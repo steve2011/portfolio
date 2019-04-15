@@ -1,0 +1,40 @@
+
+.modal-dialog {
+
+          width: 450px;
+
+        }
+
+
+
+.modal-content {
+
+    /* 80% of window height */
+
+    height: 90%;
+
+    background-color:#D7FFEB;
+
+}
+
+  .modal-header {
+
+    background-color: #004000;
+
+    padding:5px 5px;
+
+    color:#FFF;
+
+    border-bottom:1px dashed #BBBB00;
+
+ }
+
+.modal-footer {
+
+  background-color:#004000;
+
+  padding: 1rem;
+
+  border-top: 1px solid #e9ecef;
+
+}

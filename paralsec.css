@@ -1,0 +1,131 @@
+
+/* Header Parallax Element Style*/
+.paral {
+min-height: 600px;
+background-attachment: fixed;
+background-size: cover;
+background-position: 50% 50%;
+}
+
+/* Paragrapgh for Parallax Section */
+.paral p {
+font-size: 24px;
+color1:#f5f5f5;
+text-align: center;
+line-height: 60px;
+}
+
+/* Heading for Parallax Section */
+.paral h1 {
+color1: rgba(255, 255, 255, 0.8);
+font-size: 60px;
+text-align: center;
+padding-top: 60px;
+line-height: 100px;
+}
+
+/* Image for Parallax Section */
+#paralsec1 {
+background-image: url(img/img-01Large.jpg);
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center center;
+background-size: cover;
+height:1000px;
+}
+
+
+ /* Parallax Section 2 */
+#paralsec2 {
+background-color1: #91B8CC;
+height:1100px;
+color: #000 !important;
+background-color: #fff;
+background-image: url(img/webdeveloper.png), url(img/design.jpg);
+background-repeat: no-repeat, no-repeat;
+background-attachment: fixed, fixed;
+background-position: center right, center left;
+background-size: 300px 300px, 400px 300px;
+}
+
+
+
+
+
+
+
+ #paralsec2 p{
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 18px;;
+	 line-height:25px;
+     text-align: left;
+ }
+
+
+
+
+ /* Parallax Section 3 */
+#paralsec3 {
+height:1100px;
+border: 1px solid #ccff00;
+ background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+ background-image: url(img/Seamless1.jpg), url(img/Seamless2.jpg);
+ background-repeat: repeat-y, repeat-y;
+ background-attachment: fixed fixed;
+ background-position: top left, top right;
+
+
+
+
+}
+
+
+  /* Parallax Section 4 */
+
+#paralsec4 {
+    margin-top: 20px;
+background-color1:#ffcc99;
+background1: #000;
+ height:1100px;
+border: 1px solid #00cc00;
+background-color: #8A6421;
+
+
+
+ background: rgb(240,183,161); /* Old browsers */
+background: -moz-linear-gradient(left, rgba(240,183,161,1) 0%, rgba(140,51,16,1) 50%, rgba(117,34,1,1) 51%, rgba(19,18,45,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(240,183,161,1) 0%,rgba(140,51,16,1) 50%,rgba(117,34,1,1) 51%,rgba(19,18,45,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(240,183,161,1) 0%,rgba(140,51,16,1) 50%,rgba(117,34,1,1) 51%,rgba(19,18,45,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0b7a1', endColorstr='#13122d',GradientType=1 ); /* IE6-9 */
+}
+
+
+
+ /* Parallax Section 5 */
+
+ #paralsec5 {
+height:1100px;
+border: 1px solid #0000ff;
+}
+
+
+ .bk5555{
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f0b7a1+0,8c3310+50,752201+51,13122d+100 */
+background: rgb(240,183,161); /* Old browsers */
+background: -moz-linear-gradient(left, rgba(240,183,161,1) 0%, rgba(140,51,16,1) 50%, rgba(117,34,1,1) 51%, rgba(19,18,45,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(240,183,161,1) 0%,rgba(140,51,16,1) 50%,rgba(117,34,1,1) 51%,rgba(19,18,45,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(240,183,161,1) 0%,rgba(140,51,16,1) 50%,rgba(117,34,1,1) 51%,rgba(19,18,45,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0b7a1', endColorstr='#13122d',GradientType=1 ); /* IE6-9 */
+
+ }
+
+
+
+
+
+
+
+
+
+
+

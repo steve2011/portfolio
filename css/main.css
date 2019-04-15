@@ -1,0 +1,186 @@
+
+body, html {
+    height: 100%;
+    color:#000 !important;
+     margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: top;
+     font-family:Arial;
+    font-size:12px;
+	line-height:15px;
+	text-align:left ;
+     background1: url(../img/gray1.png);
+
+}
+
+
+  img {
+      max-width: 100%;
+      height: auto;
+  }
+
+
+/* Remove Bottom Margin from Jumbotron */
+.jumbotron{
+    margin-bottom: 0;
+    }
+
+
+
+  /****** JUNIOR FRONT-END DEVELOPER HEADER PARALSEC1 ************/
+  .sec1{
+    font-family: 'Berkshire Swash', cursive;
+  }
+  .well-sm h1{
+      width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 40px;
+      padding:10px;
+      background: #fff;
+      text-align: center;
+       text-shadow: 0px 3px 0px #b2a98f,
+                 0px 14px 10px rgba(0,0,0,0.15),
+                 0px 24px 2px rgba(0,0,0,0.1),
+                 0px 34px 30px rgba(0,0,0,0.1);
+      -webkit-border-bottom-left-radius: 30px;
+       -webkit-border-top-right-radius: 30px;
+       -moz-border-radius-bottomleft: 30px;
+       -moz-border-radius-topright: 30px;
+      border-bottom-left-radius: 30px;
+     border-top-right-radius: 30px;
+      -webkit-transition: all 3s ease;
+-moz-transition: all 3s ease;
+-ms-transition: all 3s ease;
+-o-transition: all 3s ease;
+transition: all 3s ease;
+
+  }
+
+  .well-sm h1:hover{
+      cursor:pointer;
+      background-color:#000;
+      color:#fff;
+  }
+  .passion {
+      color: #fff;
+       font-size:2em;
+        height:160px;
+        line-height: 70px;
+         padding: 10px;
+         background-color:#000;
+          width: 900px;
+           margin-left: auto;
+            margin-right: auto;
+            border-radius:40px;
+             -webkit-transition: all 3s ease;
+-moz-transition: all 3s ease;
+-ms-transition: all 3s ease;
+-o-transition: all 3s ease;
+transition: all 3s ease;
+opacity: 0.6;
+  }
+     .passion:hover{
+         background: #fff;
+         color:#000;
+         width:1200px;
+         height:160px;
+         cursor:pointer
+     }
+
+    /******* HORIZONTAL NAVIGATION ********/
+     .navbar-nav > li > a {
+        font-size: 25px !important;
+        color:#000 !important;
+        -webkit-transition: all 3s ease;
+-moz-transition: all 3s ease;
+-ms-transition: all 3s ease;
+-o-transition: all 3s ease;
+transition: all 3s ease;
+border: none !important;
+margin:5px;
+padding: 15px;
+    }
+
+   .navbar-nav > li > a:hover {
+          transform: scaleY(1.5);
+          cursor:pointer;
+          color: yellow !important;
+       }
+     .navbar-nav > li > a:active{
+          color: green !important;
+     }
+
+     .navbar-nav li a .nav-link{
+         color: red !important;
+     }
+
+     ul li a:active{
+         color: #ff00ff !important;
+     }
+
+
+      .no {
+          background-color:none !important;
+      }
+
+
+
+      .jumbotron {
+         border1: 1px solid #ff00ff;
+     }
+
+
+     h1 {
+        color: #000;
+     }
+
+      h1 span {
+         color: orange;
+          font-weight: bold;
+
+}
+
+
+
+
+    /********************** BORDER IMAGE *************/
+
+    .boda  {
+
+  color: pink;
+  border: 10px solid pink;
+  border-image: repeating-linear-gradient( 45deg, pink, pink 1%, purple 1%, purple 8%) 10;
+}
+
+ .jumbotron:hover  {
+  border-image: repeating-linear-gradient( 45deg, purple, purple 1%, pink 1%, pink 8%) 10;
+  color: purple;
+}
+
+/*********** FOOTER FOOTER FIXED ***/
+     .footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #000;
+   background-image: url(../img/grad-450.jpg);
+   color: white;
+   text-align: center;
+   height: 110px;
+   margin-top:50px;
+}
+
+  /************ UWL *************/
+  .uwl {
+      font-family: 'Rancho', cursive;
+      color: #ffffff;
+      text-decoration:underline;
+      font-size: 1.1em;
+  }
+
+
+
+

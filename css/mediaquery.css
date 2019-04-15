@@ -1,0 +1,38 @@
+/************** MEDIA QUERY ************/
+
+    @media (max-width:768px){
+            p.none, h1.none{
+                display: none;
+            }
+    }
+
+
+   @media (max-width:992px){
+           h1.none{
+                font-size:30px;;
+            }
+    }
+
+   @media (max-width:992px){
+            p.none{
+                display: none;
+            }
+    }
+
+    @media (max-width:768px){
+        .fs p{
+            margin: 0px;
+            padding: 0px;
+            color: #000;
+            font-size: 15px;
+        }
+
+    }
+
+    @media (max-width:768px){
+        .fs img{
+            width: 200x;
+            height: 30px;
+        }
+
+    }
