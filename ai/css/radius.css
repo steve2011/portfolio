@@ -1,0 +1,250 @@
+
+    .cona {
+       border-radius: 10px 10px 38px 95px;
+-moz-border-radius: 10px 10px 38px 95px;
+-webkit-border-radius: 10px 10px 38px 95px;
+border: 0px solid #000000;
+    -webkit-box-shadow: 10px 10px 20px -1px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 20px -1px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 20px -1px rgba(0,0,0,0.75);
+      -webkit-transition: all 3s ease;
+-moz-transition: all 3s ease;
+-ms-transition: all 3s ease;
+-o-transition: all 3s ease;
+transition: all 3s ease;
+
+    }
+
+  .cona:hover{
+       cursor: pointer;
+        -moz-transform: scale(0.7) translateX(10px) translateY(-20px);
+-webkit-transform: scale(0.7) translateX(10px) translateY(-20px);
+-o-transform: scale(0.7) translateX(10px) translateY(-20px);
+-ms-transform: scale(0.7) translateX(10px) translateY(-20px);
+transform: scale(0.7) translateX(10px) translateY(-20px);
+   }
+
+
+    .cona2 {
+      border-radius: 42px 10px 10px 64px;
+-moz-border-radius: 42px 10px 10px 64px;
+-webkit-border-radius: 42px 10px 10px 64px;
+border: 0px solid #000000;
+   -webkit-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
+
+
+
+     -webkit-transition: all 3s ease;
+-moz-transition: all 3s ease;
+-ms-transition: all 3s ease;
+-o-transition: all 3s ease;
+transition: all 3s ease;
+
+    }
+
+   .cona2:hover{
+      cursor: pointer;
+        -moz-transform: scale(0.7) translateX(10px) translateY(-20px);
+-webkit-transform: scale(0.7) translateX(10px) translateY(-20px);
+-o-transform: scale(0.7) translateX(10px) translateY(-20px);
+-ms-transform: scale(0.7) translateX(10px) translateY(-20px);
+transform: scale(0.7) translateX(10px) translateY(-20px);
+   }
+
+
+    .cona3{
+       border-radius: 54px 58px 10px 13px;
+-moz-border-radius: 54px 58px 10px 13px;
+-webkit-border-radius: 54px 58px 10px 13px;
+border: 0px solid #000000;
+     -webkit-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
+
+
+      -webkit-transition: all 3s ease;
+-moz-transition: all 3s ease;
+-ms-transition: all 3s ease;
+-o-transition: all 3s ease;
+transition: all 3s ease;
+    }
+
+   .cona3:hover{
+       cursor: pointer;
+        -moz-transform: scale(0.7) translateX(10px) translateY(-20px);
+-webkit-transform: scale(0.7) translateX(10px) translateY(-20px);
+-o-transform: scale(0.7) translateX(10px) translateY(-20px);
+-ms-transform: scale(0.7) translateX(10px) translateY(-20px);
+transform: scale(0.7) translateX(10px) translateY(-20px);
+   }
+
+
+   .bg0{
+       background-image: url(../img/vg1.png);
+       background-repeat: repeat-x;
+       background-attachment: scroll;
+       background-position: bottom;
+   }
+
+
+
+  .bg1{
+       background-image: url(../img/vg2.png);
+       background-repeat: repeat-x;
+       background-attachment: scroll;
+       background-position: bottom;
+   }
+
+
+     .bg2{
+       background-image: url(../img/vg3.png);
+       background-repeat: repeat-x;
+       background-attachment: scroll;
+       background-position: bottom;
+   }
+
+
+
+    .bg3{
+       background-image: url(../img/vg4.png);
+       background-repeat: repeat-x;
+       background-attachment: scroll;
+       background-position: bottom;
+   }
+
+   /**************** FORM *************************/
+   input[type=text], textarea {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #DDDDDD;
+}
+
+input[type=text]:focus, textarea:focus {
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid rgba(81, 203, 238, 1);
+}
+
+
+
+    input[type=text] {
+  width: 100px;
+  -webkit-transition: width .35s ease-in-out;
+  transition: width .35s ease-in-out;
+}
+input[type=text]:focus {
+  width: 250px;
+}
+
+input:focus {
+  background-color: yellow;
+}
+
+   /**** form BACKGROUND ******************/
+   .stevebg{
+       background: url(../img/stevebg.png);
+       border-radius: 20px;
+       margin-bottom: 20px;
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+   -webkit-transition: all 3s ease;
+-moz-transition: all 3s ease;
+-ms-transition: all 3s ease;
+-o-transition: all 3s ease;
+transition: all 3s ease;
+
+   }
+
+   .stevebg:hover {
+       -moz-transform: scale(1.1) translateX(-10px) translateY(10px);
+-webkit-transform: scale(1.1) translateX(-10px) translateY(10px);
+-o-transform: scale(1.1) translateX(-10px) translateY(10px);
+-ms-transform: scale(1.1) translateX(-10px) translateY(10px);
+transform: scale(1.1) translateX(-10px) translateY(10px);
+        cursor: pointer;
+   }
+
+
+
+
+   #services, #about, #article, #team, #contact {
+       height:auto;
+   }
+
+
+   .trans {
+
+          -webkit-transition: all 3s ease;
+          -moz-transition: all 3s ease;
+         -ms-transition: all 3s ease;
+          -o-transition: all 3s ease;
+          transition: all 3s ease;
+
+   }
+
+   .trans:hover{
+       cursor: pointer;
+        -moz-transform: scale(0.6);
+        -webkit-transform: scale(0.6);
+         -o-transform: scale(0.6);
+          -ms-transform: scale(0.6);
+           transform: scale(0.6);
+   }
+
+
+   .topleft{
+       border-radius: 55px 10px 10px 10px;
+-moz-border-radius: 55px 10px 10px 10px;
+-webkit-border-radius: 55px 10px 10px 10px;
+border: 0px solid #000000;
+   }
+
+   .topright{
+      border-radius: 10px 53px 10px 10px;
+      -moz-border-radius: 10px 53px 10px 10px;
+       -webkit-border-radius: 10px 53px 10px 10px;
+        border: 0px solid #000000;
+   }
+
+
+   .teamtrans {
+      -webkit-transition: background 3s ease;
+-moz-transition: background 3s ease;
+-ms-transition: background 3s ease;
+-o-transition: background 3s ease;
+transition: background 3s ease;
+   }
+
+  .teamtrans:hover {
+    cursor:pointer;
+   background-color: olive;
+  }
+
+
+  a.link:active{
+    text-decoration: underline;
+
+  }
+
+   a {
+  color: #fed136;
+}
+
+a:hover {
+  color: #fec503;
+}
+
+
+
+
+
+
