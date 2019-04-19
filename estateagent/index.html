@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>ESTATE AGENT</title>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!-- ############################################################-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- WOOW ANIMATION-->
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css" />
+     <link rel="stylesheet" href="css/carousel.css" />
+      <link rel="stylesheet" href="css/ease-in-out.css" />
+    <script src="js/wow.min.js"></script>
+
+              <script>
+              new WOW().init();
+              </script>
+
+ <style type="text/css">
+
+ aside {
+     position:fixed;
+     left: 1% !important;
+     top:20%;
+ }
+
+    @media (max-width:1200px) {
+
+    aside {
+        display:none;
+    }
+
+    }
+
+
+
+     .fa2{
+        width:100px;
+        height:60px;
+
+          background-color: #ED8029;
+          background-color: #000;
+          -webkit-transition: 3s ease;
+           -moz-transition: 3s ease;
+           -o-transition: 3s ease;
+             -ms-transition: 3s ease;
+             transition: 3s ease;
+             text-align:left
+              border-radius: 5px;
+    }
+    .fa2:hover{
+        width: 300px;
+        background: #ff00ff;
+        cursor: pointer;
+        text-align: right;
+    }
+    .circle{
+        border-radius: 50%;
+        border:1px solid #fff;
+        padding:10px;
+        margin:0.15em;
+        font-size:1.5em;
+        color: white;
+    }
+
+
+
+
+  </style>
+
+
+
+
+<style type="text/css">
+/*################# STYLING FOR navbar */
+     nav .navbar-nav li {
+         color: white !important;
+         font-size: 20px;
+     }
+
+      nav .navbar-nav li a:hover {
+         color: yellow !important;
+         font-size: 25px;
+
+     }
+     div .dropdown-menu {
+         background-color: #380000;
+         border-radius: 10px;
+         color: white !important;
+     }
+
+      div .dropdown-menu a {
+         color: white !important;
+     }
+       div .dropdown-menu a:hover {
+         background-color: #000;'
+     }
+
+
+     @media (max-width:768px){
+          .col-md-12{
+              display: none;
+          }
+
+
+         nav .navbar-nav li {
+         color: white !important;
+         font-size: 10px;
+     }
+
+     }
+       .card p{
+           font-family: Verdana, Geneva, sans-serif;
+           font-size: 15px;
+       }
+
+      .media img {
+          -webkit-transition: all 3s ease;
+          -moz-transition: all 3s ease;
+           -ms-transition: all 3s ease;
+           -o-transition: all 3s ease;
+            transition: all 3s ease;
+          -moz-transform: scale(1.1) translateY(10px);
+-webkit-transform: scale(1.1) translateY(10px);
+-o-transform: scale(1.3) translateY(10px);
+-ms-transform: scale(1.3) translateY(10px);
+transform: scale(1.3) translateY(10px);
+
+      }
+
+
+      .media img:hover{
+          cursor: pointer;
+          opacity:0.5;
+          box-shadow: 2px 2px 2px 2px #808080;
+      }
+      .navbar {
+          position:fixed;
+      }
+
+</style>
+ <style type="text/css">
+  #topheader .navbar-nav li > a {
+	text-transform: capitalize;
+	color: #333;
+	transition: background-color .2s, color .2s;
+
+	&:hover,
+	&:focus {
+		background-color: #333;
+		color: #fff;
+	}
+}
+
+#topheader .navbar-nav li.active > a {
+	background-color: #333;
+	color: #fff;
+}
+ </style>
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+  <!-- ######################  NAVIGATION ###################-->
+
+<div class="container-fluid">
+ <div id="topheader">
+<nav class="navbar navbar-expand-sm navbar-light bg-info fixed-top">
+
+  <a class="navbar-brand text-light" href="#" ><img src="img/cool.png" alt="Logo" class="img-fluid img-responsive" /></a>
+
+  <button class=" navbar-toggler" type="button" data-toggle="collapse" data-target="#demo-navbar" aria-controls="demo-navbar" aria-expanded="false" aria-label="Toggle navigation">
+
+    <span class="navbar-toggler-icon"></span>
+
+  </button>
+
+
+
+  <div class="collapse navbar-collapse" id="demo-navbar">
+
+    <ul class="navbar-nav mr-auto">
+
+      <li class="nav-item active">
+
+        <a class="nav-link text-light" href="#home">Home<span class="sr-only">(current)</span></a>
+
+      </li>
+
+      <li class="nav-item">
+
+        <a class="nav-link text-light" href="#forsales">For sale</a>
+
+      </li>
+
+        <li class="nav-item">
+
+        <a class="nav-link text-light" href="#testimonials">Testimonials</a>
+
+      </li>
+
+        <li class="nav-item">
+
+        <a class="nav-link text-light" href="#contact">Contact</a>
+
+      </li>
+         <!--
+         <li class="nav-item">
+
+        <a class="nav-link text-light" href="#">Affordabe loan</a>
+
+      </li>
+       -->
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-light" href="#rent" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Rent
+        </a>
+
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+          <a class="dropdown-item" href="#flats">Flats</a>
+
+          <a class="dropdown-item" href="#">House</a>
+
+          <a class="dropdown-item" href="#">Lockers</a>
+
+          <a class="dropdown-item" href="#">Contact us</a>
+
+          <div class="dropdown-divider"></div>
+
+          <a class="dropdown-item" href="#">Other services</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
+    </form>
+</nav>
+</div>
+</div>
+          <!-- ###################### END NAVIGATION ###################-->
+
+
+         <aside><!--EASE-IN-OUT -->
+         <div><a href="https://www.twitter.com"><button type="button" class="btn btn-button fa2"><i class="fa fa-twitter circle"></i></button></a></div><br>
+         <div><a href="https://www.twitter.com"><button type="button" class="btn btn-button fa2"><i class="fa fa-facebook circle" style="color: olive"></i></button></a></div><br>
+         <div><a href="https://www.twitter.com"><button type="button" class="btn btn-button fa2"><i class="fa fa-google-plus circle"></i></button></a></div><br>
+         <div><a href="https://www.twitter.com"><button type="button" class="btn btn-button fa2"><i class="fa fa-linkedin circle" style="color: olive"></i></button></a></div><br>
+         <div><a href="https://www.twitter.com"><button type="button" class="btn btn-button fa2"><i class="fa fa-youtube circle"></i></button></a></div>
+       </aside>
+
+
+   <!--###################################  MAIN CONTENT  ##########################-->
+     <section id="home">
+   <div class="container border">
+	<div class="row">
+		<div class="col-md-12  m-auto">  <br><br><br>
+			<h2>New Cross Estate Agent</h2>
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+				<!-- Carousel indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+					<li data-target="#myCarousel" data-slide-to="3"></li>
+					<!--<li data-target="#myCarousel" data-slide-to="4"></li>-->
+					<li data-target="#myCarousel" data-slide-to="5"></li>
+					<li data-target="#myCarousel" data-slide-to="6"></li>
+					<li data-target="#myCarousel" data-slide-to="7"></li>
+				</ol>
+
+				<!-- Wrapper for carousel items -->
+				<div class="carousel-inner">
+					<div class="item carousel-item active">
+						<div class="img-box"><img src="img/th1a.jpg" alt=""></div>
+						<p class="testimonial">We’re a short train ride away from central London, with regular trains to Charing Cross, London Bridge, Kings Cross, Cannon Street, Victoria and Waterloo. We’re also very well served by local bus routes.</p>
+						<p class="overview"><b>Genesis Historyman</b>, 1</p>
+					</div>
+					<div class="item carousel-item">
+						<div class="img-box"><img src="img/th4a.jpg" alt=""></div>
+						<p class="testimonial"> We’re a short train ride away from central London, with regular trains to Charing Cross, London Bridge, Kings Cross, Cannon Street, Victoria and Waterloo. We’re also very well served by local bus routes.</p>
+						<p class="overview"><b>Daniela Mountaintop</b>, 2</p>
+					</div>
+					<div class="item carousel-item">
+						<div class="img-box"><img src="img/th5a.jpg" alt=""></div>
+						<p class="testimonial">rocurement, Health & Safety, Communications, Community Relations, PAs and HR teams helping to keep our frontline services running smoothly.</p>
+						<p class="overview"><b>Abigail Looseweight</b>, 3</p>
+					</div>
+
+
+					<!--
+					<div class="item carousel-item active">
+						<div class="img-box"><img src="img/th6a.jpg" alt=""></div>
+						<p class="testimonial">THIA Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Idac bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.</p>
+						<p class="overview"><b>Paula Wilson</b>, 4</p>
+					</div>-->
+
+					<div class="item carousel-item">
+						<div class="img-box"><img src="img/th7a.jpg" alt=""></div>
+						<p class="testimonial"> We employ over 500 hundred people across a wide variety of roles, from Customer Services Advisors, Repairs Operatives, Caretakers and Gardeners, to Housing Officers and Welfare Benefits Advisors.</p>
+						<p class="overview"><b>Timothy Lawrence</b>, 5</p>
+					</div>
+					<div class="item carousel-item">
+						<div class="img-box"><img src="img/h1.jpg" alt=""></div>
+						<p class="testimonial">We employ over 500 hundred people across a wide variety of roles, from Customer Services Advisors, Repairs Operatives, Caretakers and Gardeners, to Housing Officers and Welfare Benefits Advisors. </p>
+						<p class="overview"><b>Maria Jackland</b>, 6</p>
+					</div>
+
+
+
+					<div class="item carousel-item">
+						<div class="img-box"><img src="img/h2.jpg" alt=""></div>
+						<p class="testimonial">To see where we are building and considering new homes, see our New Homes Map.  You can click on each of the different areas to find out more about each development.</p>
+						<p class="overview"><b>David Landowner</b>, 7</p>
+					</div>
+
+					<div class="item carousel-item">
+						<div class="img-box"><img src="img/h3.jpg" alt=""></div>
+						<p class="testimonial">To see where we are building and considering new homes, see our New Homes Map.  You can click on each of the different areas to find out more about each development.</p>
+						<p class="overview"><b>Victoria Hope</b>, 8</p>
+					</div>
+
+
+				</div>
+				<!-- Carousel controls -->
+				<a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
+					<i class="fa fa-angle-left"></i>
+				</a>
+				<a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
+					<i class="fa fa-angle-right"></i>
+				</a>
+			</div>
+		</div>
+	</div><!--FIRST ROW row -->
+    </div>
+     </section>
+
+             <!-- #########################  SECOND ROW #############-->
+        <section id="forsales">  <br><br><br><br><br>
+         <div class="row d-flex justify-content-center">
+         <br><br><br><br>
+              <div class="col-sm-6 col-md-3 col-lg-3">
+              <div class="card">
+                 <img class="card-img-top img-fluid img-responsive rounded" src="img/lew-5.jpg" alt="hs4" style="width: 100%;" />
+                  <div class="card-header">
+                         <div class="card-title">
+                          Conveyancing, Mortgages & Finance
+                          <small><i>Sell Property</i></small>
+                         </div>
+                  </div>
+                      <div class="card-body">
+                          <p>Or perhaps you have an idea for an event or project that could benefit our residents and bring your community together?.</p>
+                           <span>&pound;499.000</span>
+                      </div>
+                      <div class="card-footer">
+                         <button type="button" class="btn btn-lg btn-primary"><span class="badge badge-info">Read more</span></button>
+                      </div>
+            </div><!-- card -->
+            </div><!-- col sm 6-->
+
+             <div class="col-sm-6 col-md-3 col-lg-3">
+              <div class="card">
+                 <img class="card-img-top img-fluid img-responsive rounded" src="img/lew-3.jpg" alt="hs4" style="width: 100%;" />
+                  <div class="card-header">
+                         <div class="card-title">
+                          Looking to Rent a Property?
+                          <small><i>Get a 60 second instant valuation</i></small>
+                         </div>
+                  </div>
+                      <div class="card-body">
+                          <p>Or perhaps you have an idea for an event or project that could benefit our residents and bring your community together?.</p>
+                           <span>&pound;399.000</span>
+                      </div>
+                      <div class="card-footer">
+                         <button type="button" class="btn btn-lg btn-primary"><span class="badge badge-info">Read more</span></button>
+                      </div>
+            </div><!-- card -->
+            </div><!-- col sm 6-->
+
+             <div class="col-sm-6 col-md-3 col-lg-3">
+              <div class="card">
+                 <img class="card-img-top img-fluid img-responsive rounded" src="img/lew-2.jpg" alt="hs4" style="width: 100%;" />
+                  <div class="card-header">
+                         <div class="card-title">
+                          Property Market Analysis
+                          <small><i>Speak to us at a time that suits you</i></small>
+                         </div>
+                  </div>
+                      <div class="card-body">
+                          <p> You like about where you live, what improvements you’d like to see, and what activities could benefit your community</p>
+                           <span>&pound;299.000</span>
+                      </div>
+                      <div class="card-footer">
+                         <button type="button" class="btn btn-lg btn-primary"><span class="badge badge-info">Read more</span></button>
+                      </div>
+            </div><!-- card -->
+            </div><!-- col sm 6-->
+
+
+            <div class="col-sm-6 col-md-3 col-lg-3">
+              <div class="card">
+                 <img class="card-img-top img-fluid img-responsive rounded" src="img/lew-1.jpg" alt="hs4" style="width: 100%;" />
+                  <div class="card-header">
+                         <div class="card-title">
+                         Stay relevant and win business
+                          <small><i>Customer service is our commitment </i></small>
+                         </div>
+                  </div>
+                      <div class="card-body">
+                          <p>Or perhaps you have an idea for an event or project that could benefit our residents and bring your community together?.</p>
+                           <span>&pound;199.000</span>
+                      </div>
+                      <div class="card-footer">
+                         <button type="button" class="btn btn-lg btn-primary"><span class="badge badge-info">Read more</span></button>
+                      </div>
+            </div><!-- card -->
+            </div><!-- col sm 6-->
+   </div><!-- row-->
+    <!-- ###################  FIRST CONTAINER FLUID ############################-->
+   </section>
+            <!-- ################### MEDIA OBJECT STSRT HERE ################ -->
+
+  <section id="testimonials">  <br><br><br><br>
+    <div class="container border mt-3">
+  <h2>Testimonials</h2>
+  <p>We are the best estate agent in England and America</p><br>
+
+  <div class="media p-3">
+     <img src="img/sl1.png" alt="Daniel Catford"  class="img-fluid img-responsive ml-1 mr-3 mt-3 rounded-circle wow slideInRight" data-wow-duration="2s" data-wow-delay="2s" style="width:100px;"/>
+    <div class="media-body">
+      <h4>Daniel Catford <small><i>Posted on January 19, 2019</i></small></h4>
+      <p>To achieve this goal, the authorities in the ministry will visit these inns, monitor them and record their
+       observations to determine the level reached to meet the
+      conditions set earlier. It will also collect comments from guests regarding the hospitality.
+      All this information and data will be categorised and used
+       for the improvement of these inns to make them more acceptable and attractive to visitors.</p>
+      <div class="media p-3">
+       <img src="img/sl3.jpg" alt="Grace Lewishamton"  class="img-fluid img-responsive mr-3 mt-3 rounded-circle wow slideInLeft" data-wow-duration="2s" data-wow-delay="2s" style="width:90px;"/>
+        <div class="media-body">
+          <h4>Grace Lewishamton <small><i>Posted on February 9 2019</i></small></h4>
+          <p>Many tourists expressed satisfaction with their experience of staying at these inns, as they see it as a tourist product with a distinct Omani taste.
+           These inns provide tourists an opportunity to experience day-to-day life in Oman, with all its precise details, dimensions, traditions and practices..</p>
+        </div>
+      </div>
+    </div>
+     </div><!-- .media -->
+
+    <div class="media p-3">
+    <img src="img/sl2.jpg" alt="Gabriel Paris"  class="img-fluid img-responsive ml-1 mr-3 mt-3 rounded-circle wow slideInRight" data-wow-duration="2s" data-wow-delay="2s" style="width:100px;"/>
+    <div class="media-body">
+      <h4>Gabriel Paris <small><i>Posted on February 15, 2019</i></small></h4>
+      <p>It has also adopted special standards aimed at the classification of these facilities in order to match them with the volume
+      and momentum of tourism in the country. All efforts are being made to ensure that the terms
+       and conditions of these inns are met so that they make a good impression on tourists and visitors.</p>
+      <div class="media p-3">
+        <img src="img/sl4.jpg" alt="Janet Morrison"  class="img-fluid img-responsive ml-1 mr-3 mt-3 rounded-circle wow slideInLeft" data-wow-duration="2s" data-wow-delay="2s" style="width:100px;"/>
+        <div class="media-body">
+          <h4>Janet Morrison <small><i>Posted on February 23 2019</i></small></h4>
+          <p>We share the Committee’s concern about the current level of empty properties in the estate, and would welcome any opportunity
+           to bring these properties back into use to help address the UK’s current housing shortage."</p>
+
+        </div>
+      </div>
+    </div>
+  </div><!-- .media -->
+</div><!-- .container for media object-->
+ </section>
+
+    <section id="contact">
+    <div class="container">
+          <div class="row">
+               <div class="col-md-5 border">
+                  <div class="row">
+                   <h4 class="text-right">Where to find us</h4>
+                   <p>We are based at the James Hall, Ealing Road, ealing, WE6 4RU. </p>
+                     <div class="col-sm-6"><img src="img/receptionist.jpg" alt="Receptionist" class="img-fluid img-responsive rounded-circle" /></div>
+                      <div class="col-sm-6">
+                       <h3>Call us on: <span class="glyphicon glyphicon-phone">080078946543</span></h3>
+                       <h5>Email us on:<span class="glyphicon glyphicon-envelope">&nbsp;urgenthousing@gmail.com</span></h5>
+                      </div>
+                      <div class="col-sm-12">
+                         <form method="post" action="mailto:stephenjola2011@gmail.com">
+                          <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" required placeholder="Enter email" name="email">
+                        </div>
+                      <div class="form-group">
+                        <label for="pwd">Password:</label>
+                       <input type="password" class="form-control" id="pwd" require placeholder="Enter password" name="pswd">
+                      </div>
+                      <div class="form-group form-check">
+                       <label class="form-check-label">&nbsp;&nbsp;&nbsp;
+                       <input class="form-check-input" type="checkbox" name="remember">&nbsp; &nbsp;&nbsp;&nbsp;Can we contact you?</label>
+                       </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                   </form>
+                   </div>
+                  </div>
+                 </div>
+
+               <div class="col-md-7">
+                  <div class="mapouter"><div class="gmap_canvas"><iframe width="650" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Ealing%20broadway%20&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de">webseite erstellen lassen</a></div><style>.mapouter{text-align:right;height:500px;width:650px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:650px;}</style>Google Maps by <a href="https://www.embedgooglemap.net" rel="nofollow" target="_blank">Embedgooglemap.net</a></div>
+               </div>
+          </div><!-- row -->
+    </div><!-- container -->
+    </section>
+           <!-- ######################################### FOOTER ########################-->
+                         <br>
+
+        <!-- Footer -->
+<footer class="page-footer bg-dark pt-4 mt-3">
+    <!-- Footer Elements -->
+    <div class="container">
+
+      <!-- Social buttons -->
+      <ul class="list-unstyled list-inline text-center">
+        <li class="list-inline-item">
+          <a class="btn-floating btn-fb mx-1" style="font-size: 30px; color: olive;">
+            <i class="fa fa-facebook-f"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-tw mx-1" style="font-size: 30px; color: white;">
+            <i class="fa fa-twitter"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-gplus mx-1" style="font-size: 30px; color: olive;">
+            <i class="fa fa-google-plus"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-li mx-1" style="font-size: 30px; color: white;">
+            <i class="fa fa-linkedin"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-dribbble mx-1" style="font-size: 30px; color: olive;">
+            <i class="fa fa-dribbble"> </i>
+          </a>
+        </li>
+      </ul>
+      <!-- Social buttons -->
+
+    </div><!-- Footer Elements -->
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3"><span class="text-white">© 2019 Copyright: </span>
+      <a href="#">Stephen Jolayemi <span class="text-white font-weight-bold">Junior Web Developer London</span></a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+
+ <button type="button" class="btn btn-info float-right" >
+ <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top"> Top page <i class="fa fa-angle-up" style="font-size:30px;color:red text-align:right;"></i></a></button>
+ <script type="text/javascript">
+    $( '#topheader .navbar-nav a' ).on( 'click', function () {
+	$( '#topheader .navbar-nav' ).find( 'li.active' ).removeClass( 'active' );
+	$( this ).parent( 'li' ).addClass( 'active' );
+});
+ </script>
+</body>
+</html>
