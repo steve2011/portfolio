@@ -1,0 +1,27 @@
+ .fa2{
+        width:100px;
+        height:60px;
+        background-color: #00ff00;
+          background-color: #ED8029;
+          -webkit-transition: 3s ease;
+           -moz-transition: 3s ease;
+           -o-transition: 3s ease;
+             -ms-transition: 3s ease;
+             transition: 3s ease;
+             text-align:left
+              border-radius: 5px;
+    }
+    .fa2:hover{
+        width: 300px;
+        background: #ff00ff;
+        cursor: pointer;
+        text-align: right;
+    }
+    .circle{
+        border-radius: 50%;
+        border:1px solid #fff;
+        padding:10px;
+        margin:0.15em;
+        font-size:1.5em;
+        color: white;
+    }
