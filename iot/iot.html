@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+  	 <title>Junior Front-End Web Developer - Portfolio Website</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <!-- Font Awesome Icon Library -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="css/main.css" type="text/css" />
+      <script>
+              new WOW().init();
+              </script>
+	<!-- WOOW ANIMATION-->
+     <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/wow.min.js"></script>
+
+              <script>
+              new WOW().init();
+              </script>
+
+       <style type="text/css">
+
+           html {
+		box-sizing: border-box;
+     	}
+
+        body{
+             background1: linear-gradient(90deg, #ffffff 70%, #d3d3d3 50%,  #ffffff 90%);
+	       margin: 0;
+           padding: 0;
+	       font-size: 11pt;
+           line-height: 1.5em;
+           font-family: Arial, Helvetica, sans-serif;
+           text-shadow: 0 0  0.5px rgba(58, 58, 57, 0.25);
+          font-weight: 400;
+          z-index: -10;
+
+    }
+       .btn-info {
+           padding: 10px;
+           width: 200px;
+       }
+
+      p{
+      text-indent: 20px;
+      }
+       </style>
+
+    <style type="text/css">
+
+
+      .hd{
+
+      }
+
+       @media (max-width:576px){
+     .hd img {
+         display: none;
+     }
+
+ }
+
+    @media (max-width:992px){
+        div.icon-bar {
+            display:none;
+        }
+
+    }
+
+    @media (max-width:576px){
+        .container h1, .container h2{
+            font-size:20px;
+        }
+
+    }
+
+
+    @media (max-width:576px){
+        #gmap_canvas{
+         display:none;
+        }
+
+    }
+
+    </style>
+
+
+     <style type="text/css">
+        nav .navbar-nav{
+            font-size: 25px;
+            border-radius: 10px;
+            border1: 1px solid olive;
+
+
+        }
+
+        nav .navbar-nav li {
+                     padding-left: 10px;
+                     padding-right: 10px;
+                     }
+
+
+            nav .navbar-nav li a{
+                text-decoration: none;
+                     padding-left: 10px;
+                     padding-right: 10px;
+                     }
+                                     /*
+                   nav .navbar-brand {
+                         color: #e5dbdb;
+                         font-size: 25px;
+                         text-decoration: none !important;
+                     }  */
+
+                     .navbar-nav > li.nav-item > a.nav-link{
+                         text-decoration: none !important;
+                     }
+
+              .navbar-nav .nav-link {
+    color: rgba(255,255,255,.5);
+           }
+
+     img {
+         width: 100%;
+         height: auto;
+     }
+      .clearfix {
+          overflow: auto;
+      }
+
+     </style>
+
+
+     <style type="text/css">
+      /******************* active navbar styling *******************/
+       #topheader .navbar-nav li > a {
+	text-transform: capitalize;
+	color: #333;
+	transition: background-color .2s, color .2s;
+
+	&:hover,
+	&:focus {
+		background-color: #333;
+		color: #fff;
+	}
+}
+
+#topheader .navbar-nav li.active > a {
+	background-color: #333;
+	color: #fff;
+}
+     </style>
+     <style type="text/css">
+     /*********** NAVBAR *************/
+        .nav-bk4 {
+       background: #40e0d0;
+       background: -webkit-linear-gradient(to right, #98ddde, #f1f1f1);
+       background:  linear-gradient(to right, #98ddde, #f1f1f1);
+   }
+
+      nav .navbar-brand {
+          font-size: 20px;
+          border: 2px solid #000;
+          border-radius: 10px;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          background: #034f84;
+          transition: background 3s ease;
+          -webkit-transition: background 3s ease;
+          -moz-transition: background 3s ease;
+          color: #ffffff;
+      }
+
+      nav .navbar-brand:hover{
+          cursor: pointer;
+          background:#fff;
+          color: #000;
+      }
+
+     nav a.navbar-brand  {
+          color: #fff;
+          font-weight: bold;
+      }
+
+     .navbar-nav {
+         font-size: 20px !important;
+     }
+
+     .navbar-nav li:hover{
+         color: yellow !important;
+         font-size: 22px;
+     }
+       ul {
+           border: 1px solid #fff;
+           -webkit-border-bottom-left-radius: 10px;
+           -webkit-border-top-right-radius: 10px;
+            -moz-border-radius-bottomleft: 10px;
+           -moz-border-radius-topright: 10px;
+            border-bottom-left-radius: 10px;
+           border-top-right-radius: 10px;
+
+       }
+
+     </style>
+
+  </head>
+<body>
+
+   <!-- ***************** SOCIAL ICONS **************************-->
+      <div class="icon-bar">
+       <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+       <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+       <a href="#" class="google"><i class="fa fa-google"></i></a>
+       <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+       <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+      </div>
+
+
+      <!-- **************************** MAIN CONTENT START HERE *************************-->
+                        <!-- NAVBAR NAVBAR-EXPAND-LG NAVBAR-DARK BG-DARK -->
+
+                        <!-- Navigation -->
+
+      <div class="container" id="topheader">
+             <div id="topheader">
+          <nav class="navbar navbar-expand-md navbar-light bg-dark fixed-top nav-bk4">
+        <a class="navbar-brand" href="#">Internet Of Things</a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link js-scroll-trigger" href="#home">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#iot">InternetOfThings</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#iotbooks">IOTbooks</a>
+            </li>
+
+             <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#articles">Articles</a>
+            </li>
+              <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#progressive">Progressive</a>
+            </li>
+
+               <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#scheme">Scheme</a>
+               </li>
+
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+    </div>
+    </div><!--container -->
+   <br><br>
+
+
+                        <!--##################################################################-->  <br>
+               <div class="jumbotron">
+                   <div class="overlay"><img src="img/iot10.jpg" alt="Iot10" class="img-fluid" /></div>
+                   <div class="container">
+                         <h1 class="display-3 mb-1">About Internet of Things in 2019</h1>
+                         <p class="lead">Posted on<span>&nbsp;18 March 2019</span></p>
+                   </div>
+               </div>
+
+                  <!-- ################################# video video #####################-->
+
+
+
+
+<div class="container" id="home"> <!--VIDEO-->
+<br><br><br><br><br>
+  <div class="row align-items-center">
+     <div class="col-sm-12 col-md-6">
+         <div class="card">
+            <div class="card-header">
+               <h3>What is the Internet of Things?</h3>
+               <h4>A Simple Explanation Of 'The Internet Of Things</h4>
+            </div>
+            <div class="card-body">
+               <p>The Internet of things refers to the concept of extending Internet connectivity beyond conventional computing
+                platforms such as personal computers and mobile devices, and into any range of traditionally "dumb"
+                 or non-internet-enabled physical devices and everyday objects. <small>Wikipedia</small></p>
+                 <p>The interconnection via the Internet of computing devices embedded in everyday objects, enabling them to send and receive data.
+                "if one thing can prevent the Internet of things from transforming the way we live and work, it will be a breakdown in security"</p>
+            </div>
+            <div class="card-footer">
+              <button type="button" class="btn btn-info btn-xl">Find out more</button>
+            </div>
+
+
+         </div>
+
+       </div>
+    <div class="col-sm-12 col-md-6">
+    <video width="320" height="240" controls>
+     <source src="video/IoT.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+   </video>
+    </div>
+  </div>
+</div><!-- container -->
+
+
+
+
+
+
+                 <section id="iot">
+                   <div class="container" style="height: 90px; border: 1px solid #ffffff;"></div><!--Gap or gutter -->
+              <!-- Banner -->
+			        <div class="container">
+                             <div class="row">
+                                    <div class="col-md-5">
+											<h2 class="display-3 text-center">Internet of things</h2>
+											<h3>The Internet of Medical Things</h3>
+										   <p>The Internet of things refers to the concept of extending Internet connectivity beyond conventional computing platforms such as personal
+                                            computers and mobile devices, and into any range of traditionally "dumb" or non-internet-enabled physical devices and everyday objects.
+                                             Embedded with electronics, Internet connectivity, and other forms of hardware, these devices can communicate and interact with others over the
+                                              Internet, and they can be remotely monitored and controlled.</p>
+										     	<a href="#" class="btn btn-xl btn-outline-primary mx-auto" style="font-size:15px; font-weight:bold">Learn More</a>
+                                    </div><!-- col-md-5-->
+
+                                    <div class="col-md-7 border">
+									<img src="img/iot18cr.jpg" alt="" class="img-fluid rounded"/>
+                                    </div><!--col-md-7 -->
+
+                           </div>
+                    </div><!-- row-->
+			  </section><!--section 1 -->
+
+<!--###################################### BEGIN SECTION BOOKS CARD CARD CARD ###################-->
+<section id="iotbooks">
+<br><br>
+       <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+        <h1 class="display-4">Internet of thing latest books</h1>
+        <p class="lead">Helps electronics and software engineers and designers using the Internet-of-Things approach</p>
+       </div>
+
+    <div class="container">
+
+       <div class="row">
+       <div class="col-md-4" >
+      <div class="card mb-4 box-shadow">
+                    <div class="card-header">
+                       <h4 class="my-0 font-weight-normal text-center display-4" style="background-color: #4c6a92; color: #fff; border-radius: 10px;">Free download</h4>
+                    </div>
+           <img src="img/bk1h-200.png" alt="Book h200" class="card-img-top img-fluid rounded " />
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">&pound;0.00 <small class="text-muted">/ month</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+                  <li>Internet of Things for Architects:</li>
+                  <li>Architecting IoT solutions by implementing sensors</li>
+                  <li>communication infrastructure </li>
+                  <li>and security Paperback </li>
+            </ul>
+            <button  type="button" class="btn btn-xl btn-block btn-outline-primary"  style="border-radius: 10px;">Sign up for free</button>
+             <button type="button" class="btn btn-xl btn-block btn-outline-danger">Buy Now</button>
+             <button type="button" class="btn btn-xl btn-block btn-outline-warning"  style="border-radius: 10px;">More info</button>
+             <button type="button" class="btn btn-xl btn-block btn-info mx-auto" style=""><i class="fa fa-cart-plus" aria-hidden="true"></i>&nbsp;&nbsp;Add to cart</button>
+              <h2 class="text-center">Star Rating</h2>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="fa fa-star checked"></span>
+                 <span class="fa fa-star checked"></span>
+                 <span class="fa fa-star checked"></span>
+                 <span class="fa fa-star"></span>
+                 <span class="fa fa-star"></span>
+            </p>
+          </div><!--card-body -->
+        </div><!-- card-->
+        </div><!-- col-md-4-->
+
+        <div class="col-md-4" >
+        <div class="card mb-4 box-shadow">
+            <div class="card-header">
+            <h4 class="my-0 font-weight-normal text-center display-4" style="background-color: #92b6d5; color: #fff; border-radius: 10px;">Pro</h4>
+          </div>
+         <img src="img/bk3h-200.png" alt="Book h200" class="card-img-top img-fluid rounded "/>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">&pound;49.99 <small class="text-muted">/ month</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+            <li>Hands-On Internet of Things with Blynk:</li>
+             <li>Build on the power of Blynk  </li>
+             <li>to configure smart devices and </li>
+             <li>build exciting IoT projects </li>
+            </ul>
+            <button type="button"  class="btn  btn-xl btn-block btn-outline-primary"  style="border-radius: 10px;">Get started</button>
+             <button type="button" class="btn btn-xl btn-block btn-outline-danger">Contact us</button>
+             <button type="button" class="btn btn-xl btn-block btn-outline-warning"  style="border-radius: 10px;">More info</button>
+             <button type="button" class="btn btn-xl btn-block btn-info mx-auto" style=""><i class="fa fa-cart-plus" aria-hidden="true"></i>&nbsp;&nbsp;Add to cart</button>
+              <h2 class="text-center">Star Rating</h2>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="fa fa-star checked"></span>
+                 <span class="fa fa-star checked"></span>
+                 <span class="fa fa-star checked"></span>
+                 <span class="fa fa-star"></span>
+                 <span class="fa fa-star"></span>
+            </p>
+
+          </div><!-- card-body -->
+        </div><!--card -->
+        </div><!-- card-md-4-->
+
+        <div class="col-md-4" >
+        <div class="card mb-4 box-shadow">
+              <div class="card-header">
+                 <h4 class="my-0 font-weight-normal text-center display-4" style="background-color: #b93a32; color: #fff; border-radius: 10px;">Enterprise</h4>
+             </div>
+        <img src="img/bk5h-200.png" alt="Book3h 200" class="card-img-top img-fluid rounded" />
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">&pound;69.99 <small class="text-muted">/ month</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+                 <li>Mastering Internet of Things:</li>
+                 <li> Design and create your own</li>
+                  <li>IoT applications using Raspberry</li>
+                  <li>Pi 3 Paperback 28 Mar 2018</li>
+            </ul>
+             <button type="button" class="btn btn-lg btn-block btn-outline-primary" style="border-radius: 10px;">Contact us</button>
+             <button type="button" class="btn btn-xl btn-block btn-outline-danger">Buy Now</button>
+             <button type="button" class="btn btn-xl btn-block btn-outline-warning" style="border-radius: 10px;">More info</button>
+             <button type="button" class="btn btn-xl btn-block btn-info mx-auto" style=""><i class="fa fa-cart-plus" aria-hidden="true"></i>&nbsp;&nbsp;Add to cart</button>
+              <h2 class="text-center">Star Rating</h2>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="fa fa-star checked"></span>
+                 <span class="fa fa-star checked"></span>
+                 <span class="fa fa-star checked"></span>
+                 <span class="fa fa-star"></span>
+                 <span class="fa fa-star"></span>
+            </p>
+          </div><!-- card-body-->
+        </div><!--card-->
+        </div><!--<div class="col-md-4"-->
+
+ </div><!-- row -->
+</div><!--container -->
+ </section><!-- iot books -->
+<!-- ########################### END SECTION IOT BOOKS ##########################-->
+
+
+
+
+
+ <!-- ############################## BEGIN ARTICLES SECTION 2 ###############-->
+
+   <div class="container">               <!-- Section 2 -->
+   <section id="articles">
+     <br><br>
+   <div class="container"><br>
+   <div id="accordion"><!--parent -->
+       <div class="card">
+           <div class="card-header">
+              <b class="card-link" data-toggle="collapse" data-target="#collapseOne">
+             <button type="button" class="btn btn-block btn-outline-warning text-center pt-3 pb-3">
+             <span style="font-size:11px; color:#000; font-weight:bold;">The internet of Things</span>
+             </button>
+            </b>
+          </div>
+          <div id="collapseOne" class="collapse show" data-parent="#accordion">
+          <div class="card-body cola4">
+                        <div class="container">
+                          <div class="row">
+                     <div class="col-sm-12 col-md-6">
+                       <img src="img/col-400.jpg" alt="col 1" class="img-fluid mr-3"/>
+                     </div><!-- col-sm-12 col-md-6-->
+
+
+                 <div class="col-sm-12 col-md-6">
+                      <p>The Internet of things (IoT) examines the interconnection of devices within the existing Internet infrastructure.
+                      IoT is expected to offer advanced connectivity of devices, systems.
+                      And services that goes beyond machine-to-machine communications (M2M) and looks at a variety of protocols, domains, and applications.
+                   Recent times have seen changes in the cost and consequences of web application and denial of service attacks for organizations, with companies
+                   facing increasing revenue losses as a result of these threats.</p>
+                </div><!--col-sm-12 col-md-6-->
+                 </div><!--row-->
+                </div><!-- container -->
+          </div><!--card body -->
+         </div><!--#collapse one -->
+        </div> <!--card -->
+
+
+
+
+                        <!--**************************************************************     2         *******-->
+
+
+
+    <div class="card">
+           <div class="card-header">
+              <b class="card-link" data-toggle="collapse" data-target="#collapseTwo">
+             <button type="button" class="btn btn-block btn-outline-warning text-center pt-3 pb-3">
+             <span style="font-size:11px; color:#000; font-weight:bold;">Trends in the Cost of Web Application</span>
+             </button>
+            </b>
+          </div>
+          <div id="collapseTwo" class="collapse" data-parent="#accordion">
+          <div class="card-body cola4">
+                        <div class="container">
+                          <div class="row">
+                     <div class="col-sm-12 col-md-6">
+                       <img src="img/col2-400.jpg" alt="col 1" class="img-fluid mr-3"/>
+                     </div><!-- col-sm-12 col-md-6-->
+
+
+                 <div class="col-sm-12 col-md-6">
+                      <p>Web application and denial of service attacks can grind business processes to a halt and
+                    leave customers unable to purchase goods and services, hitting an
+                   enterprise's profits. What's more, organisations are spending more on technical
+                   support and incident response to help defend against, remediate and recover from these attacks.</p>
+                </div><!--col-sm-12 col-md-6-->
+                 </div><!--row-->
+                </div><!-- container -->
+          </div><!--card body -->
+         </div><!--#collapse Two -->
+        </div> <!--card -->
+
+
+
+        <!-- ******************************************************************************* 3 -->
+
+
+        <div class="card">
+           <div class="card-header">
+              <b class="card-link" data-toggle="collapse" data-target="#collapseThree">
+              <button type="button" class="btn btn-block btn-outline-warning text-center pt-3 pb-3">
+              <span style="font-size:11px; color:#000; font-weight:bold;">Denial of Service Attacks</span>
+              </button>
+            </b>
+          </div>
+          <div id="collapseThree" class="collapse" data-parent="#accordion">
+          <div class="card-body cola4">
+                        <div class="container">
+                          <div class="row">
+                     <div class="col-sm-12 col-md-6">
+                       <img src="img/col3-400.jpg" alt="col 1" class="img-fluid mr-3"/>
+                     </div><!-- col-sm-12 col-md-6-->
+
+
+                 <div class="col-sm-12 col-md-6">
+                      <p>Recent changes in the cost and consequences of web application and denial of service attacks
+                          Why web application security is more critical than ever
+                         How a lack of qualified security personnel is a greater barrier to preventing DoS attacks than a lack of resources
+                        What makes a web application firewall effective, and why?</p>
+                </div><!--col-sm-12 col-md-6-->
+                 </div><!--row-->
+                </div><!-- container -->
+          </div><!--card body -->
+         </div><!--#collapse three -->
+        </div> <!--card -->
+
+
+     <!--***********************************************************- 4 -->
+
+      <div class="card">
+           <div class="card-header">
+              <b class="card-link" data-toggle="collapse" data-target="#collapseFour">
+             <button type="button" class="btn btn-block btn-outline-warning text-center pt-3 pb-3">
+             <span style="font-size:11px; color:#000; font-weight:bold;">2018 Global Threat Intelligence Report</span>
+             </button>
+            </b>
+          </div>
+          <div id="collapseFour" class="collapse" data-parent="#accordion">
+          <div class="card-body cola4">
+                        <div class="container">
+                          <div class="row">
+                     <div class="col-sm-12 col-md-6">
+                       <img src="img/col4-400.jpg" alt="col 1" class="img-fluid mr-3"/>
+                     </div><!-- col-sm-12 col-md-6-->
+
+
+                 <div class="col-sm-12 col-md-6">
+                      <p>The relentless evolution of the threat landscape places the onus on businesses to
+                   innovate more rapidly than their adversaries. Cyber-awareness from the top down is imperative
+                   if the business, clients, and employees are to be protected. Also, protecting a network from compromise
+                   upfront is far less costly than dealing with post-event financial repercussions,
+                    reputational damage, legal ramifications, regulatory penalties, and breach recovery costs.</p>
+                </div><!--col-sm-12 col-md-6-->
+                 </div><!--row-->
+                </div><!-- container -->
+          </div><!--card body -->
+         </div><!--#collapse four -->
+        </div> <!--card -->
+      </div><!--accordion parent-->
+      </div><!-- container --> <br>
+ </section><!-- articles -->
+ </div><!-- container -->
+ <!-- ############################## END ARTICLES ##############################-->
+
+
+
+
+
+ <article id="progressive">
+                <br>
+               <div class="container"> <br><br>
+               <div class="row">
+
+               <div class="col-sm-12 col-md-6">
+                 <h2 class="text-center text-faded">Crypto Key Management </h2>
+                <p>Whether it's called physical computing, ubiquitous computing, or the Internet of Things, it's a hot topic in technology:
+                 how to channel your inner Steve Jobs and successfully combine hardware, embedded software, web services, electronics, and cool
+                design to create cutting-edge devices that are fun, interactive, and practical. If you'd like to create the next must-have product,
+                this unique book is the perfect place to start. Both a creative and practical primer, it explores the platforms you can use to develop
+                hardware or software, discusses design concepts that will make your products eye-catching and appealing, and shows you ways to scale up
+                from a single prototype to mass production.
+                 </p>
+              </div><!-- col-sm-12 col-md-6-->
+
+                  <div class="col-sm-12 col-md-6">
+                  <img src="img/iot2cr.png" alt="IOT 2cr" class="img-fluid wow zoomInLeft" data-wow-duration="2s" data-wow-delay="2s" / >
+                  </div><!--col-sm-12 col-md-6-->
+
+
+                <div class="col-sm-12 col-md-6">
+               <img src="img/iot4cr.jpg" alt="IOT 4 CR" class="img-fluid wow zoomInRight" data-wow-duration="2s" data-wow-delay="2s" style="clear:both;" />
+                </div><!--  col-sm-12 col-md-6-->
+
+               <div class="col-sm-12 col-md-6">
+              <h2 class="text-center text-fade">This Summer on Internet of Things (IoT)</h2>
+               <p>Not just your car, what if your refrigerator, AC, microwave and all other digital devices become your every day companion?
+               Such is the world, we humans have promised ourselves in near future. Undoubtedly, there is a long road to achieve this end state,
+              but the work has already begun.The massive upsurge in the availability of
+              data in last few years have fueled this passion for breakthrough innovation.
+             The idea of making human life faster and comfortable is the essence of discovering.
+              </p>
+              </div><!-- col-sm-12 col-md-6-->
+             </div><!--row-->
+           </div><!-- container-->
+     </article><!--progressive -->
+
+     <!--***************************  SECTION 3 ***************-->
+   <section id="scheme">
+               <!-- Section 3 -->   <br><br>
+     <div class="container" style="background: url(bg/stevebg2.png)">
+                <!-- Highlights -->
+					<div class="container">
+						<div class="row">
+							<section class="col-md-4">
+								<div class="box highlight text-white">
+                                     <img src="bg/picman1.jpg" alt="picture 1" class="img-fluid pt-3 pic1" />
+									<h4 class="text-center"><br>Videos of encryption</h4>
+									<p> It is in principle possible to decrypt the message without possessing the key, but, for a well-designed encryption scheme,
+                                    considerable computational resourcesand skills are required. An authorized recipient can easily decrypt the message with the
+                                    key provided by the originator to recipients but not to unauthorized users..</p>
+								</div>
+							</section>
+							<section class="col-md-4">
+								<div class="box highlight text-white">
+                                   <img src="bg/woman.jpg" alt="Picture 2" class="img-fluid pt-3 pic2" />
+									<h4 class="text-center"><br>Voice Encryption Software</h4>
+									<p>The need for encryption and tough security measures is at an all-time high,
+                                    with an increasing number of businesses and consumers
+                                    falling victim to a whole host of cyber crimes. Although,
+                                    the method of encrypting information is certainly not new.</p>
+								</div>
+							</section>
+
+							<section class="col-md-4">
+								<div class="box highlight text-white">
+                                     <img src="bg/picman3.jpg" alt="Picture 3" class="img-fluid pt-3 pic3" /> <br>
+									<h4 class="text-center"><br>Endpoint Encryption</h4>
+									<p>Device encryption is available on a wide range of Windows devices and helps protect your data by encrypting it.
+                                    If you turn on device encryption, only authorized individuals will be able to access your device and data. If device
+                                    encryption is not available on your device, you can turn on standard BitLocker encryption instead. </p>
+								</div>
+							</section>
+						</div><!-- row-->
+					</div><!--container inner-->
+</div><!-- container -->
+</section><!--#scheme -->
+
+<!--########################### FORM AND MAP ###########################-->
+
+
+    <!-- ##################################  NEW CONTACT FORM #######################-->
+                  <br><br>
+      <section id="contact">
+      <!--<div style="height:100px; border: 0px solid transparent; display: none;"></div>-->
+          <div class="container">
+                 <h3 class="panel-title">Free subscription to our website</h3>
+         <div class="row">
+
+                <div class="col-md-6 ">
+                  <div class="panel-body">
+                     <form role="form">
+                        <div class="form-group">
+                           <label for="firstname">Name:</label>
+                           <input type="text" name="first_name" id="first_name" class="form-control input-sm" required placeholder="First Name">
+                        </div>
+
+                        <div class="form-group">
+                        <label for="lastname">Last name:</label>
+                        <input type="text" name="last_name" id="last_name" class="form-control input-sm" required placeholder="Last Name">
+                        </div>
+
+                        <div class="form-group">
+                         <label for="email">Email:</label>
+                         <input type="email" name="email" id="email" class="form-control input-sm" required placeholder="Email Address">
+                        </div>
+
+                        <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" class="form-control input-sm" required placeholder="Password">
+                        </div>
+
+                        <div class="form-group">
+                        <label for="password_confirmation">Password_confirmation:</label>
+                        <input type="password" name="password_confirmation" id="password_confirmation" class="form-control input-sm" required placeholder="Confirm Password">
+                        </div>
+                        <input type="submit" value="Register" class="btn btn-info btn-block">
+                       </form>
+                       </div><!--panel body -->
+                       </div><!-- col-md-6 -->
+
+                       <div class="col-md-6">
+                       <div class="mapouter"><div class="gmap_canvas"><iframe width="450" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=Dartford&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><!--<style>.mapouter{text-align:right;height:400px;width:450px;}.gmap_canvas {overflow:hidden;background:none!important;height:400px;width:450px;}</style><!--<span style="font-size:12px;">Werbung: <a href="https://www.jetzt-drucken-lassen.de">jetzt-drucken-lassen.de</a></span></div>-->
+                        </div>
+                       <br>
+                       </div>
+                </div><!-- row -->
+    </div><!--container-->
+</section><!--contact-->
+
+
+     <!-- ******************************* FOOTER ***************************-->
+
+     <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-4 mb-5 mb-lg-0">
+          <h4 class="text-uppercase mb-4">United Kingdom</h4>
+          <p class="lead mb-0">New Cross Road
+            <br>SE18 35NQ</p>
+        </div>
+
+        <div class="col-md-4 mb-5 mb-lg-0">
+          <h4 class="text-uppercase mb-4">Follow us here</h4>
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item">
+              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
+                <i class="fa fa-fw fa-facebook"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
+                <i class="fa fa-fw fa-google-plus"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
+                <i class="fa fa-fw fa-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
+                <i class="fa fa-fw fa-linkedin"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
+                <i class="fa fa-fw fa-dribbble"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-4">
+          <h4 class="text-uppercase mb-4">Stephen Jolayemi</h4>
+        </div>
+      </div>
+
+
+    </div><!--container-->
+  </footer>
+
+  <!-- ************************ COPYRIGHT *********************/ -->
+
+     <div class="copyright py-4 text-center text-white">
+          <div class="container">
+            <small>Copyright &copy; Junior Web Developer 2019</small>
+          </div>
+     </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+
+  <script type="text/javascript">
+ $( '#topheader .navbar-nav a' ).on( 'click', function () {
+	$( '#topheader .navbar-nav' ).find( 'li.active' ).removeClass( 'active' );
+	$( this ).parent( 'li' ).addClass( 'active' );
+});
+
+</script>
+ 
+</body>
+
+</html>
