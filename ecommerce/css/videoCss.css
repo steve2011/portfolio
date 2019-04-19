@@ -1,0 +1,162 @@
+/****** START VIDEO ONE *************************/
+      .jumbotron{
+    position: relative;
+    z-index:-2;
+    height:62.5vh;
+}
+.video-background {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -1;
+    width:100%;
+    height: 70%;
+}
+
+/***********************        START VIDEO 2************************************/
+
+        .jumbotron {
+  position: relative;
+  z-index: -2;
+  height: 62.5vh;
+  padding: 0px !important;
+}
+
+.video-background {
+  position: relative;
+  overflow: hidden;
+  z-index: -1;
+  width: 100%;
+  height: auto;
+}
+   /********************** VIDEO NUMBER 3  I AM USING THIS VIDEO***************/
+
+
+     .jumbotron{
+  position: relative;
+  z-index:-101;
+  z-index: 100;
+   position: relative;
+   overflow: hidden;
+
+}
+  .thumbnail {
+  position: relative;
+}
+
+   .post-content {
+  background: none repeat scroll 0 0;
+  background1: rgba(255, 214, 214, 1);
+  /*opacity1: 0.5;
+  top: 0;
+  left: 0;*/
+ top:60px;
+ left:300px;
+  position: absolute;
+  height: 500px !important;
+  padding-bottom:60px;
+}
+
+
+
+Next some cleaner simpler code for the video background like so:
+
+    #video-background { /*
+      position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        overflow: hidden;
+        z-index: -100;
+        width:100%;
+
+}
+  .container {
+  position: relative;
+  color: #ffffff;
+  z-index: 2; /* Show content above video */
+   }
+
+     OR     /*
+       .jumbotron{
+   position: relative;
+   overflow: hidden;
+   height: 200px;
+}
+
+.container {
+  position: relative;
+  color: #ffffff;
+  z-index: 2; /* Show content above video */
+}
+
+#video-background{   /*
+  position: absolute;
+  height: auto;
+  width: auto;
+  min-height: 100%;
+  min-width: 100%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  z-index: 1;
+}
+    /************************ VIDEO NUMBER 4 *****************************/
+
+        video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+.jumbotron {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    color: inherit;
+    background-color: #eee;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.container {
+    position: relative;
+}
+
+    /************************ VIDEO NUMBER 5 **********************/
+
+     <style>
+       #bg-video {
+  top: 0px;
+  left: 0px;
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+}
+
+.jumbovidtext {
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+}
+
+.jumbotron {
+  background: rgba(128,128,128,0.5);
+  margin: 25vh 0;
+  overflow-y: hidden;
+}
+
+main {
+  /* Give the main content container a solid background color to hide the fixed position video */
+  background: #fff;
+  padding: 2em;
+}
+
