@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Junior Web Developer</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta name="description" content="">
+    <meta name="author" content="">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+   <link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
+   <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+      <style>
+      body {
+      background: #ffffff;
+     font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+    line-height: 20px;
+    color: #d9d4d4;
+}
+
+
+img{
+    max-width: 100%
+    height: auto;
+    padding: 0px;
+    border: none;
+}
+     /* Make imge fully responsive */
+
+     .carousel-inner img {
+      width: 100%;
+      height: 100%;
+  }
+
+   .nav-bk{
+        background: #40E0D0;
+         background-image: linear-gradient(to right top, #50c6f0, #59c1f1, #63bbf0, #6db6ef, #78b0ec, #73b5f0, #6ebaf4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+        }
+
+   .nav.bk a{
+       color: rgba(204, 104, 189, 1);
+   }
+
+
+      nav .navbar-nav li{  /**   TO CHANGE MENU COLOR**/
+  /*color: white !important; */
+  font-size: 25px;
+  color: red !important;
+  }
+
+   nav .navbar-nav li a{  /**   TO CHANGE MENU COLOR**/
+  /*color: white !important; */
+  font-size: 15px;
+  color: #000 !important;
+  background-color1: #fff;
+     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a9e4f7+0,0fb4e7+100;Ble+3D+%235 */
+background: rgb(169,228,247); /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover, rgba(169,228,247,1) 0%, rgba(15,180,231,1) 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover, rgba(169,228,247,1) 0%,rgba(15,180,231,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center, rgba(169,228,247,1) 0%,rgba(15,180,231,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9e4f7', endColorstr='#0fb4e7',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+   -webkit-transition: all 3s ease;
+   -moz-transition: all 3s ease;
+   transition: all 3s ease;
+
+    }
+
+   nav .navbar-nav li a:hover{  /**   TO CHANGE MENU COLOR**/
+  /*color: white !important; */
+  font-size: 12px;
+  color: #fff !important;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  transform: scale(1.2);
+  margin-left:20px;
+  margin-right: 20px;
+  }
+
+    </style>
+
+
+ <style type="text/css">
+
+      /* Background image */
+.jumbotron {
+background: url(img/headll2.jpeg) /*url(img/map.jpg)*/ no-repeat fixed center center;
+  text-align: center;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  text-shadow: 2px 2px #000;
+  height:400px;
+   -webkit-background-size:  cover;
+   -moz-background-size:  cover;
+   -o-background-size:  cover;
+    background-size: cover;
+    position:relative;
+    z-index: -2;
+
+}
+
+
+@media screen and (max-width: 768px) {
+  .jumbotron {
+    padding-top:20px;
+    padding-bottom:20px;
+  }
+}
+
+
+.lead span {
+  color: orange;
+  font-weight: bold;
+}
+
+.bg-cover { /*
+  background-size: cover;
+  color: white;
+  background-position: center center;
+  position: relative;
+  z-index: -2;*/
+}
+
+.overlay {
+  background-color: #000;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+
+.overlay h1{
+    margin-top: 10px;
+}
+
+   </style>
+ <style>
+  .jumbotron-billboard .img {
+    margin-bottom: 0px;
+    opacity: 0.2;
+    color: #fff;
+    background1: #000 url("https://bootstrapcreative.com/wp-bc/wp-content/uploads/2017/03/learning-story.png") top center no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    overflow: hidden;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:1;
+}
+.jumbotron h2 {margin-top:0;}
+.jumbotron {
+  position:relative;
+  padding-top:50px;
+  padding-bottom:50px;
+}
+.jumbotron .container {
+  position:relative;
+  z-index:2;
+}
+
+ @media screen and (max-width: 992px) {
+  {
+       background: #ff00ff;
+  }
+}
+
+   @media (max-width: 770px) {
+ .jumbotron h1 {    font-size:40px;
+       background: #00ff00f;
+  }
+}
+
+  @media (max-width: 1200px) {
+ .jumbotron h1 {    font-size:40px;
+       background: #00ff00f;
+  }
+}
+
+
+ @media (max-width: 1200px) {
+ .col-md-4 {    width:25%;
+       background: #00ff00f;
+  }
+}
+
+
+ /*
+@media screen and (max-width: 768px) {
+  .jumbotron {
+    padding-top:20px;
+    padding-bottom:20px;
+  }
+} */
+   .h2{
+       font-family: 'Oleo Script', cursive;
+   }
+   .span{
+       color: rgba(26, 148, 204, 1);
+       font-weight:bold;
+       text-shadow: 4px 4px 5px #ccc;
+       font-size: 1.5em;
+   }
+
+    /*** form style ***/
+      .header {
+    color: #36A0FF;
+    font-size: 27px;
+    padding: 10px;
+}
+
+.bigicon {
+    font-size: 35px;
+    color: #36A0FF;
+}
+ </style>
+
+   <style>
+       div.color {  /** change back ground colour  */
+    margin: 121px 149px;
+    width: 483px;
+    height: 298px;
+    background: #676470;
+    color: #fff;
+    font-family: Lato;
+    font-weight: 900;
+    font-size: 3.4em;
+    text-align: center;
+    line-height: 298px;
+    transition: all 3s ease;
+}
+
+div.color:hover {
+    background: #53a7ea;
+    transform: scale(1.5);
+}
+
+.boda{
+    -webkit-border-bottom-right-radius: 20px;
+     -webkit-border-bottom-left-radius: 20px;
+     -moz-border-radius-bottomright: 20px;
+      -moz-border-radius-bottomleft: 20px;
+        border-bottom-right-radius:20px;
+         border-bottom-left-radius:20px;
+          transition: all 3s ease;
+}
+   .boda:hover {
+    background: #53a7ea;
+    transform1: scale(1.2);
+    margin-bottom: 50px;
+    cursor:pointer;
+    opacity: .0.5;
+}
+
+     .bot{
+    -webkit-border-top-right-radius: 20px;
+     -webkit-border-top-left-radius: 20px;
+     -moz-border-radius-topright: 20px;
+      -moz-border-radius-topleft: 20px;
+        border-top-right-radius:20px;
+         border-top-left-radius:20px;
+         height:40px;
+         background: rgba(51, 51, 51, 1);
+           }
+
+          .logo{
+             font-family: 'Berkshire Swash', cursive;
+          }
+
+          .trans {
+                -webkit-border-radius: 20px;
+                -moz-border-radius:  20px;
+                border-radius: 20px;
+                -webkit-transition: all 3s ease;
+                -moz-transition: all 3s ease;
+                transition: all 3s ease;
+                -webkit-box-shadow: 5px 5px 10px 3px #808080;
+                -moz-box-shadow: 5px 5px 10px 3px #808080;
+                box-shadow:   5px 5px 10px 3px #808080;
+          }
+          .trans:hover{
+              -webkit-transform: scale(1.2);
+               -moz-transform: scale(1.2);
+               transform: scale(1.2);
+               cursor: pointer;
+          }
+
+   </style>
+
+
+   <style>
+      .circle{
+	border-radius: 50%;
+	margin: 0.15em;
+	font-size: 3em;
+	}
+
+.fa-twitter{
+	background: #4099FF;
+	color: #FFFFFF;
+  padding: 0.05em 0.07em;
+	}
+
+.fa-google-plus{
+  color: #FFFFFF;
+  background: #dd4b39;
+  padding: 0.1em 0.1em;
+  }
+
+.fa-dribbble{
+	color: #ea4c89;
+	}
+
+.fa-pinterest{
+	color: #cb2027;
+	}
+
+.fa-facebook{
+	background: #3B5998;
+	color: #FFFFFF;
+  padding: 0.05em 0.3em;
+	}
+
+.fa-youtube{
+	background: #bb0000;
+	color: #FFFFFF;
+  padding: 0.25em 0.25em;
+
+	}
+   </style>
+   <style type="text/css">
+      #topheader .navbar-nav li > a {
+	text-transform: capitalize;
+	color: #333;
+	transition: background-color .2s, color .2s;
+
+	&:hover,
+	&:focus {
+		background-color: #333;
+		color: #fff;
+	}
+}
+
+#topheader .navbar-nav li.active > a {
+	background-color: #333;
+	color: #fff;
+}
+
+.navbar {
+    position:fixed;
+}
+
+   </style>
+</head>
+
+<body id="top">
+
+   <div id="topheader">
+   <nav class="navbar navbar-expand-md navbar-dark nav-bk fixed-top">
+   <div class="container-fluid">
+   <div class="navbar-header">
+      <!--<a class="navbar-brand" href="#">WebSiteName</a>-->
+         <a class="navbar-brand" href="#">
+         <h3 class="logo" style="margin:0px;">SOUTH <span style="color: yellow";>AFRICA</span></h3>
+         </a>
+   </div>
+
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#home">Home</a></li>
+       <li class="active"><a href="#about">About South Africa</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Travel Info <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#destinations">Destinations</a></li>
+          <li><a href="#seasons">Seasons</a></li>
+          <li><a href="#">Experiences</a></li>
+        </ul>
+      </li>
+      <li><a href="#booking">Booking System</a></li>
+       <li><a href="#location">Location</a></li>
+        <li><a href="#contact">Contact</a></li>
+
+
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+  </div>
+
+              <!-- Navigation -->   <!--
+    <nav class="navbar navbar-expand-md navbar-dark nav-bk fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img class="img-fluid" src="img/logo1.png" alt="Logo" width="100" height="37" /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link lin" href="#">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+              <li class="nav-item">
+              <a class="nav-link" href="#">Book online</a>
+            </li>
+               <li class="nav-item">
+              <a class="nav-link" href="#">Eat</a>
+            </li>
+               <li class="nav-item">
+              <a class="nav-link" href="#">Play</a>
+            </li>
+              <li class="nav-item">
+              <a class="nav-link" href="#">Relax</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>   -->
+     <!--######################################################################## -->
+      <section id="home">
+     <div class="container-fluid"><br><br><br><br><br>
+  <div class="jumbotron bg-cover"><br><br>
+      <div class="overlay"><h3>You have to get lost before you can be found</h3></div>
+      <div class="container-fluid push-spaces">
+        <h1 class="">Feel at home when you're away</h1>
+        <p class="lead">Take a huge bite out  <span>of the big apple</span></p>
+        <br><br><br>
+      </div>
+  </div><!-- /.jumbotron -->
+
+   <div class="jumbotron jumbotron-billboard">
+  <div class="img"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+              <h1 class="display-1 text-dark" style="text-shadow: 4px 4px 4px #F8BDF9;">You are welcome to</h1>
+                <h2 class="text-success">
+                   South Africa and Enjoy your visit.
+                </h2>
+                <a href="#" class="btn btn-success btn-lg">LONDON - PARIS - JOHANNESBURG</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--################################################# -->
+  <h2 class="text-center h2" style="color:#000000;">Tourist <span class="span">attraction</span> in South Africa </h2>
+
+<div id="bs4-slide-carousel" class="carousel slide" data-ride="carousel" >
+  <ol class="carousel-indicators">
+    <li data-target="#bs4-slide-carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#bs4-slide-carousel" data-slide-to="1"></li>
+    <li data-target="#bs4-slide-carousel" data-slide-to="2"></li>
+    <li data-target="#bs4-slide-carousel" data-slide-to="3"></li>
+    <li data-target="#bs4-slide-carousel" data-slide-to="4"></li>
+    <li data-target="#bs4-slide-carousel" data-slide-to="5"></li>
+    <li data-target="#bs4-slide-carousel" data-slide-to="6"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+     <img class="img fluid" src="img/sl1.jpg" alt="Slide 1" width="2000" height="952" />
+      <!--Captions for the slides go here -->
+        <div class="carousel-caption text-success d-none d-sm-block">
+        <h5>The demo of using text in carousel Bootstrap</h5>
+        <p class="text-light">Another caption line goes here
+        <button class="btn btn-outline-primary btn-lg">More info</button>
+        </p>
+        </div>
+      <!--Captions ending here for slide 1-->
+   </div>
+    <div class="carousel-item">
+      <img src="img/sl2.jpg" width="2000" height="952" alt="Slide 2">
+      <!--Captions for the slides go here -->
+        <div class="carousel-caption text-white d-none d-sm-block">
+        <h5>The demo of using text in carousel Bootstrap</h5>
+        <p class="text-light">Another caption line goes here
+        <button class="btn btn-primary btn-lg">More info</button>
+        </p>
+
+        </div>
+      <!--Captions ending here for slide 2-->
+    </div>
+    <div class="carousel-item">
+     <img src="img/sl3.jpg" alt="Slide 3" width="2000" height="952" />
+      <!--Captions for the slides go here -->
+        <div class="carousel-caption text-warning d-none d-sm-block">
+        <h5>The demo of using text in carousel Bootstrap</h5>
+        <p class="text-light">Another caption line goes here
+        <button class="btn btn-outline-warning btn-lg">More info</button>
+        </p>
+        </div>
+      <!--Captions ending here for slide 3-->
+    </div>
+
+
+       <div class="carousel-item">
+      <img src="img/sl4.jpg" alt="Slide 4" width="2000" height="952" />
+      <!--Captions for the slides go here -->
+        <div class="carousel-caption text-warning d-none d-sm-block">
+        <h5>The demo of using text in carousel Bootstrap</h5>
+        <p class="text-light">Another caption line goes here
+        <button class="btn btn-outline-warning btn-lg">More info</button>
+        </p>
+        </div>
+      <!--Captions ending here for slide 3-->
+    </div>
+
+
+     <div class="carousel-item">
+        <img src="img/sl5.jpg" alt="Slide 5" width="2000" height="952" />
+      <!--Captions for the slides go here -->
+        <div class="carousel-caption text-warning d-none d-sm-block">
+        <h5>The demo of using text in carousel Bootstrap</h5>
+        <p class="text-light">Another caption line goes here
+        <button class="btn btn-outline-warning btn-lg">More info</button>
+        </p>
+        </div>
+      <!--Captions ending here for slide 3-->
+    </div>
+      <div class="carousel-item">
+        <img src="img/sl6.jpg" alt="Slide 6" width="2000" height="952" />
+      <!--Captions for the slides go here -->
+        <div class="carousel-caption text-warning d-none d-sm-block">
+        <h5>The demo of using text in carousel Bootstrap</h5>
+        <p class="text-light">Another caption line goes here
+        <button class="btn btn-outline-warning btn-lg">More info</button>
+        </p>
+        </div>
+      <!--Captions ending here for slide 3-->
+    </div>
+  </div>
+
+  <a class="carousel-control-prev" href="#bs4-slide-carousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#bs4-slide-carousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+</div><!-- /.container fluid-->
+</section>
+
+  <!-- #################################     END OF CAROUSEL #################################### -->
+
+
+         <!--
+    <div class="card-columns">
+<div class="card" style="width:400px">
+    <img clas="img-fluid" src="img/bot4.jpg" alt="Bot" width="500" height="400" />        >
+    <div class="card-body">
+      <h4 class="card-title">John Doe</h4>
+      <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+      <a href="#" class="btn btn-primary">See Profile</a>
+    </div>
+  </div>
+
+
+
+                   <div class="card" style="width:400px">
+    <img clas="img-fluid" src="img/bot4.jpg" alt="Bot" width="500" height="400" />
+    <div class="card-body">
+      <h4 class="card-title">John Doe</h4>
+      <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+      <a href="#" class="btn btn-primary">See Profile</a>
+    </div>
+  </div>
+
+
+
+                    <div class="card" style="width:400px">
+    <img clas="img-fluid" src="img/bot4.jpg" alt="Bot" width="500" height="400" />
+    <div class="card-body">
+      <h4 class="card-title">John Doe</h4>
+      <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+      <a href="#" class="btn btn-primary">See Profile</a>
+    </div>
+  </div>
+
+
+
+           <div class="card" style="width:400px">
+             <img clas="img-fluid" src="img/bot4.jpg" alt="Bot" width="500" height="400" />
+             <div class="card-body">
+            <h4 class="card-title">John Doe</h4>
+            <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                <a href="#" class="btn btn-primary">See Profile</a>
+              </div>
+            </div> -->
+
+          <!--######################################################-->   <br>
+              <!--  <div class="container">
+                     <div class="row">
+                        <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item"><img class="img-fluid" src="img/bot4.jpg" alt="Bot" width="400" height="400" /> </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item"><img class="img-fluid" src="img/bot4.jpg" alt="Bot" width="400" height="400" /> </div>
+                         <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item"><img class="img-fluid" src="img/bot4.jpg" alt="Bot" width="400" height="400" /> </div>
+                         <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item"><img class="img-fluid" src="img/bot4.jpg" alt="Bot" width="400" height="400" /> </div>
+
+                     </div>
+                </div>-->
+
+               <!-- ##################################################################-->
+
+
+               <!--#######################        four column experiments    #############################################-->
+       <section id="about">
+       <div class="container-fluid">
+       <div class="row">
+           <div class="col-sm-12 col-md-6 col-lg-3">
+           <div class="card" style="width:auto">
+           <div class="card-header">&nbsp;</div>
+            <img class="img-fluid card-img-top trans" src="img/bot.jpg" alt="Bot"  style="width:100%;" />
+           <div class="card-body bg-dark text-white">
+          <h4 class="card-title">Open air barbecue lunch</h4>
+          <p class="card-text">A beautiful day in South Africa</p>
+          <a href="#" class="btn btn-primary">Read more</a>
+         </div>
+         <div class="card-footer bg-info">&nbsp;</div>
+         </div>
+           </div>
+           <div class="col-sm-12 col-md-6 col-lg-3">
+           <div class="card" style="width:auto">
+           <div class="card-header">&nbsp;</div>
+           <img class="img-fluid card-img-top trans" src="img/bot2.jpg" alt="Bot"  style="width:100%;" />
+           <div class="card-body bg-dark text-white">>
+           <h4 class="card-title">Lion King</h4>
+           <p class="card-text">Father and daughter enjoying a beautiful day</p>
+          <a href="#" class="btn btn-primary">Read more</a>
+        </div>
+        <div class="card-footer bg-info">&nbsp;</div>
+        </div>
+        </div>
+           <div class="col-sm-12 col-md-6 col-lg-3">
+           <div class="card" style="width:auto">
+            <div class="card-header">&nbsp;</div>
+           <img class="img-fluid card-img-top trans" src="img/bot3.jpg" alt="Bot"  style="width:100%;" />
+           <div class="card-body bg-dark text-white">
+          <h4 class="card-title">Elephants</h4>
+         <p class="card-text">Groups of Elephants crossing the river</p>
+         <a href="#" class="btn btn-primary">See Profile</a>
+       </div>
+       <div class="card-footer bg-info">&nbsp;</div>
+        </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3">
+        <div class="card" style="width:auto">
+          <div class="card-header">&nbsp;</div>
+        <img class="img-fluid card-img-top trans" src="img/bot4.jpg" alt="Bot"  style="width:100%;" />
+        <div class="card-body bg-dark text-white">
+        <h4 class="card-title">Local Hut</h4>
+        <p class="card-text">Where you can refresh your day</p>
+        <a href="#" class="btn btn-primary">See Profile</a>
+       </div>
+       <div class="card-footer bg-info">&nbsp;</div>
+      </div>
+      </div>
+       </div>
+   </div>
+   </section>
+
+
+<!-- ################################################### -->
+         <section id="destinations">
+        <div class="container-fluid">
+       <div class="row">
+           <div class="col-sm-12 col-md-6 col-lg-3">
+           <div class="card" style="width:auto">
+           <div class="card-header">&nbsp;</div>
+            <img class="img-fluid card-img-top trans" src="img/bot5.jpg" alt="Bot"  style="width:100%;" />
+           <div class="card-body bg-dark text-white">
+          <h4 class="card-title">Village Architecture</h4>
+          <p class="card-text">What a beutiful place to spend your next holidays</p>
+          <a href="#" class="btn btn-primary">Read more</a>
+         </div>
+         <div class="card-footer bg-info">&nbsp;</div>
+         </div>
+           </div>
+           <div class="col-sm-12 col-md-6 col-lg-3">
+           <div class="card" style="width:auto">
+           <div class="card-header">&nbsp;</div>
+           <img class="img-fluid card-img-top trans" src="img/t17.jpg" alt="Bot"  style="width:100%;" />
+           <div class="card-body bg-dark text-white">
+           <h4 class="card-title">Big Rhino</h4>
+           <p class="card-text">Relaxing after a day's lunch'</p>
+          <a href="#" class="btn btn-primary">Read more</a>
+        </div>
+        <div class="card-footer bg-info">&nbsp;</div>
+        </div>
+        </div>
+           <div class="col-sm-12 col-md-6 col-lg-3">
+           <div class="card" style="width:auto">
+            <div class="card-header">&nbsp;</div>
+           <img class="img-fluid card-img-top trans" src="img/th12.jpg" alt="Bot"  style="width:100%;" />
+           <div class="card-body bg-dark text-white">
+          <h4 class="card-title">Giraffe</h4>
+         <p class="card-text">The tallest living terrestial animals and the largest ruminants</p>
+         <a href="#" class="btn btn-primary">Read more</a>
+       </div>
+       <div class="card-footer bg-info">&nbsp</div>
+        </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3">
+        <div class="card" style="width:auto trans">
+          <div class="card-header">&nbsp;</div>
+        <img class="img-fluid card-img-top trans" src="img/th8.jpg" alt="Bot"  style="width:100%;" />
+        <div class="card-body bg-dark text-white">
+        <h4 class="card-title">Another male Lion</h4>
+        <p class="card-text">Starring at Antelope, it seems not hungry</p>
+        <a href="#" class="btn btn-primary">Read more</a>
+       </div>
+       <div class="card-footer bg-info">&nbsp;</div>
+      </div>
+      </div>
+       </div>
+   </div>
+    </section>
+<!-- ############################################################## -->
+      <section id="booking">
+     <div class="container-fluid">
+       <div class="row">
+           <div class="col-sm-12 col-md-6 col-lg-3">
+           <div class="card" style="width:auto">
+           <div class="card-header">&nbsp;</div>
+            <img class="img-fluid card-img-top trans" src="img/bot9.jpg" alt="Bot"  style="width:100%;" />
+           <div class="card-body bg-dark text-white">
+          <h4 class="card-title">Mountain Gorillas</h4>
+          <p class="card-text">Gorilla permit cost £1,000 per person for one our</p>
+          <a href="#" class="btn btn-primary">See Profile</a>
+         </div>
+         <div class="card-footer bg-info">&nbsp;</div>
+         </div>
+           </div>
+           <div class="col-sm-12 col-md-6 col-lg-3">
+           <div class="card" style="width:auto">
+           <div class="card-header">&nbsp;</div>
+           <img class="img-fluid card-img-top trans" src="img/th8.jpg" alt="Bot"  style="width:100%;" />
+           <div class="card-body bg-dark text-white">
+           <h4 class="card-title">Lino King</h4>
+           <p class="card-text">There about 8,000 lions kept in captivity in South Africa</p>
+          <a href="#" class="btn btn-primary">Read more</a>
+        </div>
+        <div class="card-footer bg-info">&nbsp;</div>
+        </div>
+        </div>
+           <div class="col-sm-12 col-md-6 col-lg-3">
+           <div class="card" style="width:auto trans">
+            <div class="card-header">&nbsp;</div>
+           <img class="img-fluid card-img-top trans" src="img/th7.jpg" alt="Bot"  style="width:100%;" />
+           <div class="card-body bg-dark text-white">
+          <h4 class="card-title">Elephants</h4>
+         <p class="card-text">The world's largest land mammal, the mighty African Elephant</p>
+         <a href="#" class="btn btn-primary">Read more</a>
+       </div>
+       <div class="card-footer bg-info">&nbsp;</div>
+        </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3">
+        <div class="card" style="width:auto">
+          <div class="card-header">&nbsp;</div>
+        <img class="img-fluid card-img-top trans" src="img/bot12.jpg" alt="Bot"  style="width:100%;" />
+        <div class="card-body bg-dark text-white">
+        <h4 class="card-title">Chimpanzee</h4>
+        <p class="card-text">Chimpanzees are wild animals. They do not make good pets</p>
+        <a href="#" class="btn btn-primary">Read more</a>
+       </div>
+       <div class="card-footer bg-info">&nbsp;</div>
+      </div>
+      </div>
+       </div>
+   </div><!--container fluid -->
+   </section>
+      <!--- ########################### MAP   ###################################### -->
+
+   <!--- ################################################################# -->
+          <section id="location">
+         <div class="container-fluid">
+            <div class="row">
+            <div class="col-md-12" style="width:100%;">
+            <div class="card" style="width:100%;">
+            <div class="card-body">
+              <img class="img-fluid"src="img/map3a.jpg" alt="Map" />
+              </div>
+             </div>
+             </div>
+         </div>
+         </div>
+         </section>
+         <!-- ##################################################### form     #####################-->
+     <section id="contact"> <br><br><br><br>
+   <div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="well well-sm">
+                <form class="form-horizontal" method="post">
+                    <fieldset>
+                        <legend class="text-center header">Contact us</legend>
+
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                            <div class="col-md-8">
+                                <input id="fname" name="name" type="text" required="firstname" placeholder="First Name" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                            <div class="col-md-8">
+                                <input id="lname" name="name" type="text" required="lastname" placeholder="Last Name" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
+                            <div class="col-md-8">
+                                <input id="email" name="email" type="text" required="emailaddress" placeholder="Email Address" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
+                            <div class="col-md-8">
+                                <input id="phone" name="phone" type="text" placeholder="Phone" required="phone" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+                            <div class="col-md-8">
+                                <textarea class="form-control" id="message" name="message" placeholder="Enter your massage for us here. We will get back to you within 2 business days." rows="7"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-12 text-center">
+                                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+ </section>
+
+     <!-- ##########################################  FOOTER ########################################-->
+
+          <!-- Footer -->
+  <footer>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12 col-md-12  bg-dark boda"><br><br>
+          <ul class="list-inline text-center">
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fa fa-twitter circle"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fa fa-facebook circle"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fa fa-google-plus circle"></i>
+              </a>
+            </li>
+
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fa fa-dribbble circle"></i>
+              </a>
+            </li>
+
+              <li class="list-inline-item">
+              <a href="#">
+                <i class="fa fa-pinterest circle"></i>
+              </a>
+            </li>
+              <li class="list-inline-item">
+              <a href="#">
+                <i class="fa fa-youtube circle"></i>
+              </a>
+            </li>
+          </ul>
+             <a class="btn btn-block btn-social btn-twitter">
+             <span class="fa fa-twitter"></span> Sign in with Twitter
+             </a>
+          <p class="copyright text-center">Copyright &copy; Website designed by <span class="bg-success" style="font-style:italic; font-size: 1.2em;">Junior Web Developer</span> 2019 London</p>
+          <P class="text-right"><a href="#top"><span class="text-white"><i class="fa fa-angle-up" style="font-size:48px;color:red"></i>Go top</span></a>  </P>
+        </div>
+      </div>
+    </div>
+  </footer>
+    <div class="bot">&nbsp;</div>
+
+
+
+   <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+      <i class="fa fa-angle-up text-right"></i>
+    </a>
+
+     <script>
+
+  $("a[href='#top']").click(function() {
+     $("html, body").animate({ scrollTop: 0 }, "slow");
+     return false;
+  });
+</script>
+<script type="text/javascript">
+  $( '#topheader .navbar-nav a' ).on( 'click', function () {
+	$( '#topheader .navbar-nav' ).find( 'li.active' ).removeClass( 'active' );
+	$( this ).parent( 'li' ).addClass( 'active' );
+});
+
+</script>
+</body>
+
+</html>
