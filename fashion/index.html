@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Junior Web Developer</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta name="description" content="">
+    <meta name="author" content="">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Gabriela" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Lily+Script+One" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <style>
+   .container-fluid{
+     background: url(img/gradient2.png);
+     background-size: cover;
+
+   }
+     img{
+         width:100%
+         height:auto;
+     }
+       .jumbotron{
+           height:500px;
+           padding-top:50px;
+           background: url(img/top.jpg) no-repeat fixed top left;
+
+       }
+       .top{
+           border:1px solid #ffffff;
+           padding-top:3px;
+           font-family: 'Gabriela', serif;
+       }
+        .nav-bk{
+
+           background: #40E0D0;
+           background: -webkit-linear-gradient(to right, #FF0080, #FF8C00, #40E0D0);
+           background: linear-gradient(to right, #FF0080, #FF8C00, #40E0D0);
+        }
+        .boda{
+            border:2px inset #ffffff;
+            -webkit-border-radius:10px;
+             -moz-border-radius:10px;
+             border-radius:10px;
+
+        }
+     .linc{
+            font-size: 1.2em;
+            font-weight:bold;
+         }
+         .logo{
+           font-family: 'Lily Script One', cursive;
+         }
+
+         figure img{
+             -webkit-border-radius: 30px;
+             -moz-boder-radius: 30px;
+              border-radius:30px;
+              -webkit-transition: all 3s ease;
+              -moz-transition: all 3s ease;
+              transition: all 3s ease;
+              box-shadow: 4px 4px 10px 3px #ccc;
+         }
+         figure img:hover{
+             cursor:pointer;
+             opacity: 0.5;
+            -moz-transform: scale(1.2) rotate(0deg) translateX(0px) skewX(0deg);
+-webkit-transform: scale(1.2) rotate(0deg) translateX(0px) skewX(0deg);
+-o-transform: scale(1.2) rotate(0deg) translateX(0px) skewX(0deg);
+-ms-transform: scale(1.2) rotate(0deg) translateX(0px) skewX(0deg);
+transform: scale(1.2) rotate(0deg) translateX(0px) skewX(0deg);
+         }
+         .footi{
+             -webkit-border-bottom-right-radius: 25px;
+             -webkit-border-bottom-left-radius: 25px;
+             -moz-border-radius-bottomright: 25px;
+             -moz-border-radius-bottomleft: 25px;
+             border-bottom-right-radius: 25px;
+             border-bottom-left-radius: 25px;
+         }
+
+          .navbar-nav li a{
+              font-size: 15px !important;
+          }
+
+         .navbar-nav li a:hover{
+             color: #fff !important;
+         }
+
+   </style>
+     <style type="text/css">
+         #topheader .navbar-nav li > a {
+	text-transform: capitalize;
+	color: #333;
+	transition: background-color .2s, color .2s;
+
+	&:hover,
+	&:focus {
+		background-color: #333;
+		color: #fff;
+	}
+}
+
+#topheader .navbar-nav li.active > a {
+	background-color:#fff /*#333*/;
+	color: #fff;
+    border-radius: 10px;
+}
+     </style>
+     <style type="text/css">
+     .footbg {
+        background: rgba(66,66,66,1);
+background: -moz-linear-gradient(left, rgba(66,66,66,1) 0%, rgba(77,77,77,1) 12%, rgba(87,87,87,1) 25%, rgba(61,61,61,1) 39%, rgba(36,36,36,1) 50%, rgba(0,0,0,1) 51%, rgba(15,15,15,1) 60%, rgba(36,36,36,1) 76%, rgba(23,23,23,1) 91%, rgba(15,15,15,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(66,66,66,1)), color-stop(12%, rgba(77,77,77,1)), color-stop(25%, rgba(87,87,87,1)), color-stop(39%, rgba(61,61,61,1)), color-stop(50%, rgba(36,36,36,1)), color-stop(51%, rgba(0,0,0,1)), color-stop(60%, rgba(15,15,15,1)), color-stop(76%, rgba(36,36,36,1)), color-stop(91%, rgba(23,23,23,1)), color-stop(100%, rgba(15,15,15,1)));
+background: -webkit-linear-gradient(left, rgba(66,66,66,1) 0%, rgba(77,77,77,1) 12%, rgba(87,87,87,1) 25%, rgba(61,61,61,1) 39%, rgba(36,36,36,1) 50%, rgba(0,0,0,1) 51%, rgba(15,15,15,1) 60%, rgba(36,36,36,1) 76%, rgba(23,23,23,1) 91%, rgba(15,15,15,1) 100%);
+background: -o-linear-gradient(left, rgba(66,66,66,1) 0%, rgba(77,77,77,1) 12%, rgba(87,87,87,1) 25%, rgba(61,61,61,1) 39%, rgba(36,36,36,1) 50%, rgba(0,0,0,1) 51%, rgba(15,15,15,1) 60%, rgba(36,36,36,1) 76%, rgba(23,23,23,1) 91%, rgba(15,15,15,1) 100%);
+background: -ms-linear-gradient(left, rgba(66,66,66,1) 0%, rgba(77,77,77,1) 12%, rgba(87,87,87,1) 25%, rgba(61,61,61,1) 39%, rgba(36,36,36,1) 50%, rgba(0,0,0,1) 51%, rgba(15,15,15,1) 60%, rgba(36,36,36,1) 76%, rgba(23,23,23,1) 91%, rgba(15,15,15,1) 100%);
+background: linear-gradient(to right, rgba(66,66,66,1) 0%, rgba(77,77,77,1) 12%, rgba(87,87,87,1) 25%, rgba(61,61,61,1) 39%, rgba(36,36,36,1) 50%, rgba(0,0,0,1) 51%, rgba(15,15,15,1) 60%, rgba(36,36,36,1) 76%, rgba(23,23,23,1) 91%, rgba(15,15,15,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#424242', endColorstr='#0f0f0f', GradientType=1 );
+      }
+
+ .map-responsive{
+     position: relative;
+     padding-bottom: 40%;
+     height: 0px;
+     overflow:hidden;
+ }
+
+ .map-responsive iframe{
+     position:absolute;
+     left: 0;
+     top:0;
+     width: 100%;
+     height: 100%;
+ }
+    .col img{
+        opacity: 0.4;
+    }
+
+</style>
+</head>
+
+<body id="page-top">
+ <div class="container-fluid" style="padding-top: 5px;">
+           <br><br><br><br><br><br>
+ <div class="container-fluid top">
+        <div class="row">
+           <div class="col-sm-4 text-white bg-dark text-center"> <h4>BUY NOW PAY LATER</h4></div>
+           <div class="col-sm-4 text-center"> <h4>FREE UK DELIVERY</h4></div>
+           <div class="col-sm-4 text-white bg-dark text-center"> <h4>ONE DAY DELIVERY &pound;10.99</h4></div>
+        </div>
+ </div><!-- /.container -->
+   <div class="jumbotron"></div>
+   <!--  #############################################  -->
+
+        <!-- Navigation -->
+<!--<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">-->
+   <div id="topheader">
+  <nav class="navbar navbar-expand-lg navbar-dark nav-bk boda fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+          <button class="btn btn-warning"><span class="badge badge-pill bg-success btn-lg logo"><h3 style="color: #fff;">Ready to wear</h3></span></button>
+        </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link text-dark linc"  href="#">HOME
+                <span class="sr-only">(current)</span>
+              </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" style="font-size: 1.2em; font-weight:bold;" href="#clothing">CLOTHING</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" style="font-size: 1.2em; font-weight:bold;" href="#dresses">DRESSES</a>
+        </li>
+        <!--
+        <li class="nav-item">
+          <a class="nav-link text-dark" style="font-size: 1.2em; font-weight:bold;" href="#">ACCESSORIES</a>
+        </li>-->
+         <li class="nav-item">
+          <a class="nav-link text-dark" style="font-size: 1.2em; font-weight:bold;" href="#sales">SALE</a>
+        </li>
+
+         <li class="nav-item">
+          <a class="nav-link text-dark" style="font-size: 1.2em; font-weight:bold;" href="#tops">TOPS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" style="font-size: 1.2em; font-weight:bold;" href="#contact">CONTACT</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+     <form class="form-inline my-2 my-lg-0"><span class="glyphicon glyphicon-search" style="30px; color: #fff;"></span> &nbsp;&nbsp;&nbsp;
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
+    </form>
+</nav>
+</div>
+<!-- ################################################### -->
+
+    <div class="container-fluid">
+    <section id="home">
+         <div class="row">
+              <div class="col-sm-3">
+                  <figure>
+                      <img class="img-fluid d-block" src="img/F12a.png" alt="f12" width="362" height="338" />
+                  <figcaption>
+                     <br>
+                        <span style="text-decoration:line-through; text-decoration-color: red;">was £50.00 </span>now £25.00
+                  <button class="btn btn-primary">Add to basket</button>
+                  </figcaption>
+                  </figure>
+              </div>
+
+              <div class="col-sm-3">
+               <figure>
+                    <img class="img-fluid d-block" src="img/F17a.png" alt="f17" width="362" height="338" />
+                  <figcaption>  <br>
+                        <span style="text-decoration:line-through; text-decoration-color: red;">was £250.00 </span>now £160.00
+                 <button class="btn btn-primary">Add to basket</button>
+                  </figcaption>
+                  </figure>
+              </div>
+
+              <div class="col-sm-3">
+                 <figure>
+                     <img class="img-fluid d-block" src="img/F18a.jpg" alt="18a" width="362" height="338" />
+                  <figcaption>
+                    <br>
+                    <span style="text-decoration:line-through; text-decoration-color: red;">was £145.00 </span>now £90.00
+                 <button class="btn btn-primary">Add to basket</button>
+                  </figcaption>
+                  </figure>
+              </div>
+
+              <div class="col-sm-3">
+                <figure>
+                    <img class="img-fluid d-block"  src="img/F19a.jpg" alt="f19a" width="362" height="338" />
+                  <figcaption>
+                        <br>
+                        <span style="text-decoration:line-through; text-decoration-color: red;">was £225.00 </span>now £100.00
+                 <button class="btn btn-primary">Add to basket</button>
+                  </figcaption>
+                  </figure>
+             </div>
+         </div>
+    </section>
+
+        <section id="clothing"><br><br><br><br><br><br>
+             <div class="row">
+              <div class="col-sm-3">
+                  <figure>
+                      <img class="img-fluid rounded" src="img/F1a.jpg" alt="F1a" width="362" height="338" /><br>
+                  <figcaption>
+                   <br>
+                   <span style="text-decoration:line-through; text-decoration-color: red;">was £405.00 </span>now £200.00
+                  <button class="btn btn-primary">Add to basket</button>
+                  </figcaption>
+                  </figure>
+              </div>
+              <div class="col-sm-3">
+                <figure>
+                  <img class="img-fluid d-block" src="img/F2a.jpg" alt="F2a" width="362" height="338" />
+                  <figcaption>
+                     <br>
+                  <span style="text-decoration:line-through; text-decoration-color: red;">was £345.00 </span>now £170.00
+                 <button class="btn btn-primary">Add to basket</button>
+                  </figcaption>
+                  </figure>
+              </div>
+              <div class="col-sm-3">
+                 <figure>
+                   <img class="img-fluid d-block" src="img/F17a.png" alt="f30a" width="362" height="338" />
+                  <figcaption>
+                     <br>
+                  <span style="text-decoration:line-through; text-decoration-color: red;">was £199.00 </span>now £105.00
+                  <button class="btn btn-primary">Add to basket</button>
+                  </figcaption>
+                  </figure>
+              </div>
+
+              <div class="col-sm-3">
+                <figure>
+                      <img class="img-fluid d-block" src="img/F8a.jpg" alt="F8a" width="362" height="338" />
+                  <figcaption>
+                        <br>
+                  <span style="text-decoration:line-through; text-decoration-color: red;">was £299.00 </span>now £159.00
+                  <button class="btn btn-primary">Add to basket</button>
+                  </figcaption>
+                  </figure>
+             </div>
+             </div>
+             </section>
+
+             <section id="dresses"><br><br><br><br><br><br>
+              <div class="row">
+              <div class="col-sm-3">
+                  <figure>
+                      <img class="img-fluid d-block" src="img/f12v4-6.jpg" alt="f12v4" width="400" height="600" />
+                  <figcaption>
+                     <br>
+                  <span style="text-decoration:line-through; text-decoration-color: red;">was £499.00 </span>now £299.00
+                  <button class="btn btn-primary">Add to basket</button>
+                  </figcaption>
+                  </figure>
+              </div>
+              <div class="col-sm-3">
+                <figure>
+                    <img class="img-fluid d-block" src="img/f13 4-6.jpg" alt="f13" width="400" height="600" />
+                  <figcaption>
+                      <br>
+                 <span style="text-decoration:line-through; text-decoration-color: red;">was £699.00 </span>now £399.00
+                 <button class="btn btn-primary">Add to basket</button>
+                  </figcaption>
+                  </figure>
+              </div>
+              <div class="col-sm-3">
+                 <figure>
+                     <img class="img-fluid d-block" src="img/f14-4-6.jpg" width="400" height="600" alt="f14">
+                  <figcaption>
+                      <br>
+                 <span style="text-decoration:line-through; text-decoration-color: red;">was £99.00 </span>now £45.00
+                 <button class="btn btn-primary">Add to basket</button>
+                  </figcaption>
+                  </figure>
+              </div>
+
+              <div class="col-sm-3">
+                <figure>
+                    <img class="img-fluid d-block" src="img/f15-4-6.jpg" width="400" height="600" alt="f15">
+                  <figcaption>
+                     <br>
+                  <span style="text-decoration:line-through; text-decoration-color: red;">was £199.00 </span>now £99.00
+                  <button class="btn btn-primary">Add to basket</button>
+                  </figcaption>
+                  </figure>
+             </div>
+             </div>
+             </section>
+
+              <section id="sales">
+              <div class="row">
+              <div class="col-sm-3">
+                  <figure>
+                     <img class="img-fluid d-block" src="img/f26h-4-3.jpg" alt="fh" width="400" height="300" />
+                  <figcaption>
+                       <br>
+                  <span style="text-decoration:line-through; text-decoration-color: red;">was £350.00 </span>now £160.00
+                 <button class="btn btn-primary">Add to basket</button>
+                  </figcaption>
+                  </figure>
+              </div>
+              <div class="col-sm-3">
+                <figure>
+                     <img class="img-fluid d-block" src="img/f22h-4-3.jpg" width="400" height="300" alt="fh25">
+                  <figcaption>
+                      <br>
+                      <span style="text-decoration:line-through; text-decoration-color: red;">was £330.00 </span>now £160.00
+                  <button class="btn btn-primary">Add to basket</button>
+                  </figcaption>
+                  </figure>
+              </div>
+              <div class="col-sm-3">
+                <figure>
+                      <img class="img-fluid d-block" src="img/h1-4-3.jpg" alt="h1" width="400" height="300" />
+                  <figcaption>
+                        <br>
+                  <span style="text-decoration:line-through; text-decoration-color: red;">was £209.00 </span>now £100.00
+                  <button class="btn btn-primary">Add to basket</button>
+                  </figcaption>
+                  </figure>
+              </div>
+
+              <div class="col-sm-3">
+                <figure>
+                     <img class="img-fluid d-block" src="img/h3-4-3.jpg" alt="fh2" width="400" height="300" />
+                  <figcaption>
+                      <br>
+                  <span style="text-decoration:line-through; text-decoration-color: red;">was £699.00 </span>now £350.00
+                 <button class="btn btn-primary">Add to basket</button>
+                  </figcaption>
+                  </figure>
+             </div>
+             </div>
+             </section>
+
+
+               <section id="tops"> <br><br><br><br><br><br>
+              <div class="row">
+              <div class="col-sm-3">
+                  <figure>
+                      <img class="img-fluid d-block" src="img/h4-4-3.jpg" alt="h4" width="400" height="300" />
+                  <figcaption>
+                        <br>
+                  <span style="text-decoration:line-through; text-decoration-color: red;">was £225.00 </span>now £150.00
+                  <button class="btn btn-primary">Add to basket</button>
+                  </figcaption>
+                  </figure>
+              </div>
+              <div class="col-sm-3">
+                <figure>
+                      <img class="img-fluid d-block" src="img/h5-4-3.jpg" alt="h5" width="400" height="300" />
+                  <figcaption>
+                       <br>
+                  <span style="text-decoration:line-through; text-decoration-color: red;">was £355.00 </span>now £160.00
+                 <button class="btn btn-primary">Add to basket</button>
+                  </figcaption>
+                  </figure>
+              </div>
+              <div class="col-sm-3">
+                 <figure>
+                      <img class="img-fluid d-block" src="img/h7-4-3.jpg" alt="h7" width="400" height="300" />
+                  <figcaption>
+                      <br>
+                  <span style="text-decoration:line-through; text-decoration-color: red;">was £450.00 </span>now £259.00
+                  <button class="btn btn-primary">Add to basket</button>
+                  </figcaption>
+                  </figure>
+              </div>
+
+              <div class="col-sm-3">
+                <figure>
+                      <img class="img-fluid d-block" src="img/h8-4-3.jpg" alt="h8" width="400" height="300" />
+                  <figcaption>
+                      <br>
+                  <span style="text-decoration:line-through; text-decoration-color: red;">was £359.00 </span>now £200.00
+                     <button class="btn btn-primary">Add to basket</button>
+                  </figcaption>
+                  </figure>
+             </div>
+             </div>
+              </section>
+             <!-- #########################  footer begins here            #########################-->
+        </div><!-- /.container fluid main-->
+        </div><!-- /container fluid padding top-->
+    <!- ##################################################-->
+     <!-- ******************************************************** form map ******************-->
+          <section>
+             <div class="container-fluid bg-primary">
+               <div class="row">
+                  <div class="col-sm-12 col-md-6">
+                      <h2>Feedback form</h2>
+                      <form action="/action_page.php">
+
+                      <div class="form-group">
+                       <label for="fname">First name:</label>
+                        <input type="text" class="form-control" required="" placeholder="Enter first name" name="firstname">
+                      </div>
+                      <div class="form-group">
+                     <label for="lname">Last name:</label>
+                      <input type="text" class="form-control" required="" placeholder="Enter last name" name="lastname">
+                    </div>
+                    <div>
+                      <label for="email">Email:</label>
+                      <input type="email" class="form-control" id="email" required="" placeholder="Enter email" name="email">
+                    </div>
+                    <div class="form-group">
+                    <label for="comment">Comment:</label>
+                    <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+                    </div>
+                     <div class="form-group form-check">
+                     <label class="form-check-label">
+                   <input class="form-check-input" type="checkbox" name="remember">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bookmark this page
+                  </label>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+             </div>
+
+             <div class="col-sm-12 col-md-6">
+                      <<h1>Location area</h1>
+                      <div class="map-responsive">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19854.719144248782!2d-0.03583489550781246!3d51.53449637704936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761d646f76f141%3A0xea8a03aa08f5f286!2sWestfield+Stratford+City!5e0!3m2!1sen!2suk!4v1555692923472!5m2!1sen!2suk" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                      </div>
+             </div>
+            </div><!--row-->
+              <div class="row">
+                   <div class="col">
+                    <img src="img/city.png" alt="City" class="img-fluid" />
+
+                   </div>
+
+              </div>
+            </div><!--container-fluid-->
+
+
+          </section>
+
+
+
+
+     <!-- *********************************************************** END FORM MAP ****************************-->
+     <section id="contact"> <br>
+    <footer>
+    <div class="container-fluid bg-dark text-white text-center footi footbg" style= "line-height: 100px;">
+      <div class="row ">
+        <div class="col-md-4" >
+          <span class="copyright">Copyright &copy;  2019</span>
+        </div>
+        <div class="col-md-4">
+          <ul class="list-inline social-buttons"> <h5 style="margin:0px;">Follow us on:</h5>
+            <li class="list-inline-item">
+              <a href="https://www.twitter.com">
+                <i class="fa fa-twitter" style="font-size:25px;color:white"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.facebook.com">
+                <i class="fa fa-facebook-f" style="font-size:25px;color:white"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com">
+                <i class="fa fa-linkedin-in"></i>
+                  <i class="fa fa-linkedin-square" style="font-size:25px;color:white"></i>
+                 <!--<i class="fa fa-facebook-f"></i>-->
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.youtube.com">
+               <i class="fa fa-youtube" style="font-size:25px;color:white"></i>
+                </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <ul class="list-inline quicklinks">
+            <li class="list-inline-item">
+              <a href="#"><span class="text-white">Junior Web Developer</span></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#"><span class="text-white">London UK</span></a>
+            </li>
+            <li class="scroll-to-top rounded js-scroll-trigger fa fa-angle-up"  href="#page-top">
+             <!-- Scroll to Top Button-->
+              <a href=""><i class="fa fa-angle-up"></i></a>
+               </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  </section>
+
+
+
+
+<script type="text/javascript">
+
+  $( '#topheader .navbar-nav a' ).on( 'click', function () {
+	$( '#topheader .navbar-nav' ).find( 'li.active' ).removeClass( 'active' );
+	$( this ).parent( 'li' ).addClass( 'active' );
+});
+</script>
+</body>
+
+</html>
