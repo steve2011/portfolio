@@ -1,0 +1,894 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Junior Web Developer</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta name="description" content="">
+    <meta name="author" content="">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- ############################################################-->
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js" integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+     <link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
+
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <title>Untitled</title>
+  <style>
+   body, html {
+  width: 100%;
+  height: 100%;
+  background:#ffffff;
+}
+
+   img {
+       max-width: 100%;
+       height: auto;
+       margin:0;
+       padding: 0;
+       border: none;
+   }
+      .trans{
+        -webkit-transition: all 3s ease;
+        -moz-transition: all 3s ease;
+         -ms-transition: all 3s ease;
+         -o-transition: all 3s ease;
+         transition: all 3s ease;
+          -webkit-box-shadow: 4px 4px 4px 3px #D1D1D1;
+          box-shadow: 4px 4px 4px 3px #D1D1D1;
+      }
+      .trans:hover{
+          cursor: pointer;
+           -moz-transform: scale(1.2) rotate(2deg) translateX(4px) translateY(5px) skewX(0deg);
+           -webkit-transform: scale(1.2) rotate(2deg) translateX(4px) translateY(5px) skewX(0deg);
+            -o-transform: scale(1.2) rotate(2deg) translateX(4px) translateY(5px) skewX(0deg);
+           -ms-transform: scale(1.2) rotate(2deg) translateX(4px) translateY(5px) skewX(0deg);
+           transform: scale(1.2) rotate(2deg) translateX(4px) translateY(5px) skewX(0deg);
+           opacity: 0.5;
+      }
+      .counter-ico img{
+          border-radius:50%;
+      }
+
+  </style>
+
+
+     <style>
+      .demo {
+          border-top:10px solid #ccc;
+          height:90px;
+          font-family: sans-serif;
+     }
+
+       @keyframes grow{
+          0%{
+              font-size:0;
+              left:50%;
+          }
+
+         50%{
+             font-size: 60px;
+           left:100%;
+         }
+
+          100% {
+              font-size: 40px;
+          }
+     }
+
+     @-webkit-keyframes grow{
+          0%{
+              font-size:0
+          }
+          100% {
+              font-size: 40px;
+
+          }
+
+         }
+
+        .demo:hover .grows{
+            animation-name: grow;
+             animation-duration: 3s;
+             -webkit-animation-name: grow;
+             -webkit-animation-duration: 3s;
+             cursor: pointer;
+              color: #ff00ff;
+        }
+
+        .demo:hover .growsandstays {
+            animation-name: grow;
+             animation-duration: 3s;
+             animation-fill-mode: forwards;
+             -webkit-animation-name: grow;
+             -webkit-animation-duration: 3s;
+             -webkit-animation-fill-mode: forwards;
+        }
+
+      #ExampleB {
+width: 520px;
+}
+#ExampleB div {
+width: 100px;
+margin: 5px 0;
+padding: 5px;
+color: white;
+background-color: #ED8029;
+text-align: right;
+border-radius: 5px;
+}
+
+#ExampleB:hover div {
+width: 500px;
+}
+
+#ExampleB div.ease {
+-webkit-transition: 3s ease;
+-moz-transition: 3s ease;
+-o-transition: 3s ease;
+-ms-transition: 3s ease;
+transition: 3s ease;
+}
+  </style>
+
+
+
+
+      <style>
+            .header {
+    color: #36A0FF;
+    font-size: 27px;
+    padding: 10px;
+}
+
+.bigicon {
+    font-size: 35px;
+    color: #36A0FF;
+}
+        </style>
+
+
+<style type="text/css">
+
+.scroll-to-top {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  display1: none;
+  width: 120px;
+  height: 50px;
+  text-align: center;
+  color: #000; /*white;*/
+  background: rgba(52, 58, 64, 0.5);
+  line-height: 45px;
+  border: 1px solid #000;
+}
+
+.scroll-to-top:focus, .scroll-to-top:hover {
+  color: #000; /*white;*/
+
+}
+
+.scroll-to-top:hover {
+  background: #343a40;
+
+}
+
+.scroll-to-top i {
+  font-weight: 800;
+  height: 100px;
+}
+        </style>
+
+    <!--/****section ****/ -->
+    <style type="text/css">
+    section ul > li > a {
+        color:#fff !important;
+        font-size: 20px;
+    }
+
+     section ul > li > a:hover {
+        color:rgba(211, 246, 248, 1);
+        font-size: 10px;
+        font-weight: bold;
+    }
+
+
+    section h5 {
+        color: #fff !important;
+    }
+
+
+    .social-networks > a > fa-twitter:hover{
+        color: rgba(127, 204, 202, 1);
+    }
+      .font {
+        font-family: 'Oleo Script', cursive;
+      }
+
+    </style>
+  <style type="text/css">
+      #topheader .navbar-nav li > a {
+	text-transform: capitalize;
+	color: #333;
+	transition: background-color .2s, color .2s;
+
+	&:hover,
+	&:focus {
+		background-color: #333;
+		color: #fff;
+	}
+}
+
+#topheader .navbar-nav li.active > a {
+	background-color: #333;
+	color: #fff;
+}
+  </style>
+
+
+</head>
+   <div id="page-top"></div>
+<body>
+   <!--/ Nav Star /-->
+    <div id="topheader">
+  <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" js-scroll href="#page-top"><span class="font">Gastronomy <b class="text-primary">Americana</b></span></a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link js-scroll active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#service">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#vegetable">Vegetable</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#fishoil">Fish oil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </div>
+  <!--/ Nav End /-->
+
+
+     <section id="home">
+     <!--/ Intro Skew Star /-->
+  <!--<div id="home" class="intro route bg-image" style="background-image: url(img/intro-bg.jpg)">-->
+    <div id="home" class="intro route bg-image" style="background-image: url(img/rice-1.jpg )">
+
+    <div class="display-table">
+      <div class="table-cell">
+        <div class="container">
+          <h1 class="intro-title mb-4">Vegetable and Fruit Intake</h1>
+          <p><strong>Body weight, Obesity, Benefits and challenges</strong></p>
+        </div>
+      </div>
+  </div>
+  </div>
+    </section>
+  <!--/ Intro Skew End /-->
+
+
+     <section id="about">
+  <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="box-shadow-full">
+            <div class="row">
+        <div class="col-md-6">
+                <div class="row">
+                  <div class="col-sm-6 col-md-5">
+                    <div>
+                    <img src="img/wine.jpg" alt="Wine" class="img-fluid rounded trans pb-1" />
+                    <img src="img/wine4.jpg" alt="Wine4" class="img-fluid rounded trans" />
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-md-7">
+                    <div class="about-info">
+                      <img src="img/wine2.jpg" alt="Wine2" class="img-fluid rounded trans" />
+                    </div>
+                  </div>
+                </div><!--/ row /-->
+
+                 <br>
+                 <img src="img/veg-woman5.jpg" class="img-fluid rounded trans" alt="">
+          </div>
+
+
+              <div class="col-md-6">
+                <div class=" pt-4 pt-md-0">
+                  <div class="title-box-2">
+                    <h5 class="title-left">
+                      About fruits and vegetables
+                    </h5>
+                  </div>
+                  <p class="lead">
+                   Sufficient intake of fruits and vegetables has been associated with a reduced risk of chronic diseases and body weight management but the
+                    exact mechanism is unknown. The World Health Organisation and Food and Agriculture of the United Nation reports recommend adults to consume
+                    at least five servings of fruits and vegetables per day excluding starchy vegetables.
+                    This review focuses on the importance of fruits and vegetables as well as the benefits and progress of nutrition education in improving intake.
+                  </p>
+                  <p class="lead">
+                    Fruits and vegetables are universally promoted as healthy. The Dietary Guidelines for Americans 2010 recommend you make one-half of
+                     your plate fruits and vegetables. Myplate.gov also supports that one-half the plate should be fruits and vegetables. Fruits and vegetables
+                     include a diverse group of plant foods that vary greatly in content of energy and nutrients.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!--/ Section Services Star /-->
+  <section id="service" class="services-mf route"> <br><br><br>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="title-box text-center">
+            <h1 class="title-a">
+             Fruits and vegetables
+            </h1>
+            <p class="lead">
+              Differences among fruits and vegetables in nutrient composition are detailed. We summarize the epidemiological and clinical studies on the health benefits of fruits and vegetables.
+              Finally, we discuss the role of fiber in fruits and vegetables in disease prevention.
+            </p>
+          </div>
+        </div><!--/ col sm 12 -->
+      </div><!-- / row /-->
+
+
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="service-box" >
+               <div>
+                  <img src="img/veg-5.jpg" alt="veg-6" class="img-fluid rounded trans" />
+               </div>
+            <div class="service-content">
+              <h2 class="s-title">Introduction</h2>
+              <p class="s-description text-center">
+                Diets high in fruits and vegetables are widely recommended for their health-promoting properties.
+                 Fruits and vegetables have historically held a place in dietary guidance because of their concentrations of vitamins, especially vitamins C and A; minerals, especially electrolytes; and more recently phytochemicals, especially antioxidants.
+                Additionally, fruits and vegetables are recommended as a source of dietary fiber.
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="service-box">
+            <div>
+             <img src="img/veg-2.jpg" alt="Veg-2" class="img-fluid rounded trans" />
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">Vegetables</h2>
+              <p class="lead">
+                Dark green vegetables: all fresh, frozen, and canned dark green leafy vegetables and broccoli,
+                 cooked or raw (broccoli, spinach, romaine, collard, turnip, and mustard greens)
+                Red and orange vegetables: all fresh, frozen, and canned red and orange vegetables, cooked or raw
+              (tomatoes, red peppers, carrots, sweet potatoes, winter squash, pumpkin)
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="service-box">
+            <div>
+              <img src="img/veg-3.jpg" class="img-fluid rounded trans" alt="Veg-3">
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">Fruit</h2>
+              <p class="lead">
+                All fresh, frozen, canned, and dried fruits and fruit juices (oranges and orange juice,
+                apples and apple juice, bananas, grapes, melons, berries, and raisins)
+                 Thus, dietary guidance over time has supported the principles of moderation and variety. No food group has all the nutrients needed to support life.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4" style="1px solid #000;">
+          <div class="service-box">
+            <div>
+              <img src="img/rice-2.jpg" alt="Rice-2"  class="img-fluid rounded trans "/>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">Dietry Guidelines</h2>
+              <p class="s-description text-center">
+                Beans and peas: all cooked and canned beans and peas (kidney beans, lentils, chickpeas,
+                and pinto beans). Does not include green beans or green peas.
+           Starchy veg etables: all fresh, frozen, and canned starchy vegetables (white potatoes, corn, green peas)
+           <br><br><br> <br>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-box" style="1px solid #000;">
+            <div>
+              <img src="img/rice-3.jpg" alt="Rice-3" class="img-fluid rounded trans" />
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">Current state of knowledge</h2>
+              <p class="s-description text-center">
+                As the scientific support for a role for resistant carbohydrates not captured by the crude
+                fiber method such as pectin, glucans, and oligosaccharides was published, additional analytical
+                methods to measure more carbohydrates resistant to digestion and absorption were needed.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4" style="1px solid #000;">
+          <div class="service-box">
+            <div class="service-ico">
+             <img src="img/chicken-2.jpg" alt="Chicken-2" class="img-fluid rounded trans" />
+            </div>
+            <div class="service-content">
+              <h2>Health benefits</h2>
+              <p class="s-description text-center">
+                Vegetarian diets have been promoted since the 18th century by men and women in search
+                of physical and spiritual health. Vegetarian theorists who professed to follow the tenets of the ancient philosopher Pythagoras believed that diet should be part of an ascetic lifestyle.
+                 <br>  <br>
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div><!--/ main row /-->
+    </div><!--/ main container  /-->
+  </section>
+  <!--/ Section Services End /-->
+
+
+
+
+
+    <section id="vegetable">
+    <div class="section-counter paralax-mf bg-image" style="background-image: url(img/tomato-6.jpg)">
+       <!--<div class="overlay-mf"></div>-->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3 col-lg-3">
+          <div class="counter-box">
+            <div class="counter-ico">
+              <img src="img/woman4a.jpg" alt="WomanA" class="img-fluid trans" />
+            </div>
+            <div class="counter-num">
+              <p class="counter"></p>
+              <span class="counter-text">I EAT AS MUCH VEGETABLE AS POSSIBLE</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 col-lg-3">
+          <div class="counter-box pt-4 pt-md-0">
+            <div class="counter-ico">
+              <img src="img/woman3a.jpg" alt="Woman3a" class="img-fluid trans" />
+            </div>
+            <div class="counter-num">
+              <p class="counter"></p>
+              <span class="counter-text">I LOST 10 KILOGRAMS IN TEN MONTHS</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 col-lg-3">
+          <div class="counter-box pt-4 pt-md-0">
+            <div class="counter-ico">
+             <img src="img/woman2a.jpeg" alt="Woman2a" class="img-fluid trans"/>
+            </div>
+            <div class="counter-num">
+              <p class="counter"></p>
+              <span class="counter-text">IT IS GOOD FOR YOUR HEALTH</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 col-lg-3">
+          <div class="counter-box pt-4 pt-md-0">
+
+          <div class="counter-ico">
+             <img src="img/woman1a.jpg" alt="Woman1a"  class="img-fluid trans"/>
+            </div>
+
+            <div class="counter-num">
+              <p class="counter"></p>
+              <span class="counter-text">THANK GOD I LOVE EATING VEGETABLE</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   </section>
+    <!--####################################################################-->
+
+
+   <!--/ Section Portfolio Star /-->
+  <section id="fishoil" class="portfolio-mf sect-pt4 route">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="title-box text-center">
+            <h3 class="title-a">
+             FISH VEGETABLE AND FISH OIL
+            </h3>
+            <p class="subtitle-a">
+              In the past 10 years, many Americans have turned to omega-3 fish oil supplements,
+               which have benefits for healthy people and also those with heart disease.
+                Omega-3 fish oil contains both docosahexaenoic acid (DHA) and eicosapentaenoic acid (EPA).
+            </p>
+            <div class="line-mf"></div>
+          </div>
+        </div>
+      </div><!-- / .ROW /-->
+
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="img/fish6.jpg" data-lightbox="gallery-mf">
+              <div class="work-img">
+                <img src="img/fish6.jpg" alt="" class="img-fluid">
+              </div>
+
+              <div class="work-content">
+                <div class="row">
+                     <div class="col-sm-8">
+                     <h2 class="w-title">Mix vegetables</h2>
+                     <div class="w-more">
+                      <span class="w-ctegory" style="color: red; font-weight:bold;">&pound;19.99.00/Kg</span>
+                     </div>
+                     </div>
+
+                  <div class="col-sm-4">
+                    <div>
+                      Free delivery
+                      <br>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="img/fish5.jpg" data-lightbox="gallery-mf">
+              <div class="work-img">
+                <img src="img/fish5.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Fresh Mugali</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory" style="color: red; font-weight:bold;">&pound;10.99.00/Kg</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div>
+                      Free delivery
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="img/fish4.jpg" data-lightbox="gallery-mf">
+              <div class="work-img">
+                <img src="img/fish4.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Tikka Mangero</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory" style="color:red; font-weight:bold;">&pound;12.99.00/Kg</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div>
+                     Free delivery
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="img/fish-3.png" target="_blank" data-lightbox="gallery-mf">
+              <div class="work-img">
+                <img src="img/fish-3.png" alt="Fish-3" class="img-fluid" />
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Sahi Fish</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory" style="color:red; font-weight:bold;">&pound;11.99.00/Kg</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div>
+                      Free delivery
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="img/fish2.jpg" data-lightbox="gallery-mf">
+              <div class="work-img">
+                <img src="img/fish2.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Fish Masala</h2>
+                    <div class="w-more">
+                <span class="w-ctegory" style="color:red; font-weight:bold;">&pound;39.99.00/Kg</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div>
+                      Free delivery
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="img/fish.jpg" data-lightbox="gallery-mf">
+              <div class="work-img">
+                <img src="img/fish.jpg" alt="Fish" class="img-fluid" />
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Fish Curry</h2>
+                    <div class="w-more">
+            <span class="w-ctegory" style="color:red; font-weight:bold;">&pound;29.99.00/Kg</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div>
+                      Free delivery
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </a>
+          </div>
+        </div>
+
+      </div><!--/  main row        /-->
+    </div><!--/ .container -->
+  </section>
+  <!--/ Section Portfolio End /-->
+
+   <!--/#################################################/-->
+
+
+
+
+     <!--/ #################################################/ -->
+   <div class="demo" style="border: 1px solid #fff;">
+        <div class="grows">Health Benefits of Eating Fruits & Vegetables</div>
+
+   </div>
+
+
+    <div id="ExampleB">
+         <div class="ease"> <pre>
+             <p>Vegetables are important sources of many nutrients.</p></pre>
+         </div>
+    </div>
+    <!-- /################################################### -->
+     <section id="contact"> <br><br><br>
+   <div class="container-fluid">
+         <div class="row">
+            <div class=" col-sm-12 col-md-6" >
+              <a href=""><img src="img/veg-womanA.jpg" class="img-fluid trans ml-5" style="border-top-left-radius:20px;
+               border-top-right-radius: 0;
+               border-bottom-left-radius:0;
+               border-bottom-right-radius: 20px;
+              "alt="woman" /></a>
+
+
+
+                <a href=""><img src="img/pasta.jpg" class="img-fluid trans ml-5" style="border-top-left-radius:20px;
+               border-top-right-radius: 0;
+               border-bottom-left-radius:0;
+               border-bottom-right-radius: 20px;
+              "alt="woman" /></a>
+            </div>
+
+
+
+            <div class="col-sm-12 col-md-6">
+                 <div class="row">
+        <div class="col-md-12">
+            <div class="well well-sm">
+                <form class="form-horizontal" method="post">
+                    <fieldset>
+                        <legend class="text-center header">Contact us</legend>
+
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                            <div class="col-md-8">
+                                <input id="fname" name="name" type="text" placeholder="First Name" required="required" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                            <div class="col-md-8">
+                                <input id="lname" name="name" type="text" placeholder="Last Name" required="required" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
+                            <div class="col-md-8">
+                                <input id="email" name="email" type="text" placeholder="Email Address" required="required" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
+                            <div class="col-md-8">
+                                <input id="phone" name="phone" type="text" placeholder="Phone" required="required" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+                            <div class="col-md-8">
+                                <textarea class="form-control" id="message" name="message" placeholder="Enter your massage for us here. We will get back to you within 2 business days." rows="7"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-12 text-center">
+                                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</div>
+</div>
+ </section>
+<!-- #########################################-->
+<div class="container-fluid">
+<div id="map" style="width: 100%;">
+       <div class="mapouter img-fluid"><div class="gmap_canvas"><iframe width="1890" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=GoldSmith%20University&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net">embedgooglemap.net</a></div><style>.mapouter{text-align:right;height:400px;width:1890px;}.gmap_canvas {overflow:hidden;background:none!important;height:400px;width:1890px;}</style></div>
+  </div>
+  </div>
+
+        <br>
+  <!-- /#####################################################/-->
+          <footer>
+
+             <div class="container-fluid bg-dark text-white pt-4 pb-4">
+              <section style="background: url(gradBg/grad-450.jpg);">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h5 class="ml-5">Live better</h5>
+                    <ul class="list-unstyled ml-5">
+                        <li class="text-white"><a href="#">Salad</a></li>
+                        <li><a href="#">Meet and Fish</a></li>
+                        <li><a href="#">Downloads</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5 class="">Products</h5>
+                  <ul class="list-unstyled">
+                        <li><a href="#">Recipe boxes</a></li>
+                        <li><a href="#">Recipes</a></li>
+                        <li><a href="#">Customer information</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Support</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Help desk</a></li>
+                        <li><a href="#">Forums</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Policy</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            </section>
+        </div>
+         <!-- /###########################################-->
+
+        <div class="social-networks">
+            <a href="https://www.twitter.com" target="_self" class="twitter"><i class="fa fa-twitter mr-3" style="font-size:50px; color:#485167;"></i></a>
+            <a href="https://www.facebook.com" class="facebook"><i class="fa fa-facebook-official mr-3" style="font-size:50px; color:#994f00;"></i></a>
+            <a href="https://www.goggleplus.com" class="google"><i class="fa fa-google-plus mr-3" style="font-size:50px; color:#f2dfce;"></i></a>
+        </div>
+        <div class="footer-copyright">
+            <p>Web design by Junior web developer SE London&nbsp;&nbsp;© 2019 Copyright </p>
+        </div>
+           <p style="margin:0px; padding: 0px;"><a class="scroll-to-top rounded js-scroll-trigger"  href="#page-top"> Top page <i class="fa fa-angle-up" style="font-size:48px;color:red text-align:right;"></i></a></p>
+    </footer>
+  <!-- /#########################################################-->
+
+ <script type="text/javascript">
+    $( '#topheader .navbar-nav a' ).on( 'click', function () {
+	$( '#topheader .navbar-nav' ).find( 'li.active' ).removeClass( 'active' );
+	$( this ).parent( 'li' ).addClass( 'active' );
+});
+ </script>
+</body>
+</html>
