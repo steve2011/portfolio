@@ -1,0 +1,156 @@
+
+
+/***** General style, all sections *****/
+
+
+body { font-family: 'Open Sans', sans-serif; font-size: 15px; font-weight: 400; color: #888; line-height: 30px; text-align: center; }
+
+strong { font-weight: 600; }
+
+a { color: #856dc0; border-bottom: 1px dashed #856dc0; text-decoration: none; transition: all .3s; }
+a:hover, a:focus { color: #856dc0; border: 0; text-decoration: none; }
+
+h1, h2 { margin-top: 10px; font-size: 38px; font-weight: 300; color: #555; line-height: 50px; font-style: italic; }
+h3 { font-size: 22px; font-weight: 300; color: #555; line-height: 30px; font-style: italic; }
+
+img { max-width: 100%; }
+
+.medium-paragraph { font-size: 17px; line-height: 32px; }
+
+
+
+
+
+
+  p {
+  line-height: 1.75;
+  text-indent: 20px;
+}
+
+a {
+  color: #fed136;
+}
+
+a:hover {
+  color: #fec503;
+}
+
+.text-primary {
+  color: #fed136 !important;
+}
+
+
+
+  /**** SOCIAL BUTTON *******/
+
+ul.social-buttons {
+  margin-bottom: 0;
+}
+
+ul.social-buttons li a {
+  font-size: 20px;
+  line-height: 50px;
+  display: block;
+  width: 70px;
+  height: 70px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  color: white;
+  border-radius: 100%;
+  outline: 1px solid #ff0000;
+  background-color: #212529;
+}
+
+ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
+  background-color: #fed136;
+}
+      /****** h5 in video ****************************/
+
+      @media(max-width:992px){
+          .post-content > h5 {
+              display: none;
+          }
+
+      }
+
+
+       /**************** FOOTER ***************/
+  .bg {
+      background-image: url(city/cityG.jpg);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: top left;
+      -webkit-transition: all 3s ease;
+      -moz-transition: all 3s ease;
+       -o-transition: all 3s ease;
+        -ms-transition: all 3s ease;
+        transition: all 3s ease;
+        width: 100%;
+        height: 200px;
+  }
+  .bg:hover {
+      cursor: pointer;
+      opacity: 0.5;
+  }
+
+   img {
+       max-width: 100%;
+       height:auto;
+       display: block;
+   }
+
+   /**************  CARD *******************/
+
+
+
+   /******************** CARD BOARD IMGES *******************/
+       .cardbd {
+           -webkit-border-top-left-radius:20px;
+           -webkit-border-top-right-radius:0;
+           -webkit-border-bottom-right-radius:20px;
+           -webkit-border-bottom-left-radius:0;
+
+           border-top-left-radius:20px;
+           border-top-right-radius:0;
+           border-bottom-left-radius:0;
+           border-bottom-right-radius:20px;
+       }
+
+
+       /*********** BRAND NAVBAR ***************/
+       .brand {
+          font-family: 'Racing Sans One', cursive;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

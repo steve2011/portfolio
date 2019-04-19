@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Junior Web Developer</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta name="description" content="">
+    <meta name="author" content="">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js" integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp" crossorigin="anonymous"></script>
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+       <script src="js/wow.min.js"> </script>
+    <script type="text/javascript"> new WOW().init(); </script>
+
+   <!-- ############################################################-->
+     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
+     <!-- Bootstrap CSS File -->
+       <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+       <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom fonts for this template -->
+        <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+         <!-- Font family -->
+         <link href="https://fonts.googleapis.com/css?family=Racing+Sans+One" rel="stylesheet">
+  <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <!-- WOOW ANIMATION-->
+    <link rel="stylesheet" href="css/animate.css">
+    <!--<link rel="stylesheet" href="css/style.css" />-->
+     <link rel="stylesheet" href="css2/style2.css" />
+      <link rel="stylesheet" href="css2/videoCss.css" />
+    <script src="js/wow.min.js"> </script>
+    <script type="text/javascript"> new WOW().init(); </script>
+     <script>
+$(document).ready(function(){
+  $('[data-toggle="popover"]').popover();
+});
+</script>
+
+  <style type="text/css">
+
+  html, body {
+      background-color: #ffffff;
+  }
+
+    /*======================================
+//--//-->   NAVBAR
+======================================*/
+
+.navbar-b {
+  transition: all .5s ease-in-out;
+  background-color: transparent;
+  padding-top: 1.563rem;
+  padding-bottom: 1.563rem;
+}
+
+.navbar-b.navbar-reduce {
+  box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.06);
+}
+
+.navbar-b.navbar-trans .nav-item,
+.navbar-b.navbar-reduce .nav-item {
+  position: relative;
+  padding-right: 10px;
+  padding-left: 0;
+}
+
+.navbar-b.navbar-trans .nav-link,
+.navbar-b.navbar-reduce .nav-link {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.navbar-b.navbar-trans .nav-link:before,
+.navbar-b.navbar-reduce .nav-link:before {
+  content: '';
+  position: absolute;
+  margin-left: 0px;
+  width: 0%;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  transition: all 500ms ease;
+}
+
+.navbar-b.navbar-trans .nav-link:hover,
+.navbar-b.navbar-reduce .nav-link:hover {
+  color: #1B1B1B;
+}
+
+.navbar-b.navbar-trans .nav-link:hover:before,
+.navbar-b.navbar-reduce .nav-link:hover:before {
+  width: 35px;
+}
+
+.navbar-b.navbar-trans .show > .nav-link:before,
+.navbar-b.navbar-trans .active > .nav-link:before,
+.navbar-b.navbar-trans .nav-link.show:before,
+.navbar-b.navbar-trans .nav-link.active:before,
+.navbar-b.navbar-reduce .show > .nav-link:before,
+.navbar-b.navbar-reduce .active > .nav-link:before,
+.navbar-b.navbar-reduce .nav-link.show:before,
+.navbar-b.navbar-reduce .nav-link.active:before {
+  width: 35px;
+}
+
+.navbar-b.navbar-trans .nav-link:before {
+  background-color: #fff;
+}
+
+.navbar-b.navbar-trans .nav-link:hover {
+  color: #fff;
+}
+
+.navbar-b.navbar-trans .show > .nav-link,
+.navbar-b.navbar-trans .active > .nav-link,
+.navbar-b.navbar-trans .nav-link.show,
+.navbar-b.navbar-trans .nav-link.active {
+  color: #fff;
+}
+
+.navbar-b.navbar-reduce {
+  transition: all .5s ease-in-out;
+  background-color: #fff;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.navbar-b.navbar-reduce .nav-link {
+  color: #0078ff;
+}
+
+.navbar-b.navbar-reduce .nav-link:before {
+  background-color: #0078ff;
+}
+
+.navbar-b.navbar-reduce .nav-link:hover {
+  color: #0078ff;
+}
+
+.navbar-b.navbar-reduce .show > .nav-link,
+.navbar-b.navbar-reduce .active > .nav-link,
+.navbar-b.navbar-reduce .nav-link.show,
+.navbar-b.navbar-reduce .nav-link.active {
+  color: #0078ff;
+}
+
+.navbar-b.navbar-reduce .navbar-brand {
+  color: #0078ff;
+}
+
+.navbar-b.navbar-reduce .navbar-toggler span {
+  background-color: #1B1B1B;
+}
+
+.navbar-b .navbar-brand {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.navbar-b .navbar-nav .dropdown-item.show .dropdown-menu,
+.navbar-b .dropdown.show .dropdown-menu,
+.navbar-b .dropdown-btn.show .dropdown-menu {
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+  visibility: visible !important;
+}
+
+.navbar-b .dropdown-menu {
+  margin: 1.12rem 0 0;
+  border-radius: 0;
+
+}
+
+.navbar-b .dropdown-menu .dropdown-item {
+  padding: .7rem 1.7rem;
+  transition: all 500ms ease;
+}
+
+.navbar-b .dropdown-menu .dropdown-item:hover {
+  background-color: #0078ff;
+  color: #fff;
+  transition: all 500ms ease;
+}
+
+.navbar-b .dropdown-menu .dropdown-item.active {
+  background-color: #0078ff;
+}
+
+/*--/ Horizontal Navbar /--*/
+
+.navbar-toggler {
+  position: relative;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  outline: 0;
+}
+
+.navbar-toggler span {
+  display: block;
+  background-color: #fff;
+  height: 3px;
+  width: 25px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  left: 0;
+  opacity: 1;
+}
+
+.navbar-toggler span:nth-child(1),
+.navbar-toggler span:nth-child(3) {
+  transition: -webkit-transform .35s ease-in-out;
+  transition: transform .35s ease-in-out;
+  transition: transform .35s ease-in-out, -webkit-transform .35s ease-in-out;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(1) {
+  position: absolute;
+  left: 12px;
+  top: 10px;
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+  opacity: 0.9;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(2) {
+  height: 12px;
+  visibility: hidden;
+  background-color: transparent;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(3) {
+  position: absolute;
+  left: 12px;
+  top: 10px;
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+  opacity: 0.9;
+}
+  </style>
+
+  <style type="text/css">
+      .bg-cover {
+      background-image: url(city/cityGa.jpg);
+     background-repeat: no-repeat;
+      background-attachment1: fixed;
+      background-position: top left;
+      -webkit-transition: all 3s ease;
+      -moz-transition: all 3s ease;
+       -o-transition: all 3s ease;
+        -ms-transition: all 3s ease;
+        transition: all 3s ease;
+        width: 100%;
+        height: 400px;
+  }
+  .bg-cover:hover {
+      cursor: pointer;
+      opacity: 0.5;
+  }
+
+  </style>
+
+  <style type="text/css">
+     /**************  CARD *******************/
+   .S1{
+      -webkit-box-shadow: 0 28px 16px -26px #9E8977;
+        box-shadow: 0 28px 16px -26px #9E8977;
+
+
+      -webkit-transition: all 3s linear;
+      -moz-transition: all 3s linear;
+       -ms-transition: all 3s linear;
+        -o-transition: all 3s linear;
+       transition: all 3s linear;
+      }
+
+   .s1:hover{
+      moz-transform: scale(0.6);
+       -webkit-transform: scale(0.6);
+       -o-transform: scale(0.6);
+       -ms-transform: scale(0.6);
+
+
+     opacity:0.5;
+   cursor: pointer;
+   }
+
+   /******************** CARD BOARD IMGES *******************/
+       .cardbd {
+           -webkit-border-top-left-radius:20px;
+           -webkit-border-top-right-radius:0;
+           -webkit-border-bottom-right-radius:20px;
+           -webkit-border-bottom-left-radius:0;
+
+           border-top-left-radius:20px;
+           border-top-right-radius:0;
+           border-bottom-left-radius:0;
+           border-bottom-right-radius:20px;
+
+       }
+
+  </style>
+
+  <style type="text/css">
+    /****      what our customer says       ****/
+    @media (max-width:992px){
+        .col-lg-12 h2{
+            font-size: 15px;
+        }
+
+    }
+
+   .boxsad {   /*
+      -webkit-box-shadow: 5px 5px 7px 10px #D1D1D1;
+       -moz-box-shadow: 5px 5px 7px 10px #D1D1D1;
+       box-shadow: 5px 5px 7px 10px #D1D1D1;  */
+
+       -webkit-transition: all 3s ease;
+       -moz-transition: all 3s ease;
+       -ms-transition: all 3s ease;
+        -o-transition: all 3s ease;
+         transition: all 3s ease;
+
+   }
+   .boxsad:hover{
+       cursor: pointer;
+       -moz-transform: scale(0.6) translateX(-5px);
+        -webkit-transform: scale(0.6) translateX(-5px);
+         -o-transform: scale(0.6) translateX(-5px);
+         -ms-transform: scale(0.6) translateX(-5px);
+         transform: scale(0.6) translateX(-5px);
+   }
+     .t1 {
+         -webkit-box-shadow: 5px 5px 7px 10px #D1D1D1;
+       -moz-box-shadow: 5px 5px 7px 10px #D1D1D1;
+       box-shadow: 5px 5px 7px 10px #D1D1D1;
+     }
+
+  </style>
+  <style type="text/css">
+  /* active link */
+   #topheader .navbar-nav li > a {
+	text-transform: capitalize;
+	color: #FFFFFF /*#333*/;
+	transition: background-color .2s, color .2s;
+
+	&:hover,
+	&:focus {
+		background-color: #333;
+		color: #fff;
+	}
+}
+
+#topheader .navbar-nav li.active > a {
+	background-color: #1ECCCA /* #333*/;
+	color: #000;
+    border-radius: 10px;
+}
+
+  </style>
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+
+ <!--###########################           NAVIGATION NAVIGATION ##########################-->
+   <div id="topheader">
+   <!--/ Nav Star /-->
+  <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll" href="#page-top"><span class="brand" style="font-size:30px;">Taxis <span class="badge badge-primary badge-pill">&</span> minicabs</span></a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link js-scroll" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#services">Our services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#booking">Bookings</a>
+          </li><!--
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#quotation">Quotations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#blog">Blog</a>
+          </li>-->
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#contact">Contact us</a>
+          </li>
+            <h3 style="height: 30px;"><i class="glyphicon glyphicon-phone-alt badge badge-info badge-pill"> Tel:080099987898</i></h3>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--/ Nav End /-->
+   </div>
+ <!--#############################    JUMBOTRON JUMBPTRON ########################################-->
+ <section id="home">
+<div class="container-fluid">
+<div class="jumbotron thumbnail">
+<div class="overlay"></div>
+  <video id="video-background" preload muted autoplay loop>
+   <source src="video/Southbank_london.mp4"  type="video/mp4">
+  </video>
+  <article>
+   <div class="post-content" style="color:#ffffff;">
+    <h2 class="wow swing"      data-wow-duration="2s" data-wow-delay="5s" data-wow-iteration="10"><span class="text-white">LONDON CABS</span></h2>
+     <h5 class="wow slideInLeft" data-wow-duration="2s" data-wow-delay="5s" class="text-white" data-wow-iteration="5"><span class="text-white">We invite you to enjoy a luxurious London cab transportation service provided by our team of experts.</span></h5>
+     <h5 class="wow slideInRight" data-wow-duration="2s" data-wow-delay="5s" data-wow-iteration="5" class="text-white"><span class="text-white">We have the experience and skills to meet the expectations of every passenger and add value to every ride.</span></h5>
+  </div>
+   </article>
+</div>
+</div>
+  </section>
+ <!-- ########################################################-
+
+                   MAIN BODY
+
+  #########################################################-->
+        <section id="services">
+     <div class="container-fluid">
+         <div class="row">
+             <div class="col-sm-12 col-md-6 col-lg-4">
+                <h2>Heathtrow</h2>
+
+                 <div class="card" style="width:100%">
+             <img src="img/c9a.jpg" alt="c9a" class="img-fluid card-img-top s1 cardbd" />
+                <div class="card-body">
+                <h4 class="card-title"></h4>
+                <p class="card-text">Free way to get around London</p>
+                 <a href="#" class="btn btn-primary">Click for more information</a>
+                </div>
+                </div>
+            </div>
+
+             <div class="col-sm-12 col-md-6 col-lg-4">
+                 <h2>Gatwick</h2>
+                <div class="card" style="width:100%">
+                <img src="img/c8a.jpg" alt="c8a" class=" card-image-top img-fluid trans s1 cardbd" />
+                <div class="card-body">
+                <h4 class="card-title"></h4>
+                <p class="card-text">Trusted & reliable</p>
+                 <a href="#" class="btn btn-primary">Click for more information</a>
+                </div>
+               </div>
+             </div>
+
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                  <h2>London city</h2>
+                 <div class="card" style="width:100%">
+              <img src="img/c6a.jpg" alt="c6a" class="img-fluid card-img-top s1 cardbd" />
+                <div class="card-body">
+                <h4 class="card-title"></h4>
+                 <p class="card-text">What to pay for your minicab journey</p>
+                 <a href="#" class="btn btn-primary">For more information</a>
+                 </div>
+                 </div>
+             </div>
+
+
+
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                <h2>Luton</h2>
+                 <div class="card" style="width:100%">
+                 <img src="img/c2a.jpg" alt="c 2a" class="img-fluid card-img-top s1 cardbd" />
+                <div class="card-body">
+                <h4 class="card-title"></h4>
+                <p class="card-text">Pay by cash, account or by card, the choice is yours.</p>
+                 <a href="#" class="btn btn-primary">Click for more information</a>
+                </div>
+                </div>
+            </div>
+
+             <div class="col-sm-12 col-md-6 col-lg-4">
+                 <h2>Stansted</h2>
+                <div class="card" style="width:100%">
+                <img src="img/c1a.jpg" alt="c1a" class="img-fluid card-img-top s1 cardbd" />
+                <div class="card-body">
+                <h4 class="card-title"></h4>
+                <p class="card-text">Safer travel, stay safe - always book your minicab with us</p>
+                 <a href="#" class="btn btn-primary">Click for more information</a>
+                </div>
+               </div>
+             </div>
+
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                  <h2>Heathrow five</h2>
+                 <div class="card view zoom" style="width:100%">
+                <img src="img/c5a.jpg" alt="c5a" class="img-fluid card-img-top s1 cardbd" />
+                <div class="card-body">
+                <h4 class="card-title"></h4>
+                 <p class="card-text"> You don't' pay for traffic, poor routes or surge pricing.</p>
+                 <a href="#" class="btn btn-primary">Click for more information</a>
+                 </div>
+                 </div>
+             </div>
+     </div><!-- / row -->
+  </div><!-- container-fluid -->
+   </section>
+
+
+
+
+
+
+
+
+ <!--######################################################################-->
+         <br><br>
+ <!-- Team -->
+  <section id="booking" class="bg-light" id="team">
+    <div class="container-fluid">
+
+      <div class="row bg-info">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">What our passengers say</h2>
+        </div>
+      </div><!--/ col-lg-12 /-->
+
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="team-member boxsad">
+            <img src="img/young5a.jpg" alt="Young 5a" class="img-fluid mx-auto rounded-circle  wow  slideInLeft t1" data-wow-duration="2s" data-wow-delay="5s" data-wow-iteration="3" />
+               <br>
+            <h4>Janet Markson</h4>
+            <p class="text-muted">Brilliant customer service and no hidden price</p>
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="list-inline-item ">
+                <a href="#">
+                  <i class="fa fa-linkedin "></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="team-member boxsad">
+             <img src="img/young2a.jpg" alt="Young 2a" class="img-fluid mx-auto rounded-circle  wow slideInUp boxsad t1" data-wow-duration="2s" data-wow-delay="5s" data-wow-iteration="3" />
+                 <br>
+          <h4>Mariane Landowner</h4>
+            <p class="text-muted">Best price and I always use if for airport travel</p>
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="team-member boxsad">
+            <img src="img/young3a.jpg" alt="Young 3a" class="img-fluid mx-auto rounded-circle wow slideInRight t1" data-wow-duration="2s" data-wow-delay="5s" data-wow-iteration="3"/>
+                 <br>
+            <h4>Grace Goldsmiths</h4>
+            <p class="text-muted">Moving around London is much easier with me using their services</p>
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div><!--/  row /-->
+
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+          <p class="large text-muted">Taxis & minicabs available for airport transfers to all of London's airports.</p>
+        </div>
+      </div>
+
+    </div><!--/ container /-->
+  </section>
+
+  <!-- ################################
+
+      <!-- ################################################--
+               CONTACT FORM
+      #####################################################-->
+
+        <!-- Contact -->
+  <section id="contact">
+    <div class="container-fluid bg-dark">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Contact Us</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <form id="contactForm" name="sentMessage" novalidate="novalidate">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                <label for="name">Name:</label>
+                  <input class="form-control" style="font-size:20px;" id="name" type="text" placeholder="Your Name *" required="required" data-validation-required-message="Please enter your name.">
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group">
+                <label for="email">Email:</label>
+                  <input class="form-control" style="font-size:20px;" id="email" type="email" placeholder="Your Email *" required="required" data-validation-required-message="Please enter your email address.">
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group">
+                <label for="phoneNumber">Phone Number</label>
+                  <input class="form-control" style="font-size:20px;" id="phone" type="tel" placeholder="Your Phone *" required="required" data-validation-required-message="Please enter your phone number.">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                <label for="message">Message</label>
+                  <textarea class="form-control" style="font-size:20px;" id="message" placeholder="Your Message *" required="required" data-validation-required-message="Please enter a message."></textarea>
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="col-lg-12 text-center">
+                <div id="success"></div>
+                <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Send Message</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+ </section>
+
+   <!--#####################################################
+            MAP MAP MAP
+   ##########################################################-->
+  <div class="mapouter"><div class="gmap_canvas"><iframe width="2000" height="303" id="gmap_canvas" src="https://maps.google.com/maps?q=Lewisham&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de">website programmieren lassen</a></div><style>.mapouter{text-align:right;height:303px;width:2000px;}.gmap_canvas {overflow:hidden;background:none!important;height:303px;width:2000px;}</style>Google Maps by <a href="https://www.embedgooglemap.net" rel="nofollow" target="_blank">Embedgooglemap.net</a></div>
+  <!--########################################################-->
+
+        <div class="jumbotron jumbotron bg-cover">
+                   <!--
+                 <div class="overlay"></div>
+                 <div class="container">
+                 <h1 class="display-3 mb-1">About me</h1>
+                  <p class="lead">Posted on <span>23 September 2017</span></p>
+                 </div> -->
+              </div>
+
+
+
+
+
+
+
+
+
+  <!-- ########################################################-->
+     <!-- Footer -->
+  <footer>
+    <div class="container-fluid">
+
+      <div class="row">
+        <div class="col-md-4" style="background-color: #18B423;">
+          <span class="copyright"><span class="text-white">Website design by StephenJ Copyright &copy;  2019</span></span>
+        </div>
+        <div class="col-md-4" style="background-color: #fff;">
+          <ul class="list-inline social-buttons" >
+            <li class="list-inline-item btn-twitter" style="font-size:30px">
+              <a href="#">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item btn-facebook" style="font-size:30px">
+              <a href="#">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </li>
+            <li class="list-inline-item btn-linkedin">
+              <a href="#">
+              <i class="fa fa-linkedin" style="font-size:30px"></i>
+              </a>
+            </li>
+
+               <li class="list-inline-item btn-linkedin">
+              <a href="#">
+              <i class="fa fa-flickr" style="font-size:30px"></i>
+              </a>
+            </li>
+                <li class="list-inline-item btn-linkedin">
+              <a href="#">
+              <i class="fa fa-vimeo" style="font-size:30px"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4" style="background-color: #18b423;">
+          <ul class="list-inline quicklinks text-white">
+            <li class="list-inline-item">
+              <a href="#"><span class="text-white">Privacy Policy</span></a>
+            </li>
+            <li class="list-inline-item" >
+              <a href="#"><span class="text-white">Terms of Use</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!--########################################################-->
+       <!--#################################################--
+                    POPOVER POPOVER
+       -########################################################-->
+  <div class="form-group bg-dark">
+ <button type="button" class="btn btn-lg btn-outline-primary">
+ <a href="#" data-toggle="popover" title="Popover Header" data-placement="top" data-content="Affordable & Reliable Service">We are reliable</a>
+ </button>
+
+  <button type="button" class="btn btn-lg btn-outline-info">
+ <a href="#" data-toggle="popover" title="Popover Header" data-placement="top" data-content="Pay as you go">Our price is just</a>
+ </button>
+
+ <button type="button" class="btn btn-lg btn-outline-secondary">
+ <a href="#" data-toggle="popover" title="Popover Header" data-placement="top" data-content="We have good customer service">Rated number one</a>
+ </button>
+  </div>
+
+
+
+    <!-- Footer -->
+<aside class="text-right">
+        <a  href="#myPage" class="btn btn-info btn-lg" data-toggle="tooltip" title="TO TOP">
+          <span class="glyphicon glyphicon-chevron-up"></span> Up
+        </a>
+       <br><br>
+
+</aside>
+
+
+
+            <script>
+            $(document).ready(function(){
+             $('[data-toggle="popover"]').popover();
+             });
+            </script>
+  <script>
+$(document).ready(function(){
+    // Initialize Tooltip
+    $('[data-toggle="tooltip"]').tooltip();
+
+    // Add smooth scrolling to all links in navbar + footer link
+    $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 900, function(){
+
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+            });
+        } // End if
+    });
+})
+</script>
+
+<script type="text/javascript">
+/* Active link */
+ $( '#topheader .navbar-nav a' ).on( 'click', function () {
+	$( '#topheader .navbar-nav' ).find( 'li.active' ).removeClass( 'active' );
+	$( this ).parent( 'li' ).addClass( 'active' );
+});
+
+</script>
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</body>
+</html>
