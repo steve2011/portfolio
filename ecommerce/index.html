@@ -1,0 +1,1158 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Junior Web Developer</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta name="description" content="">
+    <meta name="author" content="">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- ############################################################-->
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js" integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+       <!-- WOOW ANIMATION-->
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/wow.min.js"></script>
+    <script src="js/wow.js"></script>
+      <script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+               <style type="text/css">
+                  body{
+                      font-family: Arial, Helvetica, sans-serif;
+                      font-size: 16px;
+                      line-height: 10px;
+                      font-weight:bold;
+                  }
+
+               </style>
+
+              <!-- NAVBAR NAVIGATION -->
+              <style type="text/css">
+
+              nav .navbar-nav > li > a:hover{
+                  color:#e5dbdb;
+              }
+
+              .navbar-nav > li > .dropdown-menu{
+                  background-color: #69899f;
+              }
+
+
+
+                 .size {
+                      font-size:15px;
+                          -webkit-transition: all 3s ease;
+             -moz-transition: all 3s ease;
+             -ms-transition: all 3s ease;
+             -o-transition: all 3s ease;
+             transition: all 3s ease;
+                      }
+
+                      .size a:hover{
+                          color: #000;
+                          font-size: 17px;
+                          cursor: pointer;
+                      }
+
+              </style>
+
+
+    <style type="text/css">
+/********footer background color **************/
+     .bg{
+        background: rgb(10,10,10);
+        background: linear-gradient(90deg, rgba(10,10,10,1) 10%, rgba(1,1,14,1) 35%, rgba(8,76,89,1) 100%);
+     }
+
+
+     /****** JUMBTORN ***/
+       .bg-cover {
+           background: #000000 url(img/bg.jpg) no-repeat fixed center center;
+           position: relative;
+           background-size: cover;
+           color:white;
+           z-index: -1;
+           border-radius: 30px;
+       }
+         .jumbotron{
+             width: 95%;
+             margin-left: auto;
+             margin-right: auto;
+             background-color:#ffffff;
+             margin-top: 25px;
+             text-align:center;
+             padding-top: 5rem;
+             padding-bottom1: 5rem;
+             text-shadow: 5px 5px  5px 5px #000;
+            height: 420px;
+
+
+         }
+          .lead{
+              color: orange;
+              font-weight:bold;
+              }
+
+
+              .overlayJumbo{
+               background-color: #000;
+               opacity: 0.5;
+               position: absolute;
+               top: 0px;
+               left: 0px;
+               bottom: 0px;
+               right:0px;
+               z-index:-1;
+               z-index: 3;
+          }
+
+
+          .container-fluid img {
+             -webkit-transition: all 3s ease;
+             -moz-transition: all 3s ease;
+             -ms-transition: all 3s ease;
+             -o-transition: all 3s ease;
+             transition: all 3s ease;
+             -webkit-box-shadow: 2px 2px 2px 2px #514C52;
+               box-shadow: 2px 2px 2px 2px #514C52;
+          }
+
+           .container-fluid img:hover {
+                    cursor: pointer;
+                     -moz-transform: scale(0.7) translateX(-5px);
+                     -webkit-transform: scale(0.7) translateX(-5px);
+                     -o-transform: scale(0.7) translateX(-5px);
+                     -ms-transform: scale(0.7) translateX(-5px);
+                     transform: scale(0.7) translateX(-5px);
+
+               }
+	</style>
+    <style type="text/css">
+       #topheader .navbar-nav li > a {
+	text-transform: capitalize;
+	color: #fff /*#333*/;
+	transition: background-color .2s, color .2s;
+
+	&:hover,
+	&:focus {
+		background-color: #EAEAEC !important /* #333*/;
+		color: #fff;
+	}
+}
+
+#topheader .navbar-nav li.active > a {
+	background-color: #CC791A /* #333*/;
+	color: #000 /*#fff*/;
+    border-radius: 10px;
+}
+    </style>
+
+    <style type="text/css">
+          input[type="email"]{
+              height: 40px;
+              width: 60%;
+              background-color: orange;
+              border-radius: 4px;
+              border:1px soid #000;
+              font-weight: bold;
+              font-size: 1.1em;
+                -webkit-transition: all 3s ease;
+             -moz-transition: all 3s ease;
+             -ms-transition: all 3s ease;
+             -o-transition: all 3s ease;
+             transition: all 3s ease;
+
+          }
+
+            input[type="email"]:hover{
+              height: 40px;
+              width: 70%;
+              background-color: olive;
+              border-radius: 4px;
+              border:1px soid #000;
+              font-weight: bold;
+              font-size: 1em;
+             cursor:pointer;
+
+          }
+          input[type="text"] {
+              width: 60%;
+              padding: 12px;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+              background: orange;
+          }
+
+           textarea {
+              width: 60%;
+              padding: 12px;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+              background: orange;
+          }
+
+
+
+
+          input[type="text"]{
+              height: 40px;
+              width: 60%;
+              background-color: orange;
+          }
+
+           label {
+               padding: 12px 12px 12px 0px;
+               display: inline-block;
+               font-weight: bold;
+               font-size: 15px;
+               text-align: left;
+           }
+
+           input[type="submit"]{
+              background-color1: #4caf50;
+              width: 100px;
+              padding: 20px;
+              color: white;
+              border: none;
+              border-radius: 4px;
+              cursor: pointer;
+           }
+
+           input[type="submit"]:hover{
+              background-color: olive;
+
+           }
+             form input[type='text'] {
+                   background: #fff;
+                   font-size: 1.1em;
+                    -webkit-transition: all 3s ease;
+             -moz-transition: all 3s ease;
+             -ms-transition: all 3s ease;
+             -o-transition: all 3s ease;
+             transition: all 3s ease;
+               }
+
+               form input[type='text']:hover {
+                   background: #CCBFCC;
+                   font-size: 15px;
+                   cursor: pointer;
+                   width:70%;
+               }
+               form {
+                   background-image1: linear-gradient(to bottom, #5CC3FF, #131311);
+               }
+    </style>
+
+    <style type="text/css">
+       .map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    background-size: cover;
+    height:0;
+}
+.map-responsive1 iframe{
+    /*left:0;
+    top:0;*/
+    height:100%;
+    width:100%;
+    position1:absolute;
+}
+    </style>
+</head>
+ <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+  <div id="topheader">
+   <!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top size">
+
+  <!-- Navbar brand -->
+  <a class="navbar-brand" href="#"><span style="font-size:20px;">Bamako Fashion</span></a>
+
+  <!-- Collapse button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+    aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Collapsible content -->
+  <div class="collapse navbar-collapse" id="basicExampleNav">
+
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#home">Home
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#collections">Collections</a>
+      </li>
+      <!--
+
+
+        <li class="nav-item">
+        <a class="nav-link" href="#">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Accessories</a>
+      </li>   -->
+         <li class="nav-item">
+        <a class="nav-link" href="#sales">Sales</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#selection">More selection</a>
+      </li>
+
+      <!-- Dropdown -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">New Collection</a>
+        <div class="dropdown-menu size" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Dresses</a>
+          <a class="dropdown-item" href="#">Knitwear</a>
+          <a class="dropdown-item" href="#">Tops</a>
+        </div>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#jeans">New Jeans</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact us</a>
+      </li>
+
+    </ul>
+    <!-- Links -->
+
+    <form class="form-inline">
+      <div class="my-0 bg-primary pr-2 pl-3">
+        <span class="glyphicon glyphicon-search">&nbsp;Search: </span><input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+      </div>
+    </form>
+  </div>
+  <!-- Collapsible content -->
+</nav>
+<!--/.Navbar-->
+</div>
+<!-- #################### END NAVIGATION -->
+
+        <!--#############################    JUMBOTRON JUMBPTRON ########################################-->
+                <br><br><br><br>
+    <section id="home">
+     <div class="jumbotron bg-cover" style="margin-top: 50px;">
+     <img src="img/bg-a.jpg" alt="bg" class="img-fluid rounded"  />
+     <div class="overlayJumbo">
+     <h1 class="wow zoomInRight"  data-wow-duration="2s" data-wow-delay="5s" data-wow-iteration="2">Fashion Week Fall 2019</h1>
+     <h3>New York, London, Paris Milan ...</h3>
+     </div>
+     </div>
+      <br><br><br>
+     </section>
+
+    <section id="collections">
+  <div class="container-fluid" >
+<section class="text-center"> <br><br><br><br><br>
+  <!--Section header-->
+  <h2>Women's clothes new arrivals</h2>
+  <!--Section page description-->
+  <p>Discover the latest in new look's range of women's clothing.</p>
+  <!--Grid row-->
+  <div class="row">
+    <!--Grid column-->
+    <div class="col-lg-3 col-md-6 mb-3">
+      <!--Card-->
+      <div class="card" cascade="true" narrower="true" class="card-ecommerce">
+       <!--Card image-->
+        <div class="header wow zoomInRight"      data-wow-duration="2s" data-wow-delay="5s" data-wow-iteration="2" >
+            <img src="img/fas1a.jpg" alt="fas1a" class="card-img-top img-fluid img-rounded" />
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div><!-- card header -->
+        <!--Card image-->
+
+        <!--Card content-->
+        <div class="card-body" cascade="true" class="text-center">
+          <!--Category & Title-->
+          <a href="" class="text-green">
+            <h5 class="card-title">Blue denim</h5>
+          </a>
+
+            <h4 class="card-title">
+              <strong>
+                <a href="">100% cotton</a>
+              </strong>
+            </h4>
+          <!-- end card title-->
+
+
+          <!--Rating-->
+    <ul class="list-inline">
+    <li><a class="fa fa-star" style="color:red;"></a></li>
+    <li><a class="fa fa-star" style="color:red;"></a></li>
+    <li><a class="fa fa-star" style="color:red;"></a></li>
+    <li><a class="fa fa-star" style="color:red;"></a></li>
+    <li><a class="fa fa-star" style="color:red;"></a></li>
+    <li><a class="fa fa-star-half-full" style="color:red;"></a></li>
+  </ul>
+          <!--Description-->
+          <h5 class="title">Machine wash</h5>
+          </div><!-- /end class body-->
+
+
+          <!--Card footer-->
+     <div class="card-footer">
+            <span class="float-left font-weight-bold">
+              <strong >&pound;29.99</strong>
+            </span>
+            <span class="float-right">
+              <a data-toggle="tooltip" data-placement="top" title="Add to Cart">
+                <i class="fa fa-shopping-cart grey-text ml-3"  style="font-size:20px;color:blue"></i>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Share">
+                <i class="fa fa-share-alt grey-text ml-3"  style="font-size:20px;color:green"></i>
+              </a>
+              <a class="active" data-toggle="tooltip" data-placement="top" title="Added to Wishlist">
+                 <i class="fa fa-heart-o ml-3" style="font-size:20px;color:red"></i>
+              </a>
+            </span>
+        </div><!-- column 1 -->
+        </div><!-- /card-->
+        </div>
+    <!--Grid column-->
+
+      <!-- ########################### FIRST COLUMN ABOVE  #############################-->
+
+
+
+
+              <!--Grid column-->
+    <div class="col-lg-3 col-md-6 mb-3">
+      <!--Card-->
+      <div class="card" cascade="true" narrower="true" class="card-ecommerce">
+       <!--Card image-->
+        <div class="header wow zoomInRight"      data-wow-duration="2s" data-wow-delay="5s" data-wow-iteration="2" >
+           <img src="img/fas2a.jpg" alt="fas1a" class="card-img-top img-fluid img-rounded" />
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div><!-- card header -->
+        <!--Card image-->
+
+        <!--Card content-->
+        <div class="card-body" cascade="true" class="text-center">
+          <!--Category & Title-->
+          <a href="" class="text-green">
+            <h5 class="card-title">Spring Autumn</h5>
+          </a>
+
+            <h4 class="card-title">
+              <strong>
+                <a href="">Refresh you wardrobe</a>
+              </strong>
+            </h4>
+          <!-- end card title-->
+
+
+          <!--Rating-->
+          <!--Rating-->
+    <ul class="list-inline">
+    <li><a class="fa fa-star" style="color:red;"></a></li>
+    <li><a class="fa fa-star" style="color:red;"></a></li>
+    <li><a class="fa fa-star" style="color:red;"></a></li>
+    <li><a class="fa fa-star" style="color:red;"></a></li>
+    <li><a class="fa fa-star" style="color:red;"></a></li>
+    <li><a class="fa fa-star-half-full" style="color:red;"></a></li>
+  </ul>
+          <!--Description-->
+          <h5 class="title">Women's choice'</h5>
+          </div><!-- /end class body-->
+
+
+          <!--Card footer-->
+     <div class="card-footer">
+            <span class="float-left font-weight-bold">
+              <strong >&pound;39.99</strong>
+            </span>
+            <span class="float-right">
+              <a data-toggle="tooltip" data-placement="top" title="Add to Cart">
+                <i class="fa fa-shopping-cart grey-text ml-3"  style="font-size:20px;color:blue"></i>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Share">
+                <i class="fa fa-share-alt grey-text ml-3"  style="font-size:20px;color:green"></i>
+              </a>
+              <a class="active" data-toggle="tooltip" data-placement="top" title="Added to Wishlist">
+                 <i class="fa fa-heart-o ml-3" style="font-size:20px;color:red"></i>
+              </a>
+            </span>
+        </div><!-- column 1 -->
+        </div><!-- /card-->
+        </div>
+    <!--Grid column-->
+
+      <!-- ########################### SECOND COLUMN ABOVE  #############################-->
+
+
+          <!--Grid column-->
+    <div class="col-lg-3 col-md-6 mb-3">
+      <!--Card-->
+      <div class="card" cascade="true" narrower="true" class="card-ecommerce">
+       <!--Card image-->
+        <div class="header">
+            <img src="img/fas4a.jpg" alt="fas1a" class="card-img-top img-fluid img-rounded" />
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div><!-- card header -->
+        <!--Card image-->
+
+        <!--Card content-->
+        <div class="card-body" cascade="true" class="text-center">
+          <!--Category & Title-->
+          <a href="" class="text-green">
+            <h5 class="card-title">The best high</h5>
+          </a>
+
+            <h4 class="card-title">
+              <strong>
+                <a href="">Affordable women's fashion</a>
+              </strong>
+            </h4>
+          <!-- end card title-->
+
+
+          <!--Rating-->
+          <!--Rating-->
+    <ul class="list-inline">
+    <li><a class="fa fa-star" style="color:red;"></a></li>
+    <li><a class="fa fa-star" style="color:red;"></a></li>
+    <li><a class="fa fa-star" style="color:red;"></a></li>
+    <li><a class="fa fa-star" style="color:red;"></a></li>
+    <li><a class="fa fa-star" style="color:red;"></a></li>
+    <li><a class="fa fa-star-half-full" style="color:red;"></a></li>
+  </ul>
+          <!--Description-->
+          <h5 class="title">With free delivery</h5>
+          </div><!-- /end class body-->
+
+
+          <!--Card footer-->
+     <div class="card-footer">
+            <span class="float-left font-weight-bold">
+              <strong >&pound;49.99</strong>
+            </span>
+            <span class="float-right">
+              <a data-toggle="tooltip" data-placement="top" title="Add to Cart">
+                <i class="fa fa-shopping-cart grey-text ml-3"  style="font-size:20px;color:blue"></i>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Share">
+                <i class="fa fa-share-alt grey-text ml-3"  style="font-size:20px;color:green"></i>
+              </a>
+              <a class="active" data-toggle="tooltip" data-placement="top" title="Added to Wishlist">
+                 <i class="fa fa-heart-o ml-3" style="font-size:20px;color:red"></i>
+              </a>
+            </span>
+        </div><!-- column 1 -->
+        </div><!-- /card-->
+        </div>
+    <!--Grid column-->
+
+      <!-- ########################### THIRD COLUMN ABOVE  #############################-->
+
+
+
+        <!--Grid column-->
+    <div class="col-lg-3 col-md-6 mb-3">
+      <!--Card-->
+      <div class="card" cascade="true" narrower="true" class="card-ecommerce">
+       <!--Card image-->
+       <div class="header wow zoomInRight"      data-wow-duration="2s" data-wow-delay="5s" data-wow-iteration="2" >
+            <img src="img/fas5a.jpg" alt="fas4a" class="card-img-top img-fluid img-rounded" />
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div><!-- card header -->
+        <!--Card image-->
+
+        <!--Card content-->
+        <div class="card-body" cascade="true" class="text-center">
+          <!--Category & Title-->
+          <a href="" class="text-green">
+            <h5 class="card-title">Shop the Jeans</h5>
+          </a>
+
+            <h4 class="card-title">
+              <strong>
+                <a href="">Collection 2019</a>
+              </strong>
+            </h4>
+          <!-- end card title-->
+
+
+         <!--Rating-->
+    <ul class="list-inline">
+    <li><a class="fa fa-star" style="color:red;"></a></li>
+    <li><a class="fa fa-star" style="color:red;"></a></li>
+    <li><a class="fa fa-star" style="color:red;"></a></li>
+    <li><a class="fa fa-star" style="color:red;"></a></li>
+    <li><a class="fa fa-star" style="color:red;"></a></li>
+    <li><a class="fa fa-star-half-full" style="color:red;"></a></li>
+   </ul>
+          <!--Description-->
+          <h5 class="title">Choose from our wide collection</h5>
+          </div><!-- /end class body-->
+
+
+          <!--Card footer-->
+     <div class="card-footer">
+            <span class="float-left font-weight-bold">
+              <strong >&pound;69.99</strong>
+            </span>
+            <span class="float-right">
+              <a data-toggle="tooltip" data-placement="top" title="Add to Cart">
+                <i class="fa fa-shopping-cart grey-text ml-3"  style="font-size:20px;color:blue"></i>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Share">
+                <i class="fa fa-share-alt grey-text ml-3"  style="font-size:20px;color:green"></i>
+              </a>
+              <a class="active" data-toggle="tooltip" data-placement="top" title="Added to Wishlist">
+                 <i class="fa fa-heart-o ml-3" style="font-size:20px;color:red"></i>
+              </a>
+            </span>
+        </div><!-- column 1 -->
+        </div><!-- /card-->
+        </div>
+    <!--Grid column-->
+
+      <!-- ########################### FOURTH COLUMN ABOVE  #############################-->
+
+
+  </div><!-- MAIN ROW -->
+  <!--Grid row -->
+</section><!-- MAIN SECTION -->
+<!--Section: Products v.1-->
+ </div><!-- .container -->
+  </section>
+
+ <!-- ######################################################################################################--.
+                                                  SECOND CONTAINER FLUID BELOW
+ ###################################################################################################### -->
+   <section id="sales">  <br><br><br><br>
+    <div class="container-fluid">
+<!--Section: Products v.1-->
+<section class="text-center pb-3 my-5">
+  <!--Section heading-->
+  <h2 class="h1 font-weight-bold h1 py-2">Women's New Arrivals'</h2>
+  <!--Section description-->
+  <p class="pb-2">Take a look at the new season collection here</p>
+  <!--Grid row-->
+  <div class="row">
+    <!--Grid column-->
+    <div class="col-lg-3 col-md-6 mb-3">
+      <!--Card-->
+      <div class="card" cascade="true" narrower="true" class="card-ecommerce">
+       <!--Card image-->
+        <div class="header wow zoomInRight"      data-wow-duration="2s" data-wow-delay="5s" data-wow-iteration="2" > 
+           <img src="img/fas7a.jpg" alt="fas5a" class="card-img-top img-fluid img-rounded" />
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div><!-- card header -->
+        <!--Card image-->
+
+        <!--Card content-->
+        <div class="card-body" cascade="true" class="text-center">
+          <!--Category & Title-->
+          <a href="" class="text-green">
+            <h5 class="card-title">Clothing straight</h5>
+          </a>
+
+            <h4 class="card-title">
+              <strong>
+                <a href="">More colours available</a>
+              </strong>
+            </h4>
+          <!-- end card title-->
+
+
+          <!--Rating-->
+    <ul class="list-inline">
+    <li><a class="fa fa-star" style="color:red;"></a></li>
+    <li><a class="fa fa-star" style="color:red;"></a></li>
+    <li><a class="fa fa-star" style="color:red;"></a></li>
+    <li><a class="fa fa-star" style="color:red;"></a></li>
+    <li><a class="fa fa-star" style="color:red;"></a></li>
+    <li><a class="fa fa-star-half-full" style="color:red;"></a></li>
+  </ul>
+          <!--Description-->
+          <h5 class="title">Always trust in the Lord</h5>
+          </div><!-- /end class body-->
+
+
+          <!--Card footer-->
+     <div class="card-footer">
+            <span class="float-left font-weight-bold">
+              <strong >&pound;25.99</strong>
+            </span>
+            <span class="float-right">
+              <a data-toggle="tooltip" data-placement="top" title="Add to Cart">
+                <i class="fa fa-shopping-cart grey-text ml-3"  style="font-size:20px;color:blue"></i>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Share">
+                <i class="fa fa-share-alt grey-text ml-3"  style="font-size:20px;color:green"></i>
+              </a>
+              <a class="active" data-toggle="tooltip" data-placement="top" title="Added to Wishlist">
+                 <i class="fa fa-heart-o ml-3" style="font-size:20px;color:red"></i>
+              </a>
+            </span>
+        </div><!-- column 1 -->
+        </div><!-- /card-->
+        </div>
+    <!--Grid column-->
+
+      <!-- ########################### FIRST COLUMN ABOVE  #############################-->
+
+
+
+
+              <!--Grid column-->
+    <div class="col-lg-3 col-md-6 mb-3">
+      <!--Card-->
+      <div class="card" cascade="true" narrower="true" class="card-ecommerce">
+       <!--Card image-->
+        <div class="header">
+           <img src="img/fas10a.jpg" alt="fas6a" class="card-img-top img-fluid img-rounded" />
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div><!-- card header -->
+        <!--Card image-->
+
+        <!--Card content-->
+        <div class="card-body" cascade="true" class="text-center">
+          <!--Category & Title-->
+          <a href="" class="text-green">
+            <h5 class="card-title">Textured stripe</h5>
+          </a>
+
+            <h4 class="card-title">
+              <strong>
+                <a href="">Pompom swing</a>
+              </strong>
+            </h4>
+          <!-- end card title-->
+
+
+           <!--Rating-->
+    <ul class="list-inline">
+    <li><a class="fa fa-star" style="color:red;"></a></li>
+    <li><a class="fa fa-star" style="color:red;"></a></li>
+    <li><a class="fa fa-star" style="color:red;"></a></li>
+    <li><a class="fa fa-star" style="color:red;"></a></li>
+    <li><a class="fa fa-star" style="color:red;"></a></li>
+    <li><a class="fa fa-star-half-full" style="color:red;"></a></li>
+  </ul>
+          <!--Description-->
+          <h5 class="title">Going out tops</h5>
+          </div><!-- /end class body-->
+
+
+          <!--Card footer-->
+     <div class="card-footer">
+            <span class="float-left font-weight-bold">
+              <strong >&pound;36.99</strong>
+            </span>
+            <span class="float-right">
+              <a data-toggle="tooltip" data-placement="top" title="Add to Cart">
+                <i class="fa fa-shopping-cart grey-text ml-3"  style="font-size:20px;color:blue"></i>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Share">
+                <i class="fa fa-share-alt grey-text ml-3"  style="font-size:20px;color:green"></i>
+              </a>
+              <a class="active" data-toggle="tooltip" data-placement="top" title="Added to Wishlist">
+                 <i class="fa fa-heart-o ml-3" style="font-size:20px;color:red"></i>
+              </a>
+            </span>
+        </div><!-- column 1 -->
+        </div><!-- /card-->
+        </div>
+    <!--Grid column-->
+
+      <!-- ########################### SECOND COLUMN ABOVE  #############################-->
+
+
+          <!--Grid column-->
+    <div class="col-lg-3 col-md-6 mb-3">
+      <!--Card-->
+      <div class="card" cascade="true" narrower="true" class="card-ecommerce">
+       <!--Card image-->
+        <div class="header wow zoomInRight"      data-wow-duration="2s" data-wow-delay="5s" data-wow-iteration="2" >
+            <img src="img/fas12a.jpg" alt="fas7a" class="card-img-top img-fluid img-rounded" />
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div><!-- card header -->
+        <!--Card image-->
+
+        <!--Card content-->
+        <div class="card-body" cascade="true" class="text-center">
+          <!--Category & Title-->
+          <a href="" class="text-green">
+            <h5 class="card-title">Paris fashion</h5>
+          </a>
+
+            <h4 class="card-title">
+              <strong>
+                <a href="">Longline edge</a>
+              </strong>
+            </h4>
+          <!-- end card title-->
+
+
+          <!--Rating-->
+          <!--Rating-->
+    <ul class="list-inline">
+    <li><a class="fa fa-star" style="color:red;"></a></li>
+    <li><a class="fa fa-star" style="color:red;"></a></li>
+    <li><a class="fa fa-star" style="color:red;"></a></li>
+    <li><a class="fa fa-star" style="color:red;"></a></li>
+    <li><a class="fa fa-star" style="color:red;"></a></li>
+    <li><a class="fa fa-star-half-full" style="color:red;"></a></li>
+  </ul>
+          <!--Description-->
+          <h5 class="title">April Zip Hem</h5>
+          </div><!-- /end class body-->
+
+
+          <!--Card footer-->
+     <div class="card-footer">
+            <span class="float-left font-weight-bold">
+              <strong >&pound;44.99</strong>
+            </span>
+            <span class="float-right">
+              <a data-toggle="tooltip" data-placement="top" title="Add to Cart">
+                <i class="fa fa-shopping-cart grey-text ml-3"  style="font-size:20px;color:blue"></i>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Share">
+                <i class="fa fa-share-alt grey-text ml-3"  style="font-size:20px;color:green"></i>
+              </a>
+              <a class="active" data-toggle="tooltip" data-placement="top" title="Added to Wishlist">
+                 <i class="fa fa-heart-o ml-3" style="font-size:20px;color:red"></i>
+              </a>
+            </span>
+        </div><!-- column 1 -->
+        </div><!-- /card-->
+        </div>
+    <!--Grid column-->
+
+      <!-- ########################### THIRD COLUMN ABOVE  #############################-->
+
+
+
+        <!--Grid column-->
+    <div class="col-lg-3 col-md-6 mb-3">
+      <!--Card-->
+      <div class="card" cascade="true" narrower="true" class="card-ecommerce">
+       <!--Card image-->
+        <div class="header">
+           <img src="img/fas13a.jpg" alt="fas1a" class="card-img-top img-fluid img-rounded" />
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div><!-- card header -->
+        <!--Card image-->
+
+        <!--Card content-->
+        <div class="card-body" cascade="true" class="text-center">
+          <!--Category & Title-->
+          <a href="" class="text-green">
+            <h5 class="card-title">London fashion</h5>
+          </a>
+
+            <h4 class="card-title">
+              <strong>
+                <a href="">Grazer Jeans</a>
+              </strong>
+            </h4>
+          <!-- end card title-->
+
+
+           <!--Rating-->
+    <ul class="list-inline">
+    <li><a class="fa fa-star" style="color:red;"></a></li>
+    <li><a class="fa fa-star" style="color:red;"></a></li>
+    <li><a class="fa fa-star" style="color:red;"></a></li>
+    <li><a class="fa fa-star" style="color:red;"></a></li>
+    <li><a class="fa fa-star" style="color:red;"></a></li>
+    <li><a class="fa fa-star-half-full" style="color:red;"></a></li>
+  </ul>
+          <!--Description-->
+          <h5 class="title">Ripped Denim </h5>
+          </div><!-- /end class body-->
+
+
+          <!--Card footer-->
+     <div class="card-footer">
+            <span class="float-left font-weight-bold">
+              <strong >&pound;72.99</strong>
+            </span>
+            <span class="float-right">
+              <a data-toggle="tooltip" data-placement="top" title="Add to Cart">
+                <i class="fa fa-shopping-cart grey-text ml-3"  style="font-size:20px;color:blue"></i>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Share">
+                <i class="fa fa-share-alt grey-text ml-3"  style="font-size:20px;color:green"></i>
+              </a>
+              <a class="active" data-toggle="tooltip" data-placement="top" title="Added to Wishlist">
+                 <i class="fa fa-heart-o ml-3" style="font-size:20px;color:red"></i>
+              </a>
+            </span>
+        </div><!-- column 1 -->
+        </div><!-- /card-->
+        </div>
+    <!--Grid column-->
+
+      <!-- ########################### FOURTH COLUMN ABOVE  #############################-->
+
+
+  </div><!-- MAIN ROW -->
+  <!--Grid row -->
+</section><!-- MAIN SECTION -->
+ </div><!-- .container -->
+  </section>
+  <!-- ########################### END OF MAIN CONTENTE  #############################-->
+
+
+  <!-- ########################### FOOTER BEGINS HERE  #############################-->
+  <section id="selection">
+ <div class="container-fluid" style="background: #c1c1c1;">
+ <footer class="page-footer font-small mdb-color lighten-3 pt-4">  <!-- Footer -->
+
+  <!-- Footer Elements -->
+  <div class="container" id="jeans"><br><br><br><br><br><br><br><br><br>
+    <div class="row">
+
+      <!--Grid column-->
+      <div class="col-lg-2 col-md-12 mb-4">
+        <!--Image-->
+        <div class="view overlay z-depth-1-half">
+         <img src="img/fas14a.jpg" alt="fas1a" class="card-img-top img-fluid img-rounded" />
+          <a href="">
+            <div class="mask rgba-white-light"></div>
+          </a>
+        </div>
+      </div>
+      <!--Grid column-->
+
+
+      <!--Grid column-->
+      <div class="col-lg-2 col-md-6 mb-4">
+        <!--Image-->
+        <div class="view overlay z-depth-1-half">
+          <img src="img/fas15a.jpg" alt="fas15a" class="card-img-top img-fluid img-rounded" />
+          <a href="">
+            <div class="mask rgba-white-light"></div>
+          </a>
+        </div>
+      </div>
+      <!--Grid column-->
+
+
+      <!--Grid column-->
+      <div class="col-lg-2 col-md-6 mb-4">
+        <!--Image-->
+        <div class="view overlay z-depth-1-half">
+          <img src="img/fas16a.jpg" alt="fas16a" class="card-img-top img-fluid img-rounded" />
+          <a href="">
+            <div class="mask rgba-white-light"></div>
+          </a>
+        </div>
+      </div>
+      <!--Grid column-->
+
+
+      <!--Grid column-->
+      <div class="col-lg-2 col-md-12 mb-4">
+        <!--Image-->
+        <div class="view overlay z-depth-1-half">
+          <img src="img/fas18a.jpg" alt="fas18a" class="card-img-top img-fluid img-rounded" />
+          <a href="">
+            <div class="mask rgba-white-light"></div>
+          </a>
+        </div>
+      </div>
+      <!--Grid column-->
+
+
+      <!--Grid column-->
+      <div class="col-lg-2 col-md-6 mb-4">
+        <!--Image-->
+        <div class="view overlay z-depth-1-half">
+          <img src="img/fas23a.jpg" alt="fas23a" class="card-img-top img-fluid img-rounded" />
+          <a href="">
+            <div class="mask rgba-white-light"></div>
+          </a>
+        </div>
+      </div>
+      <!--Grid column-->
+
+
+      <!--Grid column-->
+      <div class="col-lg-2 col-md-6 mb-4">
+        <!--Image-->
+        <div class="view overlay z-depth-1-half">
+         <img src="img/fas33a.jpg" alt="fas33a" class="card-img-top img-fluid img-rounded" />
+          <a href="">
+            <div class="mask rgba-white-light"></div>
+          </a>
+        </div>
+      </div>
+      <!--Grid column-->
+
+</div><!--Grid row-->
+</div><!-- /container -->
+  <!-- Footer Elements -->
+
+
+
+ <div class="container" id="contact"><br><br><br><br><br><br>
+   <div class="row">
+       <div class="col-sm-12 my-3">
+          <!-- form card register -->
+                    <div class="card card-outline-secondary">
+                        <div class="card-header">
+                            <h3 class="mb-0">Feedback</h3>
+                        </div>
+                        <div class="card-body">
+                            <form action="" method="post" class="form" role="form" autocomplete="off">
+                                 <fieldset>
+	                         	<legend>Personal Information</legend>
+                                <div class="form-group">
+                                    <label for="inputName" class="float-left">Name:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                    <input type="text" class="form-control" required=""  placeholder="Full name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email" class="float-left">Email:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                    <input type="email" class="form-control" placeholder="Email" required="">
+                                </div>
+                                <div class="form-group">
+                                    <label for="telephone" class="float-left">Telephone:</label>
+                                    <input type="text" class="form-control"  placeholder="Telephone number" required="">
+                                </div>
+                                 <div class="form-group">
+                                    <label for="comment" class="float-left">Comments:</label>
+                                    <textarea class="form-control" rows="4" cols="5"></textarea>
+                                </div>
+                               <div class="form-check">
+                              <label class="form-check-label" for="check1"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                               <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something" checked>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bookmark this page
+                              </label>
+                              </div><br><br>
+                              <div class="form-check">
+                              <label class="form-check-label" for="check2">Gender&nbsp;&nbsp;
+                              <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Male
+                              </label>
+                               </div> <br><br>
+                             <div class="form-check">
+                             <label class="form-check-label">Gender&nbsp;&nbsp;&nbsp;&nbsp;
+                              <input type="checkbox" class="form-check-input" disabled>&nbsp;&nbsp;&nbsp;&nbsp;Female
+                              </label>
+                            </div>
+                               <button type="reset"  class="btn btn-success btn-lg float-left">Reset</button>
+                               <button type="submit" class="btn btn-info btn-lg float-right">Submit</button>
+
+                             </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- /form card register -->
+                     </div>
+                    </div><!--row -->
+
+         <div class="row">
+          <div class="map-responsive">
+             <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d19861.448953833198!2d-0.100835!3d51.519066!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1555539082663!5m2!1sen!2suk" width="1130" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+           </div>
+           </div>
+   </div><!--container -->
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3" style="background-color: #fff; border-bottom-radius: 20px;">
+    <div class="container">
+        <div class="row">
+           <div class="col-sm-12 bg-info text-white"><br>
+             <p style="font-size: 12px;">StephenJ @ Junior Web Developer Copyright 2019</p>
+    </div>
+    </div>
+    </div>
+  </div>
+  <!-- Copyright -->
+
+</footer><!-- Footer -->
+
+</div><!-- footer fluid container -->
+ </section>
+
+    <!-- Footer -->
+<footer class="text-center">
+    <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+    </a><br><br>
+    <div class="container">
+        <div class="row">
+           <div class="col-sm-12">
+             <p style="font-size: 12px;">Designed by StephenJ Junior Web Developer London<a href="#" data-toggle="tooltip" title="I User Experience and User Interface">&nbsp;&nbsp;UI & UX</a></p>
+           </div>
+        </div>
+    </div>
+</footer>
+
+ <script>
+$(document).ready(function(){
+    // Initialize Tooltip
+    $('[data-toggle="tooltip"]').tooltip();
+
+    // Add smooth scrolling to all links in navbar + footer link
+    $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 900, function(){
+
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+            });
+        } // End if
+    });
+})
+</script>
+
+<script type="text/javascript">
+  $( '#topheader .navbar-nav a' ).on( 'click', function () {
+	$( '#topheader .navbar-nav' ).find( 'li.active' ).removeClass( 'active' );
+	$( this ).parent( 'li' ).addClass( 'active' );
+});
+</script>
+</body>
+</html>
