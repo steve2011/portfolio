@@ -73,14 +73,13 @@
            }
 
      }
-       /*
-     @media (max-width:768px){
-         .col-sm-12 .block{
-             height: 100%;
-             overflow:auto;
+
+     @media (max-width:400px){
+         #myCarousel{
+             display:none;
          }
 
-     }  */
+     }
 
    .bs{
       -webkit-box-shadow: 3px 3px 3px 5px #D6D6D6;
@@ -108,7 +107,22 @@
 }
 
  </style>
+   <style type="text/css">
+       .map-responsive{
+           position: relative;
+           overflow: hidden;
+           height: 0;
+           padding-bottom:40%;
+       }
+        iframe {
+            position:absolute;
+            top: 0;
+            left:0;
+            width: 100%;
+            height: 100%;
+        }
 
+   </style>
 </head>
 
 <body>
@@ -250,7 +264,7 @@
 				<div class="carousel-inner">
 					<div class="item carousel-item active">
 						<div class="img-box">
-                          <img class="img responsive img-fluid" src="img/af1.JPG" alt="Image 1"  />
+                          <img class="img-responsive img-fluid" src="img/af1.JPG" alt="Image 1"  />
                          </div>
 						<p class="testimonial">Meats like game (bush meat), poultry, pork, beef and fish are all common in African cooking. In rural
                         areas where meat is harder to come by, it is eaten only rarely or on special occasions</p>
@@ -260,7 +274,7 @@
 
 					<div class="item carousel-item">
 						<div class="img-box">
-                          <img class="img responsive img-fluid" src="img/egusi1.jpg" alt="Egusi 1"  />
+                          <img class="img-responsive img-fluid" src="img/egusi1.jpg" alt="Egusi 1"  />
                         </div>
 						<p class="testimonial">Meat from poultry and game can be quite tough, so it is most often prepared in slow-cooked stews and soups.</p>
 						<p class="overview"><b>Proteins</b>&nbsp;&nbsp;more energy</p>
@@ -269,7 +283,7 @@
 
                       <div class="item carousel-item">
 						<div class="img-box">
-                          <img class="img responsive img-fluid" src="img/af13A.jpg" alt="Image 3"  />
+                          <img class="img-responsive img-fluid" src="img/af13A.jpg" alt="Image 3"  />
                         </div>
 						<p class="testimonial">VNuts are another common protein source, particularly peanuts, which are found all over the continent and are grown all year round in the right climates.</p>
 						<p class="overview"><b>Piri-piri</b></p>
@@ -278,7 +292,7 @@
 
 					<div class="item carousel-item">
 						<div class="img-box">
-                        <img class="img responsive img-fluid" src="img/egusi3.jpg" alt="Egusi 3"  />
+                        <img class="img-responsive img-fluid" src="img/egusi3.jpg" alt="Egusi 3"  />
                         </div>
 						<p class="testimonial">Ground peanuts are made into sauces and soups, and the oil is sometimes used for flavoring.</p>
 						<p class="overview"><b>Chicken Muamba</b> </p>
@@ -289,7 +303,7 @@
                          <div class="item carousel-item">
 						<div class="img-box">
                           <!--<img class="img responsive img-fluid" src="img/af20.jpg" alt="Image 3"  />-->
-                          <img src="img/af20.jpg" alt="Image3" class="img responsive img-fluid" />
+                          <img src="img/af20.jpg" alt="Image3" class="img-responsive img-fluid" />
                         </div>
 						<p class="testimonial"> Legumes like lentils, beans and peas also form a significant portion of protein in African cuisine. In addition to soups and sauces, legumes are also served mashed or fried in cakes..</p>
 						<p class="overview"><b>Zanzibari</b></p>
@@ -299,7 +313,7 @@
 					<div class="item carousel-item">
 						<div class="img-box">
                         <!--<img class="img responsive img-fluid" src="img/af19.jpg" alt="Egusi 3"  />-->
-                        <img src="img/af19.jpg" alt="Egusi 3" class="img responsive img-fluid" />
+                        <img src="img/af19.jpg" alt="Egusi 3" class="img-responsive img-fluid" />
                         </div>
 						<p class="testimonial">Africa's climate welcomes a tremendous variety of fruits and vegetables, both wild and cultivated, and they comprise a large portion of the African diet because they grow all year.</p>
 						<p class="overview"><b>Koshar</b></p>
@@ -428,18 +442,18 @@
                               </ul>
                                <p class="card-text">Our restaurant is A list and is located on high street</p> <br>
                                <hr style="height: 1px; border: 1px solid olive; box-shadow: 1px 1px 1px 3px #808080" />
-                                 <span class="float-left bg-primary border">
+                                 <span class="float-left border">
                                    <span &nbsp;&nbsp; class="fa fa-cutlery" style="font-size:50px; color: #000;"><i style="font-size:25px">&nbsp;&nbsp;&nbsp;Food</i></span><br>
                                    <span class="fa fa-coffee" style="font-size:50px; color: #000;"><i style="font-size:25px">&nbsp;&nbsp;&nbsp;Service</i></span><br>
                                     <span class="fa fa-glass" style="font-size:50px; color: #000;"><i style="font-size:25px">&nbsp;&nbsp;&nbsp;Our value</i></span>
                              </span>
-                                  <span class="float-right bg-info border rounded">
+                                  <span class="float-right border rounded">
                                     <span style="font-size:25px">Order online<br>Take away<br><i style="font-size:20px;">Good services</i><br><br></span>
                                   </span>
                               </div>
                           </div>
 
-                       <div class="card bg-warning">
+                       <div class="card">
                            <div class="card-body text-center">
                               <dl><span style="font-size: 30px;">Details</span>
                                  <dt>
@@ -470,12 +484,11 @@
                        </div>
 
 
-                      <div class="card bg-success">
+                      <div class="card">
                         <div class="card-body text-center">
-                       <iframe width='325' height='350' id='mapcanvas' src='https://maps.google.com/maps?q=London,%20United%20Kingdom&Roadmap&z=10&ie=UTF8&iwloc=&output=embed' frameborder='0' scrolling='no' marginheight='0' marginwidth='0'><div class='zxos8_gm'>car <a rel='nofollow' href='https://www.twinstiarasandtantrums.com/2019/01/i-really-hate-my-car/'>advice</a> and why i ignore it</div>
-                       <div style='overflow:hidden;'> </div>
-                       <div id='gmap_canvas' style='height:auto; width:325px;'></div>
-                       <div><small>Powered by <a href='https://www.embedgooglemap.co.uk'>Embed Google Map</a></small></div></iframe>
+                             <div class="map-responsive">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.9866581316037!2d-0.07340609539867625!3d51.51346076754071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876034b5ac01ec7%3A0x57b7f600da13b153!2sAldgate+Station!5e0!3m2!1sen!2suk!4v1556066817863!5m2!1sen!2suk" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                             </div>
                         </div>
                     </div>
                 </div><!-- //.card deck -->
@@ -483,9 +496,12 @@
              </section>
 
 
+
+            <!--*****************************************************-->
+
                  <br><br>
 
-            <section id="">
+            <section id="" class="bg-light">
             <div class="container" id="contactus"> <br><br><br><br><br><br><br><br><br><br>
                   <div class="row">
                      <div class="col-sm-4" style="background: #000; color:#fff; border-radius: 20px;">
@@ -524,7 +540,7 @@
         </form>
         </div><!-- .col-sm-4 -->
 
-                      <div class="col-sm-4 bg-info">
+                      <div class="col-sm-4">
                              <div class="card"> <br>
                                <img  class="card-img-top img-fluid img-responsive rounded" src="img/oder2AA.jpg" alt="Order" />
                                  <div class="card-header">
