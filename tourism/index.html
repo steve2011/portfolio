@@ -45,7 +45,7 @@ img{
 
    .nav-bk{
         background: #40E0D0;
-         background-image: linear-gradient(to right top, #50c6f0, #59c1f1, #63bbf0, #6db6ef, #78b0ec, #73b5f0, #6ebaf4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+        /*background-image: linear-gradient(to right top, #50c6f0, #59c1f1, #63bbf0, #6db6ef, #78b0ec, #73b5f0, #6ebaf4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); */
         }
 
    .nav.bk a{
@@ -53,39 +53,6 @@ img{
    }
 
 
-      nav .navbar-nav li{  /**   TO CHANGE MENU COLOR**/
-  /*color: white !important; */
-  font-size: 25px;
-  color: red !important;
-  }
-
-   nav .navbar-nav li a{  /**   TO CHANGE MENU COLOR**/
-  /*color: white !important; */
-  font-size: 15px;
-  color: #000 !important;
-  background-color1: #fff;
-     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a9e4f7+0,0fb4e7+100;Ble+3D+%235 */
-background: rgb(169,228,247); /* Old browsers */
-background: -moz-radial-gradient(center, ellipse cover, rgba(169,228,247,1) 0%, rgba(15,180,231,1) 100%); /* FF3.6-15 */
-background: -webkit-radial-gradient(center, ellipse cover, rgba(169,228,247,1) 0%,rgba(15,180,231,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: radial-gradient(ellipse at center, rgba(169,228,247,1) 0%,rgba(15,180,231,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9e4f7', endColorstr='#0fb4e7',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-   -webkit-transition: all 3s ease;
-   -moz-transition: all 3s ease;
-   transition: all 3s ease;
-
-    }
-
-   nav .navbar-nav li a:hover{  /**   TO CHANGE MENU COLOR**/
-  /*color: white !important; */
-  font-size: 12px;
-  color: #fff !important;
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  transform: scale(1.2);
-  margin-left:20px;
-  margin-right: 20px;
-  }
 
     </style>
 
@@ -347,103 +314,138 @@ div.color:hover {
       #topheader .navbar-nav li > a {
 	text-transform: capitalize;
 	color: #333;
+    color:#fff;
 	transition: background-color .2s, color .2s;
 
 	&:hover,
 	&:focus {
 		background-color: #333;
 		color: #fff;
+        color:#000;
 	}
 }
 
 #topheader .navbar-nav li.active > a {
 	background-color: #333;
 	color: #fff;
+    color: olive;
 }
 
 .navbar {
     position:fixed;
 }
+   .dropdown-menu li a{
+       color:#000 !important;
+   }
 
    </style>
+   <style>
+
+
+       @media(max-width:768px){
+               #home {
+             padding-top: 220px;
+           height1:1000px;
+       }
+         #about {
+             padding-top: 230px;
+           height1:1000px;
+       }
+
+          #destinationsn {
+             padding-top: 280px;
+           height1:1000px;
+       }
+             #booking {
+             padding-top: 220px;
+           height1:1000px;
+       }
+
+          #location {
+             padding-top: 250px;
+           height1:1000px;
+       }
+
+            #contact {
+             padding-top: 250px;
+           height1:1000px;
+       }
+
+
+       }
+
+             /*
+       #about {
+           border: 1px solid #00ff00;
+           height:
+       }
+
+
+       #destinations {
+           border: 1px solid #000000;
+           height:
+       }
+        .dropdown-menu li a{
+            color: #000 !important;
+        }
+
+
+     #location {
+           border: 1px solid #000000;
+           height:
+       }
+
+
+
+     #contact {
+           border: 1px solid #000000;
+           height:
+       }
+            */
+   </style>
+
+
 </head>
 
 <body id="top">
-
+<section class="gutter">
    <div id="topheader">
-   <nav class="navbar navbar-expand-md navbar-dark nav-bk fixed-top">
-   <div class="container-fluid">
-   <div class="navbar-header">
-      <!--<a class="navbar-brand" href="#">WebSiteName</a>-->
-         <a class="navbar-brand" href="#">
-         <h3 class="logo" style="margin:0px;">SOUTH <span style="color: yellow";>AFRICA</span></h3>
-         </a>
-   </div>
+     <div class="container-fluid">
+   <nav class="navbar navbar-expand-md navbar-dark nav-bk bg-dark fixed-top">
+      <a class="navbar-brand" href="#"><h3 class="logo" style="margin:0px;">SOUTH <span style="color: yellow;">AFRICA</span></h3> </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
+     <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="nav navbar-nav">
       <li class="active"><a href="#home">Home</a></li>
-       <li class="active"><a href="#about">About South Africa</a></li>
-      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Travel Info <span class="caret"></span></a>
+      <li class=""><a href="#about">About South Africa</a></li>
+      <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Travel Info</a>
         <ul class="dropdown-menu">
           <li><a href="#destinations">Destinations</a></li>
           <li><a href="#seasons">Seasons</a></li>
           <li><a href="#">Experiences</a></li>
         </ul>
       </li>
-      <li><a href="#booking">Booking System</a></li>
-       <li><a href="#location">Location</a></li>
+        <li><a href="#booking">Booking System</a></li>
+        <li><a href="#location">Location</a></li>
         <li><a href="#contact">Contact</a></li>
-
-
     </ul>
+    <!--
     <ul class="nav navbar-nav navbar-right">
       <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
       <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-    </ul>
-  </div>
+    </ul>-->
+  </div><!--collapse-->
+ <!-- navbar header-->
 </nav>
   </div>
+</div><!-- id top-->
 
-              <!-- Navigation -->   <!--
-    <nav class="navbar navbar-expand-md navbar-dark nav-bk fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#"><img class="img-fluid" src="img/logo1.png" alt="Logo" width="100" height="37" /></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link lin" href="#">Home
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-              <li class="nav-item">
-              <a class="nav-link" href="#">Book online</a>
-            </li>
-               <li class="nav-item">
-              <a class="nav-link" href="#">Eat</a>
-            </li>
-               <li class="nav-item">
-              <a class="nav-link" href="#">Play</a>
-            </li>
-              <li class="nav-item">
-              <a class="nav-link" href="#">Relax</a>
-            </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>   -->
+
      <!--######################################################################## -->
       <section id="home">
      <div class="container-fluid"><br><br><br><br><br>
@@ -472,7 +474,7 @@ div.color:hover {
 </div>
 
 
-
+  <br><br><br><br><br><br>
 <!--################################################# -->
   <h2 class="text-center h2" style="color:#000000;">Tourist <span class="span">attraction</span> in South Africa </h2>
 
@@ -635,14 +637,15 @@ div.color:hover {
 
 
                <!--#######################        four column experiments    #############################################-->
-       <section id="about">
+                    <br><br><br><br><br><br><br>
+       <section id="about"><br><br><br>
        <div class="container-fluid">
        <div class="row">
            <div class="col-sm-12 col-md-6 col-lg-3">
            <div class="card" style="width:auto">
            <div class="card-header">&nbsp;</div>
             <img class="img-fluid card-img-top trans" src="img/bot.jpg" alt="Bot"  style="width:100%;" />
-           <div class="card-body bg-dark text-white">
+            <div class="card-body bg-light text-dark">
           <h4 class="card-title">Open air barbecue lunch</h4>
           <p class="card-text">A beautiful day in South Africa</p>
           <a href="#" class="btn btn-primary">Read more</a>
@@ -654,7 +657,7 @@ div.color:hover {
            <div class="card" style="width:auto">
            <div class="card-header">&nbsp;</div>
            <img class="img-fluid card-img-top trans" src="img/bot2.jpg" alt="Bot"  style="width:100%;" />
-           <div class="card-body bg-dark text-white">>
+            <div class="card-body bg-light text-dark">
            <h4 class="card-title">Lion King</h4>
            <p class="card-text">Father and daughter enjoying a beautiful day</p>
           <a href="#" class="btn btn-primary">Read more</a>
@@ -666,7 +669,7 @@ div.color:hover {
            <div class="card" style="width:auto">
             <div class="card-header">&nbsp;</div>
            <img class="img-fluid card-img-top trans" src="img/bot3.jpg" alt="Bot"  style="width:100%;" />
-           <div class="card-body bg-dark text-white">
+           <div class="card-body bg-light text-dark">
           <h4 class="card-title">Elephants</h4>
          <p class="card-text">Groups of Elephants crossing the river</p>
          <a href="#" class="btn btn-primary">See Profile</a>
@@ -678,7 +681,7 @@ div.color:hover {
         <div class="card" style="width:auto">
           <div class="card-header">&nbsp;</div>
         <img class="img-fluid card-img-top trans" src="img/bot4.jpg" alt="Bot"  style="width:100%;" />
-        <div class="card-body bg-dark text-white">
+         <div class="card-body bg-light text-dark">
         <h4 class="card-title">Local Hut</h4>
         <p class="card-text">Where you can refresh your day</p>
         <a href="#" class="btn btn-primary">See Profile</a>
@@ -690,16 +693,16 @@ div.color:hover {
    </div>
    </section>
 
-
+               <br><br><br><br><br><br><br>
 <!-- ################################################### -->
-         <section id="destinations">
+         <section id="destinations"> <br><br><br><br>
         <div class="container-fluid">
        <div class="row">
            <div class="col-sm-12 col-md-6 col-lg-3">
            <div class="card" style="width:auto">
            <div class="card-header">&nbsp;</div>
             <img class="img-fluid card-img-top trans" src="img/bot5.jpg" alt="Bot"  style="width:100%;" />
-           <div class="card-body bg-dark text-white">
+            <div class="card-body bg-light text-dark">
           <h4 class="card-title">Village Architecture</h4>
           <p class="card-text">What a beutiful place to spend your next holidays</p>
           <a href="#" class="btn btn-primary">Read more</a>
@@ -711,7 +714,7 @@ div.color:hover {
            <div class="card" style="width:auto">
            <div class="card-header">&nbsp;</div>
            <img class="img-fluid card-img-top trans" src="img/t17.jpg" alt="Bot"  style="width:100%;" />
-           <div class="card-body bg-dark text-white">
+            <div class="card-body bg-light text-dark">
            <h4 class="card-title">Big Rhino</h4>
            <p class="card-text">Relaxing after a day's lunch'</p>
           <a href="#" class="btn btn-primary">Read more</a>
@@ -723,7 +726,7 @@ div.color:hover {
            <div class="card" style="width:auto">
             <div class="card-header">&nbsp;</div>
            <img class="img-fluid card-img-top trans" src="img/th12.jpg" alt="Bot"  style="width:100%;" />
-           <div class="card-body bg-dark text-white">
+           <div class="card-body bg-light text-dark">
           <h4 class="card-title">Giraffe</h4>
          <p class="card-text">The tallest living terrestial animals and the largest ruminants</p>
          <a href="#" class="btn btn-primary">Read more</a>
@@ -735,7 +738,7 @@ div.color:hover {
         <div class="card" style="width:auto trans">
           <div class="card-header">&nbsp;</div>
         <img class="img-fluid card-img-top trans" src="img/th8.jpg" alt="Bot"  style="width:100%;" />
-        <div class="card-body bg-dark text-white">
+        <div class="card-body bg-light text-dark">
         <h4 class="card-title">Another male Lion</h4>
         <p class="card-text">Starring at Antelope, it seems not hungry</p>
         <a href="#" class="btn btn-primary">Read more</a>
@@ -747,14 +750,14 @@ div.color:hover {
    </div>
     </section>
 <!-- ############################################################## -->
-      <section id="booking">
+      <section id="booking"> <br><br><br><br>
      <div class="container-fluid">
        <div class="row">
            <div class="col-sm-12 col-md-6 col-lg-3">
            <div class="card" style="width:auto">
            <div class="card-header">&nbsp;</div>
             <img class="img-fluid card-img-top trans" src="img/bot9.jpg" alt="Bot"  style="width:100%;" />
-           <div class="card-body bg-dark text-white">
+            <div class="card-body bg-light text-dark">
           <h4 class="card-title">Mountain Gorillas</h4>
           <p class="card-text">Gorilla permit cost £1,000 per person for one our</p>
           <a href="#" class="btn btn-primary">See Profile</a>
@@ -766,7 +769,7 @@ div.color:hover {
            <div class="card" style="width:auto">
            <div class="card-header">&nbsp;</div>
            <img class="img-fluid card-img-top trans" src="img/th8.jpg" alt="Bot"  style="width:100%;" />
-           <div class="card-body bg-dark text-white">
+            <div class="card-body bg-light text-dark">
            <h4 class="card-title">Lino King</h4>
            <p class="card-text">There about 8,000 lions kept in captivity in South Africa</p>
           <a href="#" class="btn btn-primary">Read more</a>
@@ -778,7 +781,7 @@ div.color:hover {
            <div class="card" style="width:auto trans">
             <div class="card-header">&nbsp;</div>
            <img class="img-fluid card-img-top trans" src="img/th7.jpg" alt="Bot"  style="width:100%;" />
-           <div class="card-body bg-dark text-white">
+            <div class="card-body bg-light text-dark">
           <h4 class="card-title">Elephants</h4>
          <p class="card-text">The world's largest land mammal, the mighty African Elephant</p>
          <a href="#" class="btn btn-primary">Read more</a>
@@ -790,7 +793,7 @@ div.color:hover {
         <div class="card" style="width:auto">
           <div class="card-header">&nbsp;</div>
         <img class="img-fluid card-img-top trans" src="img/bot12.jpg" alt="Bot"  style="width:100%;" />
-        <div class="card-body bg-dark text-white">
+         <div class="card-body bg-light text-dark">
         <h4 class="card-title">Chimpanzee</h4>
         <p class="card-text">Chimpanzees are wild animals. They do not make good pets</p>
         <a href="#" class="btn btn-primary">Read more</a>
@@ -804,7 +807,7 @@ div.color:hover {
       <!--- ########################### MAP   ###################################### -->
 
    <!--- ################################################################# -->
-          <section id="location">
+          <section id="location"> <br><br><br>
          <div class="container-fluid">
             <div class="row">
             <div class="col-md-12" style="width:100%;">
@@ -924,6 +927,7 @@ div.color:hover {
       </div>
     </div>
   </footer>
+   </section><!--class gutter-->
     <div class="bot">&nbsp;</div>
 
 
