@@ -372,6 +372,20 @@ $(document).ready(function(){
 	color: #000;
     border-radius: 10px;
 }
+     .cab {
+
+     }
+
+     @media(max-width:576px){
+         .cab a{
+              display:none;
+         }
+
+         .post-content h2, h5 {
+             display:none;
+         }
+
+     }
 
   </style>
 </head>
@@ -383,7 +397,7 @@ $(document).ready(function(){
    <div id="topheader">
    <!--/ Nav Star /-->
   <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
-    <div class="container">
+    <div class="container cab">
       <a class="navbar-brand js-scroll" href="#page-top"><span class="brand" style="font-size:30px;">Taxis <span class="badge badge-primary badge-pill">&</span> minicabs</span></a>
       <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
         aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -401,16 +415,16 @@ $(document).ready(function(){
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll" href="#booking">Bookings</a>
-          </li><!--
-          <li class="nav-item">
-            <a class="nav-link js-scroll" href="#quotation">Quotations</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll" href="#blog">Blog</a>
-          </li>-->
           <li class="nav-item">
             <a class="nav-link js-scroll" href="#contact">Contact us</a>
+          </li><!--
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#blog">Blog</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#contact">Contact us</a>
+          </li>-->
             <h3 style="height: 30px;"><i class="glyphicon glyphicon-phone-alt badge badge-info badge-pill"> Tel:080099987898</i></h3>
 
         </ul>
@@ -715,40 +729,44 @@ $(document).ready(function(){
     <div class="container-fluid">
 
       <div class="row">
-        <div class="col-md-4" style="background-color: #18B423;">
+        <div class="col-md-3" style="background-color: #18B423;">
           <span class="copyright"><span class="text-white">Website design by StephenJ Copyright &copy;  2019</span></span>
         </div>
-        <div class="col-md-4" style="background-color: #fff;">
+
+        <div class="col-md-6" style="background-color: #fff; white-space:10px;">
+
           <ul class="list-inline social-buttons" >
-            <li class="list-inline-item btn-twitter" style="font-size:30px">
+            <li class="list-inline-item btn-twitter" style="font-size:20px">
               <a href="#">
                 <i class="fa fa-twitter"></i>
               </a>
             </li>
-            <li class="list-inline-item btn-facebook" style="font-size:30px">
+            <li class="list-inline-item btn-facebook" style="font-size:20px">
               <a href="#">
                 <i class="fa fa-facebook"></i>
               </a>
             </li>
             <li class="list-inline-item btn-linkedin">
               <a href="#">
-              <i class="fa fa-linkedin" style="font-size:30px"></i>
+              <i class="fa fa-linkedin" style="font-size:20px"></i>
               </a>
             </li>
 
                <li class="list-inline-item btn-linkedin">
               <a href="#">
-              <i class="fa fa-flickr" style="font-size:30px"></i>
+              <i class="fa fa-flickr" style="font-size:20px"></i>
               </a>
             </li>
                 <li class="list-inline-item btn-linkedin">
               <a href="#">
-              <i class="fa fa-vimeo" style="font-size:30px"></i>
+              <i class="fa fa-vimeo" style="font-size:20px"></i>
               </a>
             </li>
           </ul>
         </div>
-        <div class="col-md-4" style="background-color: #18b423;">
+
+
+        <div class="col-md-3" style="background-color: #18b423;">
           <ul class="list-inline quicklinks text-white">
             <li class="list-inline-item">
               <a href="#"><span class="text-white">Privacy Policy</span></a>
