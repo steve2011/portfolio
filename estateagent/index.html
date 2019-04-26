@@ -21,7 +21,18 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--****************************************************-->
+         <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
 
+  <!-- Plugin CSS -->
+  <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+  <!-- Theme CSS - Includes Bootstrap -->
+  <link href="css/creative.min.css" rel="stylesheet">
+
+  <!--**************** END OF JS SCROLLER    **********************-->
 	<!-- WOOW ANIMATION-->
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css" />
@@ -201,10 +212,10 @@ transform: scale(1.3) translateY(10px);
    </style>
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar" data-offset="50">
+<body  data-spy="scroll" data-target=".navbar" data-offset="50">
 
   <!-- ######################  NAVIGATION ###################-->
-
+  <div id="page-top"></div>
 <div class="container-fluid">
  <div id="topheader">
 <nav class="navbar navbar-expand-sm navbar-light bg-info fixed-top">
@@ -225,25 +236,25 @@ transform: scale(1.3) translateY(10px);
 
       <li class="nav-item active">
 
-        <a class="nav-link text-light" href="#home">Home<span class="sr-only">(current)</span></a>
+        <a class="nav-link text-light js-scroll-trigger" href="#home">Home<span class="sr-only">(current)</span></a>
 
       </li>
 
       <li class="nav-item">
 
-        <a class="nav-link text-light" href="#forsales">For sale</a>
+        <a class="nav-link text-light js-scroll-trigger" href="#forsales">For sale</a>
 
       </li>
 
         <li class="nav-item">
 
-        <a class="nav-link text-light" href="#testimonials">Testimonials</a>
+        <a class="nav-link text-light js-scroll-trigger" href="#testimonials">Testimonials</a>
 
       </li>
 
         <li class="nav-item">
 
-        <a class="nav-link text-light" href="#contact">Contact</a>
+        <a class="nav-link text-light js-scroll-trigger" href="#contact">Contact</a>
 
       </li>
          <!--
@@ -252,7 +263,7 @@ transform: scale(1.3) translateY(10px);
         <a class="nav-link text-light" href="#">Affordabe loan</a>
 
       </li>
-       -->
+
 
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle text-light" href="#rent" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -273,7 +284,7 @@ transform: scale(1.3) translateY(10px);
 
           <a class="dropdown-item" href="#">Other services</a>
         </div>
-      </li>
+      </li> -->
     </ul>
   </div>
     <form class="form-inline my-2 my-lg-0">
@@ -381,7 +392,8 @@ transform: scale(1.3) translateY(10px);
      </section>
 
              <!-- #########################  SECOND ROW #############-->
-        <section id="forsales">  <br><br><br><br><br>
+        <section id="forsales">  <br><br><br>
+        <h1 class="display-3 justify-content-center">For sales</h1>
          <div class="row d-flex justify-content-center">
          <br><br><br><br>
               <div class="col-sm-6 col-md-3 col-lg-3">
@@ -465,58 +477,52 @@ transform: scale(1.3) translateY(10px);
    </section>
             <!-- ################### MEDIA OBJECT STSRT HERE ################ -->
 
-  <section id="testimonials">  <br><br><br><br>
-    <div class="container border mt-3">
-  <h2>Testimonials</h2>
-  <p>We are the best estate agent in England and America</p><br>
+  <section id="testimonials">
+  <div class="container border mt-3">
+    <h2>Testimonials</h2>
+    <p>We are the best estate agent in England and America</p><br>
 
-  <div class="media p-3">
-     <img src="img/sl1.png" alt="Daniel Catford"  class="img-fluid img-responsive ml-1 mr-3 mt-3 rounded-circle wow slideInRight" data-wow-duration="2s" data-wow-delay="2s" style="width:100px;"/>
-    <div class="media-body">
-      <h4>Daniel Catford <small><i>Posted on January 19, 2019</i></small></h4>
-      <p>To achieve this goal, the authorities in the ministry will visit these inns, monitor them and record their
-       observations to determine the level reached to meet the
-      conditions set earlier. It will also collect comments from guests regarding the hospitality.
-      All this information and data will be categorised and used
-       for the improvement of these inns to make them more acceptable and attractive to visitors.</p>
-      <div class="media p-3">
-       <img src="img/sl3.jpg" alt="Grace Lewishamton"  class="img-fluid img-responsive mr-3 mt-3 rounded-circle wow slideInLeft" data-wow-duration="2s" data-wow-delay="2s" style="width:90px;"/>
-        <div class="media-body">
+       <article class="well-sm">
+        <img src="img/sl1.png" alt="Daniel Catford"  class="img-fluid img-responsive ml-1 mr-3 mt-3 rounded-circle wow slideInRight mx-auto" data-wow-duration="2s" data-wow-delay="2s" style="width:100px;"/>
+        <h4>Daniel Catford <small><i>Posted on January 19, 2019</i></small></h4>
+        <p>To achieve this goal, the authorities in the ministry will visit these inns, monitor them and record their
+         observations to determine the level reached to meet the
+         conditions set earlier. It will also collect comments from guests regarding the hospitality.
+         All this information and data will be categorised and used
+         for the improvement of these inns to make them more acceptable and attractive to visitors.</p>
+        </article><!-- class="media p-3"-->
+
+          <article class="well-sm">
+          <img src="img/sl3.jpg" alt="Grace Lewishamton"  class="img-fluid img-responsive mr-3 mt-3 rounded-circle wow slideInLeft mx-auto" data-wow-duration="2s" data-wow-delay="2s" style="width:90px;"/>
           <h4>Grace Lewishamton <small><i>Posted on February 9 2019</i></small></h4>
           <p>Many tourists expressed satisfaction with their experience of staying at these inns, as they see it as a tourist product with a distinct Omani taste.
            These inns provide tourists an opportunity to experience day-to-day life in Oman, with all its precise details, dimensions, traditions and practices..</p>
-        </div>
-      </div>
-    </div>
-     </div><!-- .media -->
+           </article>
+     </div><!--class="container border mt-3"-->
 
-    <div class="media p-3">
-    <img src="img/sl2.jpg" alt="Gabriel Paris"  class="img-fluid img-responsive ml-1 mr-3 mt-3 rounded-circle wow slideInRight" data-wow-duration="2s" data-wow-delay="2s" style="width:100px;"/>
-    <div class="media-body">
+
+    <article class="well-sm">
+    <img src="img/sl2.jpg" alt="Gabriel Paris"  class="img-fluid img-responsive ml-1 mr-3 mt-3 rounded-circle wow slideInRight mx-auto" data-wow-duration="2s" data-wow-delay="2s" style="width:100px;"/>
       <h4>Gabriel Paris <small><i>Posted on February 15, 2019</i></small></h4>
       <p>It has also adopted special standards aimed at the classification of these facilities in order to match them with the volume
       and momentum of tourism in the country. All efforts are being made to ensure that the terms
        and conditions of these inns are met so that they make a good impression on tourists and visitors.</p>
-      <div class="media p-3">
-        <img src="img/sl4.jpg" alt="Janet Morrison"  class="img-fluid img-responsive ml-1 mr-3 mt-3 rounded-circle wow slideInLeft" data-wow-duration="2s" data-wow-delay="2s" style="width:100px;"/>
-        <div class="media-body">
+       </article>
+
+      <article class="well-sm">
+          <img src="img/sl4.jpg" alt="Janet Morrison"  class="img-fluid img-responsive ml-1 mr-3 mt-3 rounded-circle wow slideInLeft mx-auto" data-wow-duration="2s" data-wow-delay="2s" style="width:100px;"/>
           <h4>Janet Morrison <small><i>Posted on February 23 2019</i></small></h4>
           <p>We share the Committee’s concern about the current level of empty properties in the estate, and would welcome any opportunity
            to bring these properties back into use to help address the UK’s current housing shortage."</p>
-
-        </div>
-      </div>
-    </div>
-  </div><!-- .media -->
-</div><!-- .container for media object-->
+        </article><!-- .media -->
  </section>
 
-    <section id="contact">
+    <section id="contact"> <br><br>
     <div class="container">
           <div class="row">
                <div class="col-md-5 border">
                   <div class="row">
-                   <h4 class="text-right">Where to find us</h4>
+                   <h3 class="text-right">Where to find us</h3>
                    <p>We are based at the James Hall, Ealing Road, ealing, WE6 4RU. </p>
                      <div class="col-sm-6"><img src="img/receptionist.jpg" alt="Receptionist" class="img-fluid img-responsive rounded-circle" /></div>
                       <div class="col-sm-6">
@@ -557,10 +563,10 @@ transform: scale(1.3) translateY(10px);
                          <br>
 
         <!-- Footer -->
-<footer class="page-footer bg-dark pt-4 mt-3">
+
     <!-- Footer Elements -->
     <div class="container">
-
+       <footer class="page-footer bg-dark pt-4 mt-3">
       <!-- Social buttons -->
       <ul class="list-unstyled list-inline text-center">
         <li class="list-inline-item">
@@ -590,24 +596,38 @@ transform: scale(1.3) translateY(10px);
         </li>
       </ul>
       <!-- Social buttons -->
-
-    </div><!-- Footer Elements -->
     <!-- Copyright -->
     <div class="footer-copyright text-center py-3"><span class="text-white">© 2019 Copyright: </span>
       <a href="#">Stephen Jolayemi <span class="text-white font-weight-bold">Junior Web Developer London</span></a>
     </div>
     <!-- Copyright -->
+    </footer><!-- Footer -->
+        <button type="button" class="btn btn-info float-right" >
+      <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top"> Top page
+      <i class="fa fa-angle-up" style="font-size:15px; color:white; text-align:right;"></i>
+      </a>
+   </button>   <br><br>
+    </div><!--container -->
 
-  </footer>
-  <!-- Footer -->
 
- <button type="button" class="btn btn-info float-right" >
- <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top"> Top page <i class="fa fa-angle-up" style="font-size:30px;color:red text-align:right;"></i></a></button>
  <script type="text/javascript">
     $( '#topheader .navbar-nav a' ).on( 'click', function () {
 	$( '#topheader .navbar-nav' ).find( 'li.active' ).removeClass( 'active' );
 	$( this ).parent( 'li' ).addClass( 'active' );
 });
  </script>
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/creative.min.js"></script>
+
 </body>
 </html>
