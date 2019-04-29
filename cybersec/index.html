@@ -20,6 +20,13 @@
   <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Trocchi" rel="stylesheet">
+   <!-- Plugin CSS -->
+  <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+  <!-- Theme CSS - Includes Bootstrap -->
+  <link href="css/creative.min.css" rel="stylesheet">
+
+
       <!-- WOOW ANIMATION-->
      <link rel="stylesheet" href="animate.css">
     <link rel="stylesheet" href="css/animate.css">
@@ -170,9 +177,31 @@
 
 /** to change navbar colour ***/
        .navbar-nav li a {
-           font-size: 18pt;
+           font-size: 14pt;
            text-decoration: none;
+           padding-left: 10px;
+           padding-right:10px;
        }
+
+
+       @media(max-width:1075px){
+            .navbar-nav li a {
+             font-size: 10pt;
+             color: olive;
+
+             }
+       }
+
+
+       @media(max-width:885px){
+            .navbar-nav li a {
+             font-size: 8pt;
+             color: olive;
+
+             }
+       }
+
+
        .navbar-nav li a:hover{
            color: #fff !important;
            background-color: #000;
@@ -355,28 +384,32 @@
         <div class="collapse navbar-collapse" id="navbarToggler">
           <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item active">
-              <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link js-scroll-trigger" href="#home">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#security">About security</a>
+              <a class="nav-link js-scroll-trigger" href="#security">About security</a>
             </li>
-            <li class="nav-item dropdown dmenu">
-            <a class="nav-link dropdown-toggle" href="#hacker" id="navbardrop" data-toggle="dropdown">
-              Hackers
-            </a>
-            <div class="dropdown-menu sm-menu">
-              <a class="dropdown-item" href="#reviews">Reviews</a>
-              <a class="dropdown-item" href="#advertise">Advertise</a>
-              <a class="dropdown-item" href="#customers">Customers</a>
-            </div>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#hacker">Hackers</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#skills">Security skills</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#skills">Security skills</a>
+            <a class="nav-link js-scroll-trigger" href="#information">Malware</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#information">Malware</a>
+             <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#trojan">Trojan</a>
           </li>
-          <li class="nav-item dropdown dmenu">
+             <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact us</a>
+          </li>
+            <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#location">Location</a>
+          </li>
+          <!--
+          <li class="nav-item dropdown menu">
             <a class="nav-link dropdown-toggle" href="#services" id="navbardrop" data-toggle="dropdown">
              Media
             </a>
@@ -386,7 +419,8 @@
               <a class="dropdown-item" href="#solutions">Solutions</a>
               <a class="dropdown-item" href="#resources">Resources</a>
             </div>
-          </li>
+          </li>-->
+
           </ul>
         </div>
           <div class="social-part">
@@ -454,13 +488,13 @@
                 </section>
 
 
-                            <br>
+
 
 
 			<!-- Features -->
 
-              <section id="reviews">
-              <br><br><br><br><br>
+              <section id="hacker">
+              <br>
                 <div class="container bg-primary thumbnail"> <br>
                 <div class="row">
                          <div class="col-md-4">
@@ -587,10 +621,10 @@
              </section>
 
     <!-- ########################################################-->
-         <section id="blog">
+         <section id="trojan">
          <br><br><br><br>
-    <div class="container" style="3px solid #ff00ff;">
-    <footer class="footer" style="background: #000000; color: #fff;">
+       <div class="container" style="3px solid #ff00ff;">
+              <footer class="footer" style="background: #000000; color: #fff;">
                    <div class="row">
                         <div class="col-sm-12  col-md-6">
                          <img class="img-fluid wow fadeIn rounded" data-wow-duration="6s" data-wow-delay="3s" src="images/Attack.jpg" alt="attack" />
@@ -600,16 +634,21 @@
                        </div><!--col-md-4-->
                       </div>
 
+                      </footer>
+            </div>
+          </section>
 
-                       <div class="row">
+          <section id="contact">
+                       <div class="row"> <br><br><br><br>
                        <div class="col bg-light">
                     <!-- form card login with validation feedback -->
                     <div class="card card-outline-secondary my-3 fmbg">
+                    <br><br><br>
                         <div class="card-header">
                             <h3 class="mb-0 text-dark">Feedback</h3>
                         </div>
-                        <div class="card-body text-dark">
-                            <form action="" class="form" role="form" autocomplete="on"  method="POST">
+                        <div class="card-body text-dark">  <br><br><br><br><br>
+                            <form action="" class="form" role="form" autocomplete="on"  method="POST" id="contact">
                                 <div class="form-group">
                                     <label for="visame">Visitor name:</label>
                                     <input type="text" class="form-control" name="visname" placeholder="Your name" required="">
@@ -638,45 +677,42 @@
                     <!-- /form card login -->
                          </div><!--col-->
                        </div><!--row -->
+          </section>
 
-
-
-                     <div class="row">
+                     <section id="location"> <br>
+                       <div class="row">
                           <div class="col">
                              <div class="map-responsive">
                                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d19876.963253123155!2d-0.03517475!3d51.4834816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1555461002104!5m2!1sen!2suk" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                                </div>
                           </div>
                      </div>
-
+                   </section>
 
 
                           <div class="row fadeIn">
-							    <div class="col-sm-12 col-md-6">
+							    <div class="col-sm-12 col-md-6 bg-info">
 									<span class="menu wow fadeIn list-inline" data-wow-delay="0.6s">&copy; Copyright All rights reserved</span>
                                  </div>
-                                   <div class="col-sm-12 col-md-6">
+                                   <div class="col-sm-12 col-md-6" style="background-color: olive;">
                                    <span>Designed by: Junior Web Developer<b>&nbsp;&nbsp;&nbsp;&nbsp;Stephen Jolayemi</b></span>
 							    </div>
 						   </div>
-
+        <section class="border bg-dark">
         <div class="row no-gutters social-container">
           <div class="col-sm-3"><a class="social-inner" href="https://www.facebook.com/"  target="_top"><span class="icon mdi mdi-facebook"></span><span>Facebook</span></a></div>
           <div class="col-sm-3"><a class="social-inner" href="https://www.instagram.com/" target="_top"><span class="icon mdi mdi-instagram"></span><span>instagram</span></a></div>
           <div class="col-sm-3"><a class="social-inner" href="https://www.twitter.com/"   target="_top"><span class="icon mdi mdi-twitter"></span><span>twitter</span></a></div>
           <div class="col-sm-3"><a class="social-inner" href="https://www.google.com/"    target="_top"><span class="icon mdi mdi-youtube-play"></span><span>google</span></a></div>
         </div>
-        </footer>
-         </div><!-- .container -->
-          </section>
-         </div>
+        </section>
 
            <!-- ##############################################-->
            <div class="toTop">
             <div><a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top pt-2 pb-4" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up">&nbsp;&nbsp;Back to top page</span></a>
             </div>
           </div>
-
+       </div>
        <script type="text/javascript">
            $(document).ready(function(){
      $(window).scroll(function () {
@@ -708,6 +744,20 @@
 });
 
        </script>
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/creative.min.js"></script>
+
+
 	</body>
 </html>
 
